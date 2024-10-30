@@ -1,0 +1,126 @@
+.cart-container {
+  background-color: var(--color-light);
+  padding: 4rem 2rem;
+}
+
+.cart-container-content {
+  display: grid;
+  gap: 6rem;
+}
+
+.cart {
+  display: grid;
+  gap: 2rem;
+}
+
+.cart-item {
+  background-color: var(--color-extralight);
+  border: 1.5px solid lightgray;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.empty-cart-content {
+  font-style: italic;
+  min-height: 47.5rem;
+  opacity: 0.375;
+}
+
+.cart-item-primary {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item-quantity,
+.cart-item-name {
+  color: var(--color-extrabold);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.cart-item-price {
+  color: var(--color-bold);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.remove-item-btn {
+  background-color: var(--color-medium);
+  border-radius: 1rem;
+  border-style: none;
+  color: var(--color-extralight);
+  font-size: 1.4rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.remove-item-btn:hover {
+  opacity: 0.5;
+}
+
+.total-primary {
+  color: var(--color-extrabold);
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.subtotal-container,
+.tax-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtotal,
+.subtotal-number,
+.tax,
+.tax-number {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.total-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-btn {
+  background-color: var(--color-bold);
+  border-radius: 4rem;
+  color: var(--color-extralight);
+  border-style: none;
+  font-weight: 500;
+  padding: 1.5rem 6rem;
+}
+
+.checkout-btn:hover {
+  background-color: var(--color-medium);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .cart-container {
+    padding: 4rem 15rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

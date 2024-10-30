@@ -1,0 +1,82 @@
+.home-container {
+  background-color: var(--color-light);
+  display: grid;
+  gap: 8rem;
+}
+
+h1 {
+  color: var(--color-extrabold);
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  display: block;
+  margin: auto;
+  max-height: 150rem;
+  max-width: 120rem;
+}
+
+.our-story,
+.our-coffee,
+.gallery,
+.location-and-hours {
+  padding: 0rem 2rem;
+}
+
+.gallery-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.location-and-hours {
+  margin-bottom: 8rem;
+}
+
+.location-and-hours-details {
+  display: grid;
+  gap: 3rem;
+}
+
+.location,
+.hours {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home-container {
+    gap: 15rem;
+  }
+
+  .hero-img {
+    padding: 5rem 10rem 2rem 10rem;
+  }
+
+  .our-story,
+  .our-coffee,
+  .location-and-hours {
+    padding: 0rem 35rem;
+    text-align: center;
+  }
+
+  .gallery {
+    padding: 0rem 15rem;
+  }
+
+  .gallery-container {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .location-and-hours {
+    margin-bottom: 15rem;
+  }
+}

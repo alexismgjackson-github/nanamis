@@ -1,0 +1,99 @@
+.contact-container {
+  background-color: var(--color-light);
+  display: grid;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 6rem;
+}
+
+.phone-and-email {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  color: var(--color-extrabold);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  background-color: var(--color-extralight);
+  border: 1.75px solid var(--color-extrabold);
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border: 1.75px solid var(--color-medium);
+  outline: none;
+}
+
+.contact-success {
+  background-color: green;
+  border: 1px solid green;
+  color: var(--color-extralight);
+  font-size: 1.4rem;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
+.contact-error {
+  background-color: red;
+  border: 1px solid red;
+  color: var(--color-extralight);
+  font-size: 1.4rem;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
+.contact-btn {
+  background-color: var(--color-medium);
+  border-radius: 2.75rem;
+  border-style: none;
+  color: var(--color-light);
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  width: 20rem;
+}
+
+.contact-btn:hover {
+  opacity: 0.65;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contact-container {
+    padding: 4rem 15rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
