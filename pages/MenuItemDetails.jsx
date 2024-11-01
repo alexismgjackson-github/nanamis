@@ -1,8 +1,11 @@
+// import { data } from "@remix-run/router";
 import { useState } from "react";
 import "./MenuItemDetails.css";
 
 export default function MenuItemDetails({ ...item }) {
-  const [formData, setFormData] = useState({
+  const [cartItems, setCartItems] = useState([]);
+
+  const [dataObj, setDataObj] = useState({
     id: item.id,
     quantity: 0,
     name: item.name,
@@ -11,26 +14,26 @@ export default function MenuItemDetails({ ...item }) {
     ideas: item.ideas,
   });
 
-  const itemPrice = item.price * formData.quantity;
+  const itemPrice = item.price * dataObj.quantity;
   const totalPrice = formatUSD(itemPrice);
 
   function incrementByOne() {
-    setFormData((prevFormData) => {
+    setDataObj((prevDataObj) => {
       return {
-        ...prevFormData,
-        quantity: prevFormData.quantity + 1,
-        price: prevFormData.price * item.quantity,
+        ...prevDataObj,
+        quantity: prevDataObj.quantity + 1,
+        price: prevDataObj.price * item.quantity,
       };
     });
     console.log("Increment button clicked");
   }
 
   function decrementByOne() {
-    setFormData((prevFormData) => {
+    setDataObj((prevDataObj) => {
       return {
-        ...prevFormData,
-        quantity: prevFormData.quantity - 1,
-        price: prevFormData.price * item.quantity,
+        ...prevDataObj,
+        quantity: prevDataObj.quantity - 1,
+        price: prevDataObj.price * item.quantity,
       };
     });
     console.log("Decrement button clicked");
@@ -45,15 +48,30 @@ export default function MenuItemDetails({ ...item }) {
 
   function addToCart(event) {
     event.preventDefault();
+
     console.log("Adding item to cart");
+
+    const newCartItem = {
+      id: dataObj.id,
+      quantity: dataObj.quantity,
+      name: dataObj.name,
+      price: totalPrice,
+      description: dataObj.description,
+      ideas: dataObj.ideas,
+    };
+
+    console.log(newCartItem);
+
+    setCartItems((prevCartItems) => [...prevCartItems, newCartItem]);
+    console.log(cartItems);
   }
 
   /*
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
-    setFormData((prevFormData) => {
+    setDataObj((prevDataObj) => {
       return {
-        ...prevFormData,
+        ...prevDataObj,
         [name]: type === "checkbox" ? checked : value,
       };
     });
@@ -67,6 +85,7 @@ export default function MenuItemDetails({ ...item }) {
         <span className="menu-item-modal-price">${item.price}</span>
         <p className="menu-item-modal-description">{item.description}</p>
         <p className="menu-item-modal-ideas">{item.ideas}</p>
+        <p className="menu-item-modal-flavor">Today's flavor: {item.flavor}</p>
       </div>
       <div className="menu-item-modal-content">
         <form className="menu-item-modal-form">
@@ -76,7 +95,7 @@ export default function MenuItemDetails({ ...item }) {
               type="button"
               aria-label="Decrease quantity"
               onClick={decrementByOne}
-              disabled={formData.quantity === 0 ? true : false}
+              disabled={dataObj.quantity === 0 ? true : false}
             >
               <img
                 src="assets/icons/decrement.svg"
@@ -84,15 +103,13 @@ export default function MenuItemDetails({ ...item }) {
                 aria-label="Decrease quantity"
               />
             </button>
-            <span className="menu-item-modal-quantity">
-              {formData.quantity}
-            </span>
+            <span className="menu-item-modal-quantity">{dataObj.quantity}</span>
             <button
               className="menu-item-modal-increment-btn"
               type="button"
               aria-label="Increase quantity"
               onClick={incrementByOne}
-              disabled={formData.quantity === 10 ? true : false}
+              disabled={dataObj.quantity === 10 ? true : false}
             >
               <img
                 src="assets/icons/increment.svg"
@@ -106,7 +123,7 @@ export default function MenuItemDetails({ ...item }) {
               className="add-to-cart-btn"
               aria-label="Add item to cart"
               onClick={addToCart}
-              disabled={formData.quantity === 0 ? true : false}
+              disabled={dataObj.quantity === 0 ? true : false}
             >
               Add To Cart - {totalPrice}{" "}
             </button>

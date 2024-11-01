@@ -5,7 +5,11 @@ export default function Home() {
     <>
       <div className="home-container">
         <section className="hero">
-          <img className="hero-img" src="assets/images/hero-img.jpg" alt="" />
+          <img
+            className="hero-img"
+            src="assets/images/hero-img.jpg"
+            alt="Sliced baguette"
+          />
         </section>
         <section className="our-story">
           <h1>Our Story</h1>
@@ -15,32 +19,101 @@ export default function Home() {
             asperiores quas, eum facere saepe perspiciatis praesentium
             molestiae, debitis consequatur. Fuga voluptatum rerum temporibus.
             Natus pariatur eaque reprehenderit deleniti aliquam debitis, dolorum
-            culpa consectetur placeat cum aliquid itaque, cumque animi,
-            recusandae veritatis laudantium similique laboriosam quam. Cumque
-            saepe fuga iure quidem laudantium pariatur soluta. Ratione
-            necessitatibus neque deserunt soluta blanditiis.
+            culpa consectetur placeat cum aliquid itaque.
           </p>
         </section>
         <section className="gallery">
           <div className="gallery-container">
-            <img src="assets/images/grid-img-1.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-2.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-3.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-4.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-5.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-6.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-7.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-8.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-9.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-10.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-11.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-12.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-13.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-14.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-15.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-16.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-17.jpg" alt="" loading="lazy" />
-            <img src="assets/images/grid-img-18.jpg" alt="" loading="lazy" />
+            <img
+              src="assets/images/grid-img-1.jpg"
+              alt="Sourdough loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-2.jpg"
+              alt="Assorted bagels"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-3.jpg"
+              alt="Cinnamon rolls"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-4.jpg"
+              alt="Sourdough loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-5.jpg"
+              alt="Pita bread"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-6.jpg"
+              alt="Sliced Hokkaido loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-7.jpg"
+              alt="Sliced Ciabatta loaves"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-8.jpg"
+              alt="Challah loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-9.jpg"
+              alt="Sliced multi-grain loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-10.jpg"
+              alt="Sourdough loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-11.jpg"
+              alt="Hands kneading dough"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-12.jpg"
+              alt="Croissants in an oven"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-13.jpg"
+              alt="Baguettes in a paper bag"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-14.jpg"
+              alt="Sliced multi-grain loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-15.jpg"
+              alt="Sourdough loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-16.jpg"
+              alt="Pumperknickel loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-17.jpg"
+              alt="Sliced Hokkaido loaf"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-18.jpg"
+              alt="Hand sprinkling flour on dough"
+              loading="lazy"
+            />
           </div>
         </section>
         <section className="location-and-hours">

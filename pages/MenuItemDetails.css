@@ -1,6 +1,6 @@
 .menu-item-modal {
   display: grid;
-  gap: 12.5rem;
+  gap: 10rem;
   padding: 2rem;
 }
 
@@ -23,7 +23,8 @@
 }
 
 .menu-item-modal-description,
-.menu-item-modal-ideas {
+.menu-item-modal-ideas,
+.menu-item-modal-flavor {
   font-size: 1.6rem;
 }
 

@@ -2,20 +2,20 @@ export default [
   {
     id: 1,
     name: "Bagel",
-    price: 2.25,
-    description:
-      "Slightly sweet, somewhat salty. Available in plain, blueberry, sesame seed, everything seasoning and sunflower seed.",
+    price: 2.45,
+    description: "Slightly sweet, somewhat salty.",
     ideas:
       "Perfect as an open-faced toast-like meal or as a breakfast sandwich.",
+    flavor: "Blueberry",
   },
   {
     id: 2,
     name: "Baguette",
-    price: 5.25,
-    description:
-      "Crunchy on the outside but soft and airy on the inside. Classic-style.",
+    price: 5.15,
+    description: "Crunchy on the outside but soft and airy on the inside. ",
     ideas:
       "Perfect with butter, cheese, and cured meats, or alongside charcuterie boards and butter boards.",
+    flavor: "Plain",
   },
   {
     id: 3,
@@ -23,84 +23,90 @@ export default [
     price: 8.25,
     description: "Sweet, fluffy and airy texture.",
     ideas:
-      "Perfect as dinner rolls, hamburger buns, hot dog rolls, French toast, or as a slice of bread served with butter or jam.",
+      "Perfect as French toast, or as a slice of bread served with butter or jam.",
+    flavor: "Plain",
   },
   {
     id: 4,
     name: "Challah Loaf",
-    price: 8.25,
-    description:
-      "Slightly sweet flavor and a soft, fluffy texture. Available in plain and sesame seed.",
+    price: 8.35,
+    description: "Slightly sweet flavor and a soft, fluffy texture.",
     ideas:
       "Perfect sliced and spread with butter and jam or used for French toast or bread pudding.",
+    flavor: "Sesame",
   },
   {
     id: 5,
     name: "Ciabatta Loaf",
-    price: 5.75,
+    price: 5.85,
     description: "Light and airy bread with a slightly chewy crust.",
     ideas: "Perfect for garlic bread, sandwiches, paninis, and as table bread.",
+    flavor: "Roasted Garlic",
   },
   {
     id: 6,
     name: "Cinnamon Roll",
     price: 3.75,
-    description:
-      "Creamy, doughy, sweet and decadent. Frosted with cream cheese icing.",
+    description: "Creamy, doughy, sweet and decadent.",
     ideas: "Perfect as-is or with a glass of milk.",
+    flavor: "Frosted Pecan",
   },
   {
     id: 7,
     name: "Croissant",
-    price: 3.25,
-    description:
-      "Buttery, flaky and slightly sweet. French-style or chocolate filled.",
+    price: 3.45,
+    description: "Buttery, flaky and slightly sweet. ",
     ideas: "Perfect as-is, toasted or for breakfast sandwiches.",
+    flavor: "Nutella",
   },
   {
     id: 8,
     name: "Foccacia Loaf",
-    price: 6.25,
-    description:
-      "Soft, buttery, airy interior and crispy crust. Topped with olive oil, rosemary and coarse salt.",
+    price: 6.65,
+    description: "Soft, buttery, airy interior and crispy crust. ",
     ideas: "Perfect alongside olive oil or made into a panini.",
+    flavor: "Rosemary",
   },
   {
     id: 9,
     name: "Hokkaido Loaf",
-    price: 10.25,
+    price: 10.65,
     description: "Milky-sweet flavor and a feathery soft texture.",
     ideas: "Perfect as-is or toasted and smeared with butter and jam.",
+    flavor: "Plain",
   },
   {
     id: 10,
+    name: "Multi-Grain Loaf",
+    price: 7.75,
+    description: "Subtle sweetness, complex and slightly nutty flavor.",
+    ideas: "Perfect for breakfast toasts and sandwiches.",
+    flavor: "Flax, Pumpkin & Sunflower",
+  },
+  {
+    id: 11,
     name: "Pita",
     price: 2.25,
     description: "Light with a semi-dry and dense, chewy bite.",
     ideas:
       "Perfect for Greek souvlaki, Middle Eastern falafel sandwich, or served with kebabs.",
-  },
-  {
-    id: 11,
-    name: "Pumperknickel Loaf",
-    price: 8.25,
-    description: "Nutty flavor and a slightly sweet.",
-    ideas: "Perfect toasted with butter or sandwiches.",
+    flavor: "Plain",
   },
   {
     id: 12,
-    name: "Sourdough Loaf",
-    price: 9.25,
-    description:
-      "Slightly tangy flavor, crispy crust, and airy-chewy crumb. Better for digestion and blood sugar control.",
-    ideas:
-      "Perfect for toast, sandwich bread, and accompaniment to a charcuterie board.",
+    name: "Pumperknickel Loaf",
+    price: 8.55,
+    description: "Nutty flavor and a slightly sweet.",
+    ideas: "Perfect toasted with butter or sandwiches.",
+    flavor: "Plain",
   },
   {
     id: 13,
-    name: "7-Grain Loaf",
-    price: 7.75,
-    description: "Subtle sweetness, complex and slightly nutty flavor.",
-    ideas: "Perfect for breakfast toasts and sandwiches.",
+    name: "Sourdough Loaf",
+    price: 9.25,
+    description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb. ",
+    ideas:
+      "Perfect for toast, sandwich bread, and accompaniment to a charcuterie board.",
+    flavor: "Plain",
   },
 ];
