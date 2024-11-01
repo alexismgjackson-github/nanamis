@@ -51,7 +51,7 @@ export default function Header() {
             style={({ isActive }) => (isActive ? activeStyle : null)}
             className="cart-icon"
           >
-            Cart
+            Cart ({cartItems.length})
           </NavLink>
         </div>
 
