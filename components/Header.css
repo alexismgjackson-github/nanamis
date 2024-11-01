@@ -36,6 +36,7 @@ header {
   color: var(--color-medium);
   display: flex;
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .mobile-and-tablet-cart-icon {
@@ -55,7 +56,7 @@ header {
 }
 
 .hamburger-overlay {
-  background-color: #111; /*var(--color-extrabold);*/
+  background-color: #111;
   height: 100%;
   left: 0;
   position: fixed;
