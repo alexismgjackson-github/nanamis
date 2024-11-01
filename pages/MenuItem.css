@@ -50,6 +50,96 @@
   padding: 2rem;
 }
 
+.menu-item-modal {
+  display: grid;
+  gap: 10rem;
+  padding: 2rem;
+}
+
+.menu-item-modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.menu-item-modal-heading {
+  font-size: 3.2rem;
+  margin-bottom: 0rem;
+}
+
+.menu-item-modal-price {
+  color: var(--color-bold);
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 4rem;
+}
+
+.menu-item-modal-description,
+.menu-item-modal-ideas,
+.menu-item-modal-flavor {
+  font-size: 1.6rem;
+}
+
+.menu-item-modal-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.menu-item-modal-form {
+  display: grid;
+  gap: 4rem;
+}
+
+.modal-quantity-container {
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.menu-item-modal-quantity {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1.5rem;
+}
+
+.menu-item-modal-decrement-btn,
+.menu-item-modal-increment-btn {
+  align-items: center;
+  background-color: #808080;
+  border-style: none;
+  color: var(--color-extrabold);
+  display: inline-flex;
+  padding: 1rem;
+}
+
+.menu-item-modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart-btn {
+  background-color: var(--color-bold);
+  border-radius: 4rem;
+  color: var(--color-extralight);
+  border-style: none;
+  font-weight: 500;
+  padding: 1.5rem 6rem;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--color-medium);
+}
+
+:disabled:hover {
+  background-color: #d3d3d3;
+}
+
+:disabled {
+  background-color: #d3d3d3;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }

@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
-import MenuItemDetails from "./MenuItemDetails";
+import { useState, useEffect, useContext } from "react";
+import { CartContext } from "../Context/cart";
 import "./MenuItem.css";
 
 export default function MenuItem(item) {
+  const { addToCart } = useContext(CartContext);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -29,7 +31,31 @@ export default function MenuItem(item) {
             aria-label="Close menu item modal"
           />
         </button>
-        <MenuItemDetails {...item} />
+        <div className="menu-item-modal">
+          <div className="menu-item-modal-header">
+            <h1 className="menu-item-modal-heading">{item.name}</h1>
+            <span className="menu-item-modal-price">${item.price}</span>
+            <p className="menu-item-modal-description">{item.description}</p>
+            <p className="menu-item-modal-ideas">{item.ideas}</p>
+            <p className="menu-item-modal-flavor">
+              Today's flavor: {item.flavor}
+            </p>
+          </div>
+          <div className="menu-item-modal-content">
+            <div className="menu-item-modal-btn">
+              <button
+                className="add-to-cart-btn"
+                aria-label="Add item to cart"
+                onClick={() => {
+                  addToCart(item);
+                  handleClick();
+                }}
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

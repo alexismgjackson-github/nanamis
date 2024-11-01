@@ -1,8 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { CartContext } from "../Context/cart";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
+  const { cartItems } = useContext(CartContext);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -53,17 +56,21 @@ export default function Header() {
         </div>
 
         <div className="header-mobile-and-tablet-view">
-          <NavLink
-            to="/cart"
-            style={({ isActive }) => (isActive ? activeStyle : null)}
-            className="cart-icon"
-          >
-            <img
-              src="assets/icons/cart.svg"
-              alt="Shopping cart icon"
-              aria-label="Go to shopping cart"
-            />
-          </NavLink>
+          <div className="mobile-and-tablet-cart-icon-container">
+            <NavLink
+              to="/cart"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+              className="mobile-and-tablet-cart-icon"
+            >
+              <img
+                className="cart-icon"
+                src="assets/icons/cart.svg"
+                alt="Shopping cart icon"
+                aria-label="Go to shopping cart"
+              />
+            </NavLink>
+            {cartItems.length}
+          </div>
           <div className="hamburger-menu">
             <button className="hamburger-btn" onClick={handleClick}>
               <img

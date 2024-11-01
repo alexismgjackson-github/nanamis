@@ -13,6 +13,11 @@ header {
   height: 3rem;
 }
 
+.header-nav {
+  align-items: center;
+  display: flex;
+}
+
 .header-desktop-view {
   display: none;
 }
@@ -24,12 +29,23 @@ header {
 .header-mobile-and-tablet-view {
   align-items: center;
   display: flex;
+  margin-top: 1rem;
+}
+
+.mobile-and-tablet-cart-icon-container {
+  color: var(--color-medium);
+  display: flex;
+  font-size: 1.8rem;
+}
+
+.mobile-and-tablet-cart-icon {
+  margin-right: 0.5rem;
 }
 
 .hamburger-btn {
   background-color: inherit;
   border-style: none;
-  padding-left: 2.5rem;
+  padding-left: 3rem;
 }
 
 .close-hamburger-btn {
