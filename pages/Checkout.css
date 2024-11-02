@@ -1,0 +1,135 @@
+.checkout-container {
+  background-color: var(--color-light);
+  display: grid;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.back-to-cart-link {
+  align-items: center;
+  color: var(--color-extrabold);
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.back-to-cart-link:hover {
+  text-decoration: underline;
+}
+
+.back-arrow-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.checkout-steps-container {
+  display: grid;
+  gap: 4rem;
+}
+
+.steps {
+  font-size: 1.8rem;
+}
+
+.checkout-subheading {
+  color: var(--color-extrabold);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  text-transform: none;
+}
+
+select {
+  background-color: var(--color-extralight);
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.personal-details-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.checkout-subtotal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-total {
+  margin-top: 4rem;
+}
+
+.checkout-total-primary {
+  color: var(--color-extrabold);
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.checkout-subtotal-container,
+.checkout-tax-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-subtotal,
+.checkout-subtotal-number,
+.checkout-tax,
+.checkout-tax-number {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.checkout-total-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-subtotal-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-btn {
+  background-color: var(--color-bold);
+  border-radius: 4rem;
+  color: var(--color-extralight);
+  border-style: none;
+  font-weight: 500;
+  padding: 1.5rem 6rem;
+}
+
+.payment-btn:hover {
+  background-color: var(--color-medium);
+}
+
+hr {
+  border: 1px solid lightgray;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .checkout-container {
+    padding: 4rem 15rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

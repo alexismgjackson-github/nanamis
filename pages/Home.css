@@ -34,13 +34,7 @@ h1 {
 
 .location-and-hours-details {
   display: grid;
-  gap: 3rem;
-}
-
-.location,
-.hours {
-  display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

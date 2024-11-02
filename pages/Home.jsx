@@ -8,75 +8,75 @@ export default function Home() {
           <img
             className="hero-img"
             src="assets/images/hero-img.jpg"
-            alt="Sliced baguette"
+            alt="Stacked Sliced baguette"
           />
         </section>
         <section className="our-story">
           <h1>Our Story</h1>
           <p>
-            Nanami's, dolor sit amet consectetur adipisicing elit. Delectus
-            aliquid accusamus voluptatem sed ut architecto repudiandae
-            asperiores quas, eum facere saepe perspiciatis praesentium
-            molestiae, debitis consequatur. Fuga voluptatum rerum temporibus.
-            Natus pariatur eaque reprehenderit deleniti aliquam debitis, dolorum
-            culpa consectetur placeat cum aliquid itaque.
+            At Nanami's our baked goods are mixed in small batches, shaped by
+            hand, and baked daily. It’s a process that requires time, but the
+            result is well worth the wait. Our menu changes as we go, evolving
+            with the seasons. We work directly with small, regional mills and
+            farmers whenever possible, to be able to provide you with the
+            freshest baked goods.
           </p>
         </section>
         <section className="gallery">
           <div className="gallery-container">
             <img
               src="assets/images/grid-img-1.jpg"
-              alt="Sourdough loaf"
+              alt="Sourdough loaf on a wooden surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-2.jpg"
-              alt="Assorted bagels"
+              alt="Assorted bagels on parchment paper"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-3.jpg"
-              alt="Cinnamon rolls"
+              alt="Raw Cinnamon rolls on a wooden surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-4.jpg"
-              alt="Sourdough loaf"
+              alt="Sourdough loaf on crumpled paper"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-5.jpg"
-              alt="Pita bread"
+              alt="Multiple Pita bread puffed up"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-6.jpg"
-              alt="Sliced Hokkaido loaf"
+              alt="Sliced Hokkaido milk loaf on a white plate and cloth"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-7.jpg"
-              alt="Sliced Ciabatta loaves"
+              alt="Sliced Ciabatta loaves on white cloth and wooden surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-8.jpg"
-              alt="Challah loaf"
+              alt="Sesame Challah loaf on black surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-9.jpg"
-              alt="Sliced multi-grain loaf"
+              alt="Sliced Multi-Grain loaf"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-10.jpg"
-              alt="Sourdough loaf"
+              alt="Sourdough loaf on a wooden surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-11.jpg"
-              alt="Hands kneading dough"
+              alt="Hands kneading dough on a wooden surface"
               loading="lazy"
             />
             <img
@@ -91,27 +91,27 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-14.jpg"
-              alt="Sliced multi-grain loaf"
+              alt="Sliced Multi-Grain loaf on a black cloth"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-15.jpg"
-              alt="Sourdough loaf"
+              alt="Sourdough loaf on a white cloth"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-16.jpg"
-              alt="Pumperknickel loaf"
+              alt="Pumperknickel loaf on a black surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-17.jpg"
-              alt="Sliced Hokkaido loaf"
+              alt="Sliced Hokkaido milk loaf on a wooden board"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-18.jpg"
-              alt="Hand sprinkling flour on dough"
+              alt="Hand sprinkling flour on dough on a wooden surface"
               loading="lazy"
             />
           </div>
@@ -119,14 +119,9 @@ export default function Home() {
         <section className="location-and-hours">
           <h1>Location & Hours</h1>
           <ul className="location-and-hours-details">
-            <div className="location">
-              <li>73 Black Flash Drive</li>
-              <li>Cannon Beach, OR 97110</li>
-            </div>
-            <div className="hours">
-              <li>Weekdays: 7:00am - 5:00pm</li>
-              <li>Weekends: 8:00am - 5:00pm</li>
-            </div>
+            <li>73 Black Flash Drive</li>
+            <li>Cannon Beach, OR 97110</li>
+            <li>Open Daily: 7:00am - 3:00pm</li>
           </ul>
         </section>
       </div>

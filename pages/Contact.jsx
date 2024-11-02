@@ -24,10 +24,6 @@ export default function Contact() {
     }));
   }
 
-  /* function emailIsValid(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  } */
-
   function handleSubmit(event) {
     event.preventDefault();
 

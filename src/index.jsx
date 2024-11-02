@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { CartProvider } from "../Context/cart";
 import Cart from "../pages/Cart";
+import Checkout from "../pages/Checkout";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Layout from "../components/Layout";
 import Menu from "../pages/Menu";
+import Payment from "../pages/Payment";
 import "./index.css";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/payment" element={<Payment />} />
           </Route>
         </Routes>
       </BrowserRouter>

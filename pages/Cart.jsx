@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../Context/cart";
 import "./Cart.css";
 
@@ -9,7 +10,7 @@ export default function Cart() {
   return (
     <>
       <div className="cart-container">
-        <h1>Your Cart</h1>
+        <h1 className="cart-heading">Your Cart</h1>
         <div className="cart-container-content">
           {cartItems.length > 0 ? (
             <div className="cart">
@@ -59,9 +60,11 @@ export default function Cart() {
                   </div>
                 </div>
                 <div className="total-secondary">
-                  <button className="checkout-btn">
-                    Checkout ({cartItems.length})
-                  </button>
+                  <Link to="/checkout">
+                    <button className="checkout-btn">
+                      Go To Checkout ({cartItems.length})
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

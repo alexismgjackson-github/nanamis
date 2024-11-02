@@ -18,11 +18,11 @@ h2 {
 h2,
 .newsletter-text,
 .footer-copyright p {
-  color: var(--color-light);
+  color: var(--color-extralight);
 }
 
 .footer-link {
-  color: var(--color-light);
+  color: var(--color-extralight);
   text-decoration: underline;
   text-transform: uppercase;
 }

@@ -3,7 +3,7 @@ export default [
     id: 1,
     name: "Bagel",
     price: 2.45,
-    description: "Slightly sweet, somewhat salty.",
+    description: "Somewhat sweet or somewhat salty, chewy crumb.",
     ideas:
       "Perfect as an open-faced toast-like meal or as a breakfast sandwich.",
     flavor: "Blueberry",
@@ -12,7 +12,8 @@ export default [
     id: 2,
     name: "Baguette",
     price: 5.15,
-    description: "Crunchy on the outside but soft and airy on the inside. ",
+    description:
+      "Crispy crust and soft chewy crumb, balanced flavor and mild acidity.",
     ideas:
       "Perfect with butter, cheese, and cured meats, or alongside charcuterie boards and butter boards.",
     flavor: "Plain",
@@ -30,7 +31,7 @@ export default [
     id: 4,
     name: "Challah Loaf",
     price: 8.35,
-    description: "Slightly sweet flavor and a soft, fluffy texture.",
+    description: "Pleasant sweet flavor and a soft, fluffy texture.",
     ideas:
       "Perfect sliced and spread with butter and jam or used for French toast or bread pudding.",
     flavor: "Sesame",
@@ -39,8 +40,8 @@ export default [
     id: 5,
     name: "Ciabatta Loaf",
     price: 5.85,
-    description: "Light and airy bread with a slightly chewy crust.",
-    ideas: "Perfect for garlic bread, sandwiches, paninis, and as table bread.",
+    description: "Light and airy bread with a slightly chewy, crispy crust.",
+    ideas: "Perfect for garlic bread, sandwiches, paninis, or as table bread.",
     flavor: "Roasted Garlic",
   },
   {
@@ -55,21 +56,21 @@ export default [
     id: 7,
     name: "Croissant",
     price: 3.45,
-    description: "Buttery, flaky and slightly sweet. ",
+    description: "Buttery, flaky and slightly sweet.",
     ideas: "Perfect as-is, toasted or for breakfast sandwiches.",
-    flavor: "Nutella",
+    flavor: "Almond",
   },
   {
     id: 8,
     name: "Foccacia Loaf",
     price: 6.65,
-    description: "Soft, buttery, airy interior and crispy crust. ",
+    description: "Soft, buttery, airy interior and crispy crust.",
     ideas: "Perfect alongside olive oil or made into a panini.",
     flavor: "Rosemary",
   },
   {
     id: 9,
-    name: "Hokkaido Loaf",
+    name: "Hokkaido Milk Loaf",
     price: 10.65,
     description: "Milky-sweet flavor and a feathery soft texture.",
     ideas: "Perfect as-is or toasted and smeared with butter and jam.",
@@ -79,9 +80,10 @@ export default [
     id: 10,
     name: "Multi-Grain Loaf",
     price: 7.75,
-    description: "Subtle sweetness, complex and slightly nutty flavor.",
-    ideas: "Perfect for breakfast toasts and sandwiches.",
-    flavor: "Flax, Pumpkin & Sunflower",
+    description:
+      "Subtle sweetness, unique texture, complex and slightly nutty flavor.",
+    ideas: "Perfect for breakfast toasts or sandwiches.",
+    flavor: "Cracked rye, oat, spelt and sunflower blend",
   },
   {
     id: 11,
@@ -104,9 +106,9 @@ export default [
     id: 13,
     name: "Sourdough Loaf",
     price: 9.25,
-    description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb. ",
+    description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb.",
     ideas:
-      "Perfect for toast, sandwich bread, and accompaniment to a charcuterie board.",
+      "Perfect for toast, sandwich bread, or accompaniment to a charcuterie board.",
     flavor: "Plain",
   },
 ];
