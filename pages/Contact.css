@@ -60,7 +60,7 @@ textarea {
 }
 
 .contact-btn {
-  background-color: var(--color-medium);
+  background-color: var(--color-bold);
   border-radius: 2.75rem;
   border-style: none;
   color: var(--color-light);
@@ -72,7 +72,7 @@ textarea {
 }
 
 .contact-btn:hover {
-  opacity: 0.65;
+  background-color: var(--color-medium);
 }
 
 /* Extra small devices (phones, 600px and down) */

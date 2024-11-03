@@ -14,7 +14,7 @@ export default function Home() {
         <section className="our-story">
           <h1>Our Story</h1>
           <p>
-            At Nanami's our baked goods are mixed in small batches, shaped by
+            At Nanami's, our baked goods are mixed in small batches, shaped by
             hand, and baked daily. It’s a process that requires time, but the
             result is well worth the wait. Our menu changes as we go, evolving
             with the seasons. We work directly with small, regional mills and
@@ -127,6 +127,21 @@ export default function Home() {
             <img
               src="assets/images/grid-img-21.jpg"
               alt="Chocolate Babka wreath on a white plate on black surface"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-22.jpg"
+              alt="Cinnamon roll on wooden surface"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-23.jpg"
+              alt="Multi-Grain sourdough loaf on a wooden surface"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-24.jpg"
+              alt="Hand mixing dry flour"
               loading="lazy"
             />
           </div>

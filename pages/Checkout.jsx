@@ -197,7 +197,7 @@ export default function Checkout() {
                     <div className="cart-item" key={item.id}>
                       <div className="cart-item-primary">
                         <span className="cart-item-quantity">
-                          {item.quantity}
+                          x {item.quantity}
                         </span>
                         <p className="cart-item-name">{item.name}</p>
                         <span className="cart-item-price">${item.price}</span>

@@ -95,7 +95,7 @@ export default [
   },
   {
     id: 12,
-    name: "Pita",
+    name: "Pita Bread",
     price: 2.25,
     description: "Light with a semi-dry and dense, chewy bite.",
     ideas:
