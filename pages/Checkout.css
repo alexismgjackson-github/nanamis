@@ -41,6 +41,7 @@
 
 select {
   background-color: var(--color-extralight);
+  color: var(--color-extrabold);
   padding: 1.5rem;
   width: 100%;
 }
@@ -89,9 +90,10 @@ select {
 }
 
 .checkout-subtotal-btn-container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
 }
 
 .payment-btn {

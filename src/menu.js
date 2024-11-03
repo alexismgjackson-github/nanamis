@@ -1,6 +1,14 @@
 export default [
   {
     id: 1,
+    name: "Babka Slice",
+    price: 3.45,
+    description: "Creamy, doughy, sweet and decadent.",
+    ideas: "Perfect as-is or with a glass of milk.",
+    flavor: "Chocolate",
+  },
+  {
+    id: 2,
     name: "Bagel",
     price: 2.45,
     description: "Somewhat sweet or somewhat salty, chewy crumb.",
@@ -9,7 +17,7 @@ export default [
     flavor: "Blueberry",
   },
   {
-    id: 2,
+    id: 3,
     name: "Baguette",
     price: 5.15,
     description:
@@ -19,7 +27,7 @@ export default [
     flavor: "Plain",
   },
   {
-    id: 3,
+    id: 4,
     name: "Brioche Loaf",
     price: 8.25,
     description: "Sweet, fluffy and airy texture.",
@@ -28,7 +36,7 @@ export default [
     flavor: "Plain",
   },
   {
-    id: 4,
+    id: 5,
     name: "Challah Loaf",
     price: 8.35,
     description: "Pleasant sweet flavor and a soft, fluffy texture.",
@@ -37,7 +45,7 @@ export default [
     flavor: "Sesame",
   },
   {
-    id: 5,
+    id: 6,
     name: "Ciabatta Loaf",
     price: 5.85,
     description: "Light and airy bread with a slightly chewy, crispy crust.",
@@ -45,7 +53,7 @@ export default [
     flavor: "Roasted Garlic",
   },
   {
-    id: 6,
+    id: 7,
     name: "Cinnamon Roll",
     price: 3.75,
     description: "Creamy, doughy, sweet and decadent.",
@@ -53,7 +61,7 @@ export default [
     flavor: "Frosted Pecan",
   },
   {
-    id: 7,
+    id: 8,
     name: "Croissant",
     price: 3.45,
     description: "Buttery, flaky and slightly sweet.",
@@ -61,7 +69,7 @@ export default [
     flavor: "Almond",
   },
   {
-    id: 8,
+    id: 9,
     name: "Foccacia Loaf",
     price: 6.65,
     description: "Soft, buttery, airy interior and crispy crust.",
@@ -69,7 +77,7 @@ export default [
     flavor: "Rosemary",
   },
   {
-    id: 9,
+    id: 10,
     name: "Hokkaido Milk Loaf",
     price: 10.65,
     description: "Milky-sweet flavor and a feathery soft texture.",
@@ -77,7 +85,7 @@ export default [
     flavor: "Plain",
   },
   {
-    id: 10,
+    id: 11,
     name: "Multi-Grain Loaf",
     price: 7.75,
     description:
@@ -86,7 +94,7 @@ export default [
     flavor: "Cracked rye, oat, spelt and sunflower blend",
   },
   {
-    id: 11,
+    id: 12,
     name: "Pita",
     price: 2.25,
     description: "Light with a semi-dry and dense, chewy bite.",
@@ -95,7 +103,7 @@ export default [
     flavor: "Plain",
   },
   {
-    id: 12,
+    id: 13,
     name: "Pumperknickel Loaf",
     price: 8.55,
     description: "Nutty flavor and a slightly sweet.",
@@ -103,7 +111,15 @@ export default [
     flavor: "Plain",
   },
   {
-    id: 13,
+    id: 14,
+    name: "Soft Pretzel",
+    price: 4.25,
+    description: "Aromatic, chewy and slight malty flavor.",
+    ideas: "Perfect as-is or dipped in cheese dip.",
+    flavor: "Plain",
+  },
+  {
+    id: 15,
     name: "Sourdough Loaf",
     price: 9.25,
     description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb.",

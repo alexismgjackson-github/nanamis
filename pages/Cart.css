@@ -89,6 +89,8 @@
 }
 
 .total {
+  display: grid;
+  gap: 2rem;
   margin-top: 4rem;
 }
 
@@ -145,10 +147,17 @@
 @media only screen and (min-width: 768px) {
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cart-container {
+    padding: 6rem 15rem;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .cart-container {
-    padding: 4rem 15rem;
+    padding: 8rem 15rem;
   }
 }
 

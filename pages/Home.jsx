@@ -114,6 +114,21 @@ export default function Home() {
               alt="Hand sprinkling flour on dough on a wooden surface"
               loading="lazy"
             />
+            <img
+              src="assets/images/grid-img-19.jpg"
+              alt="Soft Pretzels and silver tongs"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-20.jpg"
+              alt="Croissant on a white plate on a wooden surface"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/grid-img-21.jpg"
+              alt="Chocolate Babka wreath on a white plate on black surface"
+              loading="lazy"
+            />
           </div>
         </section>
         <section className="location-and-hours">

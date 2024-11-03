@@ -91,6 +91,30 @@ h2,
   opacity: 0.65;
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: space-between;
+    padding: 4rem 15rem;
+  }
+
+  .footer-links-and-form {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    margin-bottom: 2rem;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   footer {

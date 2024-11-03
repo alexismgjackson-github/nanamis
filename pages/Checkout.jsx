@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../Context/cart";
 import "./Checkout.css";
 
 export default function Checkout() {
-  const { cartItems, removeFromCart, clearCart, getCartTotal } =
-    useContext(CartContext);
+  const { cartItems, getCartTotal } = useContext(CartContext);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -65,6 +64,14 @@ export default function Checkout() {
     }
   }
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <div className="checkout-container">
@@ -88,22 +95,22 @@ export default function Checkout() {
             <form className="timepicker">
               <label htmlFor="pickup-time"></label>
               <select className="select" name="timeslot" id="timeslot">
-                <option value="7:00AM-7:30AM">7:00AM-7:30AM</option>
-                <option value="7:30AM-8:00AM">7:30AM-8:00AM</option>
-                <option value="8:00AM-8:30AM">8:00AM-8:30AM</option>
-                <option value="8:30AM-9:00AM">8:30AM-9:00AM</option>
-                <option value="9:00AM-9:30AM">9:00AM-9:30AM</option>
-                <option value="9:30AM-10:00AM">9:30AM-10:00AM</option>
-                <option value="10:00AM-10:30AM">10:00AM-10:30AM</option>
-                <option value="10:30AM-11:00AM">10:30AM-11:00AM</option>
-                <option value="11:00AM-11:30AM">11:00AM-11:30AM</option>
-                <option value="11:30AM-12:00PM">11:30AM-12:00PM</option>
-                <option value="12:00PM-12:30PM">12:00PM-12:30PM</option>
-                <option value="12:30AM-1:00PM">12:30AM-1:00PM</option>
-                <option value="1:00PM-1:30PM">1:00PM-1:30PM</option>
-                <option value="1:30PM-2:00PM">1:30PM-2:00PM</option>
-                <option value="2:00PM-2:30PM">2:00PM-2:30PM</option>
-                <option value="2:30PM-3:00PM">2:30PM-3:00PM</option>
+                <option value="7:00AM-7:30AM">7:00AM - 7:30AM</option>
+                <option value="7:30AM-8:00AM">7:30AM - 8:00AM</option>
+                <option value="8:00AM-8:30AM">8:00AM - 8:30AM</option>
+                <option value="8:30AM-9:00AM">8:30AM - 9:00AM</option>
+                <option value="9:00AM-9:30AM">9:00AM - 9:30AM</option>
+                <option value="9:30AM-10:00AM">9:30AM - 10:00AM</option>
+                <option value="10:00AM-10:30AM">10:00AM - 10:30AM</option>
+                <option value="10:30AM-11:00AM">10:30AM - 11:00AM</option>
+                <option value="11:00AM-11:30AM">11:00AM - 11:30AM</option>
+                <option value="11:30AM-12:00PM">11:30AM - 12:00PM</option>
+                <option value="12:00PM-12:30PM">12:00PM - 12:30PM</option>
+                <option value="12:30AM-1:00PM">12:30AM - 1:00PM</option>
+                <option value="1:00PM-1:30PM">1:00PM - 1:30PM</option>
+                <option value="1:30PM-2:00PM">1:30PM - 2:00PM</option>
+                <option value="2:00PM-2:30PM">2:00PM - 2:30PM</option>
+                <option value="2:30PM-3:00PM">2:30PM - 3:00PM</option>
               </select>
             </form>
           </div>
