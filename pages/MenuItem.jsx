@@ -40,6 +40,7 @@ export default function MenuItem(item) {
             <p className="menu-item-modal-flavor">
               Today's flavor: {item.flavor}
             </p>
+            <p className="menu-item-ingredients">Ingredients: {item.ingredients}</p>
           </div>
           <div className="menu-item-modal-content">
             <div className="menu-item-modal-btn">

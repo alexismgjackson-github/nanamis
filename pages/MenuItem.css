@@ -19,7 +19,8 @@
 
 .menu-item-name,
 .menu-item-price,
-.menu-item-description {
+.menu-item-description,
+.menu-item-ingredients {
   font-size: 1.6rem;
 }
 
@@ -52,7 +53,7 @@
 
 .menu-item-modal {
   display: grid;
-  gap: 10rem;
+  gap: 6rem;
   padding: 2rem;
 }
 

@@ -2,10 +2,12 @@ export default [
   {
     id: 1,
     name: "Babka Slice",
-    price: 3.45,
-    description: "Creamy, doughy, sweet and decadent.",
+    price: 3.25,
+    description: "Buttery, sweet and brioche-like crumb.",
     ideas: "Perfect as-is or with a glass of milk.",
     flavor: "Chocolate",
+    ingredients:
+      "flour, yeast, sugar, eggs, milk, butter, salt, cinnamon, cocoaa powder, dark chocolate",
   },
   {
     id: 2,
@@ -15,6 +17,8 @@ export default [
     ideas:
       "Perfect as an open-faced toast-like meal or as a breakfast sandwich.",
     flavor: "Blueberry",
+    ingredients:
+      "flour, eggs, water, salt, yeast, malt, vegetable oil, blueberries, sugar, honey",
   },
   {
     id: 3,
@@ -25,6 +29,7 @@ export default [
     ideas:
       "Perfect with butter, cheese, and cured meats, or alongside charcuterie boards and butter boards.",
     flavor: "Plain",
+    ingredients: "flour, yeast, salt, water",
   },
   {
     id: 4,
@@ -34,6 +39,7 @@ export default [
     ideas:
       "Perfect as French toast, or as a slice of bread served with butter or jam.",
     flavor: "Plain",
+    ingredients: "flour, eggs, cream, butter, sugar, yeast, milk, salt",
   },
   {
     id: 5,
@@ -43,14 +49,17 @@ export default [
     ideas:
       "Perfect sliced and spread with butter and jam or used for French toast or bread pudding.",
     flavor: "Sesame",
+    ingredients:
+      "flour, butter, eggs, sugar, vegetable oil, honey, yeast, water, sesame seeds",
   },
   {
     id: 6,
     name: "Ciabatta Loaf",
-    price: 5.85,
+    price: 6.85,
     description: "Light and airy bread with a slightly chewy, crispy crust.",
     ideas: "Perfect for garlic bread, sandwiches, paninis, or as table bread.",
     flavor: "Roasted Garlic",
+    ingredients: "flour, yeast, olive oil, salt, water, garlic",
   },
   {
     id: 7,
@@ -59,6 +68,8 @@ export default [
     description: "Creamy, doughy, sweet and decadent.",
     ideas: "Perfect as-is or with a glass of milk.",
     flavor: "Frosted Pecan",
+    ingredients:
+      "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese, pecans",
   },
   {
     id: 8,
@@ -66,7 +77,8 @@ export default [
     price: 3.45,
     description: "Buttery, flaky and slightly sweet.",
     ideas: "Perfect as-is, toasted or for breakfast sandwiches.",
-    flavor: "Almond",
+    flavor: "Nutella",
+    ingredients: "flour, yeast, butter, milk, sugar, salt, nutella ",
   },
   {
     id: 9,
@@ -75,6 +87,8 @@ export default [
     description: "Soft, buttery, airy interior and crispy crust.",
     ideas: "Perfect alongside olive oil or made into a panini.",
     flavor: "Rosemary",
+    ingredients:
+      "all-purpose flour, active dry yeast, olive oil, salt, water, sugar, rosemary",
   },
   {
     id: 10,
@@ -83,6 +97,7 @@ export default [
     description: "Milky-sweet flavor and a feathery soft texture.",
     ideas: "Perfect as-is or toasted and smeared with butter and jam.",
     flavor: "Plain",
+    ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
   },
   {
     id: 11,
@@ -91,7 +106,9 @@ export default [
     description:
       "Subtle sweetness, unique texture, complex and slightly nutty flavor.",
     ideas: "Perfect for breakfast toasts or sandwiches.",
-    flavor: "Cracked rye, oat, spelt and sunflower blend",
+    flavor: "Plain",
+    ingredients:
+      "cracked rye, barley, flax, millet, oats, spelt, wheat, whole-wheat flour, flaxseed, quinoa, sunflower seeds, egg white",
   },
   {
     id: 12,
@@ -101,6 +118,7 @@ export default [
     ideas:
       "Perfect for Greek souvlaki, Middle Eastern falafel sandwich, or served with kebabs.",
     flavor: "Plain",
+    ingredients: "flour, salt, yeast, water, sugar, olive oil",
   },
   {
     id: 13,
@@ -109,6 +127,7 @@ export default [
     description: "Nutty flavor and a slightly sweet.",
     ideas: "Perfect toasted with butter or sandwiches.",
     flavor: "Plain",
+    ingredients: "rye flour, molasses, cocoa powder, wheat flour, cornmeal",
   },
   {
     id: 14,
@@ -116,7 +135,9 @@ export default [
     price: 4.25,
     description: "Aromatic, chewy and slight malty flavor.",
     ideas: "Perfect as-is or dipped in cheese dip.",
-    flavor: "Plain",
+    flavor: "Cinnamon Sugar",
+    ingredients:
+      "flour, yeast, salt, baking soda, water, sugar, butter, cinnamon",
   },
   {
     id: 15,
@@ -126,5 +147,6 @@ export default [
     ideas:
       "Perfect for toast, sandwich bread, or accompaniment to a charcuterie board.",
     flavor: "Plain",
+    ingredients: "sourdough starter, flour, salt, water, olive oil",
   },
 ];
