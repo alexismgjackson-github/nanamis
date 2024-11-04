@@ -208,27 +208,43 @@ export default function Checkout() {
                     </div>
                   ))}
                 </div>
-                <div className="checkout-total">
-                  <div className="checkout-total-primary">
-                    <div className="checkout-subtotal-container">
-                      <p className="checkout-subtotal">Item subtotal</p>
-                      <span className="checkout-subtotal-number">
-                        {getCartTotal()}
-                      </span>
-                    </div>
-                    <div className="checkout-tax-container">
-                      <p className="checkout-tax">Tax</p>
-                      <span className="checkout-tax-number">$0.00</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-            <div className="checkout-subtotal-btn-container">
-              <Link to="/payment">
-                <button className="payment-btn">Go To Payment</button>
-              </Link>
+          </div>
+          <hr />
+
+          <div className="tipping-container">
+            <h2 className="checkout-subheading">
+              <span className="steps">4.</span> Add A Tip
+            </h2>
+            <div className="tip-options-buttons">
+              <button className="no-tip-btn">No Tip</button>
+              <button className="ten-percent-btn">10%</button>
+              <button className="fifteen-percent-btn">15%</button>
+              <button className="twenty-percent-btn">20%</button>
             </div>
+          </div>
+          <hr />
+
+          <div className="checkout-total">
+            <div className="checkout-total-primary">
+              <div className="checkout-subtotal-container">
+                <p className="checkout-subtotal">Item subtotal</p>
+                <span className="checkout-subtotal-number">
+                  {getCartTotal()}
+                </span>
+              </div>
+              <div className="checkout-tax-container">
+                <p className="checkout-tax">Tax</p>
+                <span className="checkout-tax-number">$0.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="checkout-subtotal-btn-container">
+            <Link to="/payment">
+              <button className="payment-btn">Go To Payment</button>
+            </Link>
           </div>
         </div>
       </div>

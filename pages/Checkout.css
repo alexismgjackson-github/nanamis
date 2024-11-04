@@ -51,14 +51,33 @@ select {
   gap: 1.5rem;
 }
 
+.tip-options-buttons {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.no-tip-btn,
+.ten-percent-btn,
+.fifteen-percent-btn,
+.twenty-percent-btn {
+  background-color: var(--color-bold);
+  border-radius: 1rem;
+  border-style: none;
+  color: var(--color-extralight);
+  padding: 1rem;
+}
+
+.no-tip-btn:hover,
+.ten-percent-btn:hover,
+.fifteen-percent-btn:hover,
+.twenty-percent-btn:hover {
+  background-color: var(--color-medium);
+}
+
 .checkout-subtotal-container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.checkout-total {
-  margin-top: 4rem;
 }
 
 .checkout-total-primary {
@@ -93,7 +112,6 @@ select {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .payment-btn {
