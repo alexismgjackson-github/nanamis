@@ -51,12 +51,8 @@ export default function Cart() {
               <div className="total">
                 <div className="total-primary">
                   <div className="subtotal-container">
-                    <p className="subtotal">Item subtotal</p>
+                    <p className="subtotal">Item Total</p>
                     <span className="subtotal-number">{getCartTotal()}</span>
-                  </div>
-                  <div className="tax-container">
-                    <p className="tax">Tax</p>
-                    <span className="tax-number">$0.00</span>
                   </div>
                 </div>
                 <div className="total-secondary">

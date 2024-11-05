@@ -15,6 +15,10 @@
   gap: 1.5rem;
 }
 
+.contact-form-container {
+  margin-bottom: 4rem;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -37,26 +41,20 @@ textarea {
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
-  border: 1.75px solid var(--color-medium);
+  border: 1px solid var(--color-medium);
   outline: none;
 }
 
 .contact-success {
-  background-color: green;
-  border: 1px solid green;
-  color: var(--color-extralight);
+  color: green;
   font-size: 1.4rem;
-  max-width: fit-content;
-  padding: 1rem;
+  font-style: italic;
 }
 
 .contact-error {
-  background-color: red;
-  border: 1px solid red;
-  color: var(--color-extralight);
+  color: red;
   font-size: 1.4rem;
-  max-width: fit-content;
-  padding: 1rem;
+  font-style: italic;
 }
 
 .contact-btn {

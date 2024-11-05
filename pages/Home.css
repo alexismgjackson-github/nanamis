@@ -39,8 +39,23 @@ h1 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .home-container {
+    gap: 12rem;
+  }
+
   .gallery-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .location-and-hours {
+    margin-bottom: 12rem;
+  }
+
+  .our-story,
+  .our-coffee,
+  .location-and-hours {
+    padding: 0rem 15rem;
+    text-align: center;
   }
 }
 
@@ -58,7 +73,6 @@ h1 {
   .our-coffee,
   .location-and-hours {
     padding: 0rem 35rem;
-    text-align: center;
   }
 
   .gallery {

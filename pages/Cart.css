@@ -10,6 +10,7 @@
 .cart-container-content {
   display: grid;
   gap: 6rem;
+  margin-bottom: 4rem;
 }
 
 .cart {
@@ -91,7 +92,7 @@
 .total {
   display: grid;
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .total-primary {
@@ -109,9 +110,7 @@
 }
 
 .subtotal,
-.subtotal-number,
-.tax,
-.tax-number {
+.subtotal-number {
   font-size: 1.6rem;
   font-weight: 500;
 }

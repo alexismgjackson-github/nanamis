@@ -8,15 +8,16 @@ export default function Checkout() {
   const { cartItems, getCartTotal } = useContext(CartContext);
 
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
+    cardNumber: "",
+    expiration: "",
+    ccv: "",
+    zipcode: "",
   });
 
-  const [formMessage, setFormMessage] = useState("");
-  const [firstNameMessage, setFirstNameMessage] = useState("");
-  const [lastNameMessage, setLastNameMessage] = useState("");
-  const [emailMessage, setEmailMessage] = useState("");
+  const [cardNumberMessage, setCardNumberMessage] = useState("");
+  const [expirationMessage, setExpirationMessage] = useState("");
+  const [ccvMessage, setCcvMessage] = useState("");
+  const [zipcodeMessage, setZipcodeMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
 
   function handleChange(event) {
@@ -30,35 +31,46 @@ export default function Checkout() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (formData.firstName.length === 0) {
-      console.log("First name is invalid");
-      setFirstNameMessage("Error: First name is required");
+    if (formData.cardNumber.length === 0) {
+      console.log("Card number is invalid");
+      setCardNumberMessage("Error: Card number is required");
       setIsValid(false);
     } else {
-      console.log("First name is valid");
-      setFirstNameMessage("First name successfully submitted!");
-      formData.firstName = "";
+      console.log("Card number is valid");
+      setCardNumberMessage("Card number successfully submitted!");
+      formData.cardNumber = "";
       setIsValid(true);
     }
 
-    if (formData.lastName.length === 0) {
-      console.log("Last name is invalid");
-      setLastNameMessage("Error: Last name is required");
+    if (formData.expiration.length === 0) {
+      console.log("Expiration is invalid");
+      setExpirationMessage("Error: Expiration is required");
       setIsValid(false);
     } else {
-      console.log("Second name is valid");
-      setLastNameMessage("Last successfully submitted!");
-      formData.lastName = "";
+      console.log("Expiration is valid");
+      setExpirationMessage("Last successfully submitted!");
+      formData.expiration = "";
       setIsValid(true);
     }
 
-    if (formData.email.length === 0) {
-      console.log("Email is invalid");
-      setEmailMessage("Error: Valid email is required");
+    if (formData.ccv.length === 0) {
+      console.log("CCV is invalid");
+      setCcvMessage("Error: CCV is required");
       setIsValid(false);
     } else {
-      console.log("Email is valid");
-      setEmailMessage("Email successfully submitted!");
+      console.log("CCV is valid");
+      setCcvMessage("CCV successfully submitted!");
+      formData.email = "";
+      setIsValid(true);
+    }
+
+    if (formData.zipcode.length === 0) {
+      console.log("Zipcode is invalid");
+      setZipcodeMessage("Error: Zipcode is required");
+      setIsValid(false);
+    } else {
+      console.log("Zipcode is valid");
+      setZipcodeMessage("Zipcode successfully submitted!");
       formData.email = "";
       setIsValid(true);
     }
@@ -116,135 +128,141 @@ export default function Checkout() {
           </div>
           <hr />
 
-          <div className="personal-details-container">
-            <h2 className="checkout-subheading">
-              <span className="steps">2.</span> Enter Personal Details
-            </h2>
-            <form className="personal-details-form" onSubmit={handleSubmit}>
-              {formMessage && (
-                <span
-                  className={`contact-message ${
-                    isValid == true ? "contact-success" : "contact-error"
-                  }`}
-                >
-                  {formMessage}
-                </span>
-              )}
-              <label htmlFor="">First Name (required)</label>
-              {firstNameMessage && (
-                <span
-                  className={`contact-message ${
-                    isValid == true ? "contact-success" : "contact-error"
-                  }`}
-                >
-                  {firstNameMessage}
-                </span>
-              )}
-              <input
-                type="text"
-                onChange={handleChange}
-                name="firstName"
-                value={formData.firstName}
-                className="contact-form-input"
-              />
-
-              <label htmlFor="">Last Name (required)</label>
-              {lastNameMessage && (
-                <span
-                  className={`contact-message ${
-                    isValid == true ? "contact-success" : "contact-error"
-                  }`}
-                >
-                  {lastNameMessage}
-                </span>
-              )}
-              <input
-                type="text"
-                onChange={handleChange}
-                name="lastName"
-                value={formData.lastName}
-                className="contact-form-input"
-              />
-              <label htmlFor="">Email (required)</label>
-              {emailMessage && (
-                <span
-                  className={`contact-message ${
-                    isValid == true ? "contact-success" : "contact-error"
-                  }`}
-                >
-                  {emailMessage}
-                </span>
-              )}
-              <input
-                type="text"
-                onChange={handleChange}
-                name="email"
-                value={formData.email}
-                className="contact-form-input"
-              />
-            </form>
-          </div>
-          <hr />
-
           <div className="view-order-container">
             <h2 className="checkout-subheading">
-              <span className="steps">3.</span> Review Your Order
+              <span className="steps">2.</span> Review Your Order
             </h2>
             <div className="cart-container-content">
-              <div className="cart">
-                <div className="full-cart">
+              <div className="checkout-cart">
+                <div className="checkout-full-cart">
                   {cartItems.map((item) => (
-                    <div className="cart-item" key={item.id}>
-                      <div className="cart-item-primary">
-                        <span className="cart-item-quantity">
+                    <div className="checkout-cart-item" key={item.id}>
+                      <div className="checkout-cart-item-primary">
+                        <span className="checkout-cart-item-quantity">
                           x {item.quantity}
                         </span>
-                        <p className="cart-item-name">{item.name}</p>
-                        <span className="cart-item-price">${item.price}</span>
+                        <p className="checkout-cart-item-name">{item.name}</p>
+                        <span className="checkout-cart-item-price">
+                          ${item.price}
+                        </span>
                       </div>
-                      <div className="cart-item-secondary">
-                        <p className="cart-item-flavor">{item.flavor}</p>
+                      <div className="checkout-cart-item-secondary">
+                        <p className="checkout-cart-item-flavor">
+                          {item.flavor}
+                        </p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
+
+            <div className="checkout-total">
+              <div className="checkout-total-primary">
+                <div className="checkout-subtotal-container">
+                  <p className="checkout-subtotal">Item Total</p>
+                  <span className="checkout-subtotal-number">
+                    {getCartTotal()}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
           <hr />
 
-          <div className="tipping-container">
+          <div className="details-container">
             <h2 className="checkout-subheading">
-              <span className="steps">4.</span> Add A Tip
+              <span className="steps">3.</span> Enter Details
             </h2>
-            <div className="tip-options-buttons">
-              <button className="no-tip-btn">No Tip</button>
-              <button className="ten-percent-btn">10%</button>
-              <button className="fifteen-percent-btn">15%</button>
-              <button className="twenty-percent-btn">20%</button>
-            </div>
-          </div>
-          <hr />
-
-          <div className="checkout-total">
-            <div className="checkout-total-primary">
-              <div className="checkout-subtotal-container">
-                <p className="checkout-subtotal">Item subtotal</p>
-                <span className="checkout-subtotal-number">
-                  {getCartTotal()}
+            <form className="details-form" onSubmit={handleSubmit}>
+              <label htmlFor="">Card Number (required)</label>
+              {cardNumberMessage && (
+                <span
+                  className={`checkout-message ${
+                    isValid == true ? "checkout-success" : "checkout-error"
+                  }`}
+                >
+                  {cardNumberMessage}
                 </span>
-              </div>
-              <div className="checkout-tax-container">
-                <p className="checkout-tax">Tax</p>
-                <span className="checkout-tax-number">$0.00</span>
-              </div>
-            </div>
-          </div>
+              )}
+              <input
+                type="text"
+                placeholder="1234-1234-1234-1234"
+                maxLength={16}
+                onChange={handleChange}
+                name="cardNumber"
+                value={formData.cardNumber}
+                className="checkout-form-input"
+              />
 
-          <div className="checkout-subtotal-btn-container">
-            <Link to="/payment">
-              <button className="payment-btn">Go To Payment</button>
-            </Link>
+              <label htmlFor="" className="expiration-label">
+                Expiration (required)
+              </label>
+              {expirationMessage && (
+                <span
+                  className={`checkout-message ${
+                    isValid == true ? "checkout-success" : "checkout-error"
+                  }`}
+                >
+                  {expirationMessage}
+                </span>
+              )}
+              <input
+                type="date"
+                onChange={handleChange}
+                name="expiration"
+                value={formData.expiration}
+                className="checkout-form-input"
+              />
+
+              <label htmlFor="" className="ccv-label">
+                CCV (required)
+              </label>
+              {ccvMessage && (
+                <span
+                  className={`checkout-message ${
+                    isValid == true ? "checkout-success" : "checkout-error"
+                  }`}
+                >
+                  {ccvMessage}
+                </span>
+              )}
+              <input
+                type="password"
+                maxLength={3}
+                placeholder="123"
+                onChange={handleChange}
+                name="ccv"
+                value={formData.ccv}
+                className="checkout-form-input"
+              />
+
+              <label htmlFor="">ZIP Code (required)</label>
+              {zipcodeMessage && (
+                <span
+                  className={`checkout-message ${
+                    isValid == true ? "checkout-success" : "checkout-error"
+                  }`}
+                >
+                  {zipcodeMessage}
+                </span>
+              )}
+              <input
+                type="text"
+                placeholder="12345"
+                maxLength={5}
+                onChange={handleChange}
+                name="zipcode"
+                value={formData.zipcode}
+                className="checkout-form-input"
+              />
+
+              <div className="checkout-subtotal-btn-container">
+                <button type="submit" className="payment-btn">
+                  Complete Order
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

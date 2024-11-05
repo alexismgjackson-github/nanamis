@@ -46,7 +46,58 @@ select {
   width: 100%;
 }
 
-.personal-details-form {
+.checkout-cart {
+  display: grid;
+  gap: 2rem;
+}
+
+.checkout-full-cart {
+  display: grid;
+  gap: 2rem;
+}
+
+.checkout-cart-item {
+  background-color: var(--color-extralight);
+  border: 1.5px solid lightgray;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.checkout-cart-item-primary,
+.checkout-cart-item-secondary {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-cart-item-quantity,
+.checkout-cart-item-name {
+  color: var(--color-extrabold);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.checkout-cart-item-price {
+  color: var(--color-bold);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.cart-item-flavor {
+  font-style: italic;
+}
+
+input {
+  background-color: var(--color-extralight);
+  border: 1px solid var(--color-extrabold);
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.details-form {
   display: grid;
   gap: 1.5rem;
 }
@@ -56,22 +107,10 @@ select {
   gap: 2.5rem;
 }
 
-.no-tip-btn,
-.ten-percent-btn,
-.fifteen-percent-btn,
-.twenty-percent-btn {
-  background-color: var(--color-bold);
-  border-radius: 1rem;
-  border-style: none;
-  color: var(--color-extralight);
-  padding: 1rem;
-}
-
-.no-tip-btn:hover,
-.ten-percent-btn:hover,
-.fifteen-percent-btn:hover,
-.twenty-percent-btn:hover {
-  background-color: var(--color-medium);
+.expiration,
+.ccv {
+  display: flex;
+  flex-direction: column;
 }
 
 .checkout-subtotal-container {
@@ -84,11 +123,10 @@ select {
   color: var(--color-extrabold);
   display: grid;
   gap: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 .checkout-subtotal-container,
-.checkout-tax-container {
+.checkout-grandtotal-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -96,8 +134,8 @@ select {
 
 .checkout-subtotal,
 .checkout-subtotal-number,
-.checkout-tax,
-.checkout-tax-number {
+.checkout-grandtotal,
+.checkout-grandtotal-number {
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -129,6 +167,27 @@ select {
 
 hr {
   border: 1px solid lightgray;
+}
+
+.checkout-form-input:focus {
+  border: 1px solid var(--color-medium);
+  outline: none;
+}
+
+.checkout-subtotal-btn-container {
+  margin: 4rem 0;
+}
+
+.checkout-success {
+  color: green;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.checkout-error {
+  color: red;
+  font-size: 1.4rem;
+  font-style: italic;
 }
 
 /* Extra small devices (phones, 600px and down) */

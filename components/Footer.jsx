@@ -89,6 +89,14 @@ export default function Footer() {
               Be the first to know about all things Nanami's
             </p>
             <form className="newsletter-form" onSubmit={handleSubmit}>
+              <input
+                className="newsletter-input"
+                type={"email"}
+                placeholder="Type email here..."
+                name="email"
+                onChange={handleChange}
+                value={formData.email}
+              />
               {emailMessage && (
                 <span
                   className={`newsletter-message ${
@@ -98,14 +106,6 @@ export default function Footer() {
                   {emailMessage}
                 </span>
               )}
-              <input
-                className="newsletter-input"
-                type={"email"}
-                placeholder="Type email here..."
-                name="email"
-                onChange={handleChange}
-                value={formData.email}
-              />
               <button className="newsletter-btn">Sign Up</button>
             </form>
           </div>

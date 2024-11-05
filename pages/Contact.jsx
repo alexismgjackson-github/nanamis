@@ -9,7 +9,6 @@ export default function Contact() {
     message: "",
   });
 
-  const [formMessage, setFormMessage] = useState("");
   const [firstNameMessage, setFirstNameMessage] = useState("");
   const [lastNameMessage, setLastNameMessage] = useState("");
   const [emailMessage, setEmailMessage] = useState("");
@@ -29,7 +28,7 @@ export default function Contact() {
 
     if (formData.firstName.length === 0) {
       console.log("First name is invalid");
-      setFirstNameMessage("Error: First name is required");
+      setFirstNameMessage("Error: First name is required.");
       setIsValid(false);
     } else {
       console.log("First name is valid");
@@ -40,18 +39,18 @@ export default function Contact() {
 
     if (formData.lastName.length === 0) {
       console.log("Last name is invalid");
-      setLastNameMessage("Error: Last name is required");
+      setLastNameMessage("Error: Last name is required.");
       setIsValid(false);
     } else {
-      console.log("Second name is valid");
-      setLastNameMessage("Last successfully submitted!");
+      console.log("Last name is valid");
+      setLastNameMessage("Last Name successfully submitted!");
       formData.lastName = "";
       setIsValid(true);
     }
 
     if (formData.email.length === 0) {
       console.log("Email is invalid");
-      setEmailMessage("Error: Valid email is required");
+      setEmailMessage("Error: Valid email is required.");
       setIsValid(false);
     } else {
       console.log("Email is valid");
@@ -62,7 +61,7 @@ export default function Contact() {
 
     if (formData.message.length === 0) {
       console.log("Message is invalid");
-      setMessageMessage("Error: Message is required");
+      setMessageMessage("Error: Message is required.");
       setIsValid(false);
     } else {
       console.log("Message is valid");
@@ -87,15 +86,6 @@ export default function Contact() {
           </div>
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
-              {formMessage && (
-                <span
-                  className={`contact-message ${
-                    isValid == true ? "contact-success" : "contact-error"
-                  }`}
-                >
-                  {formMessage}
-                </span>
-              )}
               <label htmlFor="">First Name (required)</label>
               {firstNameMessage && (
                 <span
@@ -108,6 +98,7 @@ export default function Contact() {
               )}
               <input
                 type="text"
+                placeholder="Jane"
                 onChange={handleChange}
                 name="firstName"
                 value={formData.firstName}
@@ -126,6 +117,7 @@ export default function Contact() {
               )}
               <input
                 type="text"
+                placeholder="Doe"
                 onChange={handleChange}
                 name="lastName"
                 value={formData.lastName}
@@ -143,6 +135,7 @@ export default function Contact() {
               )}
               <input
                 type="text"
+                placeholder="janedoe@mail.com"
                 onChange={handleChange}
                 name="email"
                 value={formData.email}
@@ -160,6 +153,7 @@ export default function Contact() {
               )}
               <textarea
                 className="contact-form-textarea"
+                placeholder="Hello there!"
                 cols="30"
                 rows="10"
                 onChange={handleChange}
