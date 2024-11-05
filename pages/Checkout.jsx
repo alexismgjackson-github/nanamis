@@ -44,33 +44,33 @@ export default function Checkout() {
 
     if (formData.expiration.length === 0) {
       console.log("Expiration is invalid");
-      setExpirationMessage("Error: Expiration is required");
+      setExpirationMessage("Error: Expiration date is required");
       setIsValid(false);
     } else {
       console.log("Expiration is valid");
-      setExpirationMessage("Last successfully submitted!");
+      setExpirationMessage("Expiration date was successfully submitted!");
       formData.expiration = "";
       setIsValid(true);
     }
 
     if (formData.ccv.length === 0) {
       console.log("CCV is invalid");
-      setCcvMessage("Error: CCV is required");
+      setCcvMessage("Error: Security code is required");
       setIsValid(false);
     } else {
       console.log("CCV is valid");
-      setCcvMessage("CCV successfully submitted!");
+      setCcvMessage("Security code successfully submitted!");
       formData.email = "";
       setIsValid(true);
     }
 
     if (formData.zipcode.length === 0) {
-      console.log("Zipcode is invalid");
-      setZipcodeMessage("Error: Zipcode is required");
+      console.log("Zip code is invalid");
+      setZipcodeMessage("Error: Zip code is required");
       setIsValid(false);
     } else {
-      console.log("Zipcode is valid");
-      setZipcodeMessage("Zipcode successfully submitted!");
+      console.log("Zip code is valid");
+      setZipcodeMessage("Zip code successfully submitted!");
       formData.email = "";
       setIsValid(true);
     }

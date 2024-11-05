@@ -98,7 +98,7 @@ export default function Contact() {
               )}
               <input
                 type="text"
-                placeholder="Jane"
+                placeholder="Kento"
                 onChange={handleChange}
                 name="firstName"
                 value={formData.firstName}
@@ -117,7 +117,7 @@ export default function Contact() {
               )}
               <input
                 type="text"
-                placeholder="Doe"
+                placeholder="Nanami"
                 onChange={handleChange}
                 name="lastName"
                 value={formData.lastName}
@@ -135,7 +135,7 @@ export default function Contact() {
               )}
               <input
                 type="text"
-                placeholder="janedoe@mail.com"
+                placeholder="kentonanami@mail.com"
                 onChange={handleChange}
                 name="email"
                 value={formData.email}

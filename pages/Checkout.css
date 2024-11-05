@@ -169,6 +169,11 @@ hr {
   border: 1px solid lightgray;
 }
 
+.checkout-form-input {
+  color: var(--color-extrabold);
+  width: 100%;
+}
+
 .checkout-form-input:focus {
   border: 1px solid var(--color-medium);
   outline: none;
