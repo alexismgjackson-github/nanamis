@@ -103,6 +103,7 @@ export default function Contact() {
                 name="firstName"
                 value={formData.firstName}
                 className="contact-form-input"
+                required
               />
 
               <label htmlFor="">Last Name (required)</label>
@@ -122,6 +123,7 @@ export default function Contact() {
                 name="lastName"
                 value={formData.lastName}
                 className="contact-form-input"
+                required
               />
               <label htmlFor="">Email (required)</label>
               {emailMessage && (
@@ -140,6 +142,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 className="contact-form-input"
+                required
               />
               <label htmlFor="">Message (required)</label>
               {messageMessage && (
@@ -159,6 +162,7 @@ export default function Contact() {
                 onChange={handleChange}
                 name="message"
                 value={formData.message}
+                required
               />
               <button className="contact-btn">Send</button>
             </form>

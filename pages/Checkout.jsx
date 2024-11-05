@@ -193,6 +193,7 @@ export default function Checkout() {
                 name="cardNumber"
                 value={formData.cardNumber}
                 className="checkout-form-input"
+                required
               />
 
               <label htmlFor="" className="expiration-label">
@@ -213,6 +214,7 @@ export default function Checkout() {
                 name="expiration"
                 value={formData.expiration}
                 className="checkout-form-input"
+                required
               />
 
               <label htmlFor="" className="ccv-label">
@@ -235,6 +237,7 @@ export default function Checkout() {
                 name="ccv"
                 value={formData.ccv}
                 className="checkout-form-input"
+                required
               />
 
               <label htmlFor="">ZIP Code (required)</label>
@@ -255,6 +258,7 @@ export default function Checkout() {
                 name="zipcode"
                 value={formData.zipcode}
                 className="checkout-form-input"
+                required
               />
 
               <div className="checkout-subtotal-btn-container">
