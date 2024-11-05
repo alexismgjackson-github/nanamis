@@ -172,7 +172,7 @@ export default function Checkout() {
 
           <div className="details-container">
             <h2 className="checkout-subheading">
-              <span className="steps">3.</span> Enter Details
+              <span className="steps">3.</span> Enter Payment Details
             </h2>
             <form className="details-form" onSubmit={handleSubmit}>
               <label htmlFor="">Card Number (required)</label>
