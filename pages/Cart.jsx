@@ -55,7 +55,7 @@ export default function Cart() {
               <div className="total">
                 <div className="total-primary">
                   <div className="subtotal-container">
-                    <p className="subtotal">Item Total</p>
+                    <p className="subtotal">Cart Total</p>
                     <span className="subtotal-number">{getCartTotal()}</span>
                   </div>
                 </div>

@@ -173,7 +173,7 @@ export default function Checkout() {
             <div className="checkout-total">
               <div className="checkout-total-primary">
                 <div className="checkout-subtotal-container">
-                  <p className="checkout-subtotal">Item Total</p>
+                  <p className="checkout-subtotal">Order Total</p>
                   <span className="checkout-subtotal-number">
                     {getCartTotal()}
                   </span>
@@ -203,7 +203,7 @@ export default function Checkout() {
                 placeholder="Kento Nanami"
                 onChange={handleChange}
                 name="cardHolder"
-                value={formData.cardNumber}
+                value={formData.cardHolder}
                 className="checkout-form-input"
                 required
               />
@@ -300,7 +300,7 @@ export default function Checkout() {
 
               <div className="checkout-subtotal-btn-container">
                 <button type="submit" className="payment-btn">
-                  Complete Order
+                  Complete Order ({getCartTotal()})
                 </button>
               </div>
             </form>
