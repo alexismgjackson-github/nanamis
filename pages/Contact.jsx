@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import "./Contact.css";
 
 export default function Contact() {
@@ -14,7 +14,6 @@ export default function Contact() {
   const [emailMessage, setEmailMessage] = useState("");
   const [messageMessage, setMessageMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
-  const emailInputRef = useRef(null);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -24,56 +23,31 @@ export default function Contact() {
     }));
   }
 
-  /*
-  useEffect(() => {
-    if (emailInputRef.current) {
-      emailInputRef.current.setCustomValidity("Nope");
-    }
-  }, [emailInputRef]);
-
-  */
-
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (formData.firstName.length === 0) {
-      console.log("First name is invalid");
-      setFirstNameMessage("Error: First name is required.");
-      setIsValid(false);
-    } else {
+    if (formData.firstName.length > 0) {
       console.log("First name is valid");
       setFirstNameMessage("First name successfully submitted!");
       formData.firstName = "";
       setIsValid(true);
     }
 
-    if (formData.lastName.length === 0) {
-      console.log("Last name is invalid");
-      setLastNameMessage("Error: Last name is required.");
-      setIsValid(false);
-    } else {
+    if (formData.lastName.length > 0) {
       console.log("Last name is valid");
       setLastNameMessage("Last Name successfully submitted!");
       formData.lastName = "";
       setIsValid(true);
     }
 
-    if (formData.email.length === 0) {
-      console.log("Email is invalid");
-      setEmailMessage("Error: Valid email is required.");
-      setIsValid(false);
-    } else {
+    if (formData.email.length > 0) {
       console.log("Email is valid");
       setEmailMessage("Email successfully submitted!");
       formData.email = "";
       setIsValid(true);
     }
 
-    if (formData.message.length === 0) {
-      console.log("Message is invalid");
-      setMessageMessage("Error: Message is required.");
-      setIsValid(false);
-    } else {
+    if (formData.message.length > 0) {
       console.log("Message is valid");
       setMessageMessage("Message successfully submitted!");
       formData.message = "";
@@ -153,7 +127,6 @@ export default function Contact() {
                 value={formData.email}
                 className="contact-form-input"
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                /*ref={emailInputRef}*/
                 required
               />
               <label htmlFor="">Message (required)</label>

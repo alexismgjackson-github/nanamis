@@ -1,0 +1,38 @@
+.order-complete-container {
+  background-color: var(--color-light);
+  display: grid;
+  gap: 4rem;
+  min-height: 60rem;
+  padding: 8rem 2rem;
+}
+
+.order-complete-text {
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
+.order-complete-img-container {
+  margin: auto;
+}
+
+.order-complete-img {
+  max-height: 96rem;
+  max-width: 64rem;
+  min-height: 48rem;
+  min-width: 33rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .order-complete-container {
+    padding: 8rem 15rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .order-complete-container {
+    padding: 10rem 15rem;
+  }
+}

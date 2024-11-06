@@ -18,9 +18,9 @@ export default function Home() {
             hand, and baked daily. It’s a process that requires time, but the
             result is well worth the wait. Our menu changes as we go, evolving
             with the seasons. We work directly with small, regional mills and
-            farmers whenever possible. Our concept is simple, but far from the
-            ordinary: only fresh, natural ingredients are used to make our
-            artisanal bread and pastries.
+            farmers whenever possible. Our concept is simple: only fresh,
+            natural ingredients are used to make our artisanal bread and
+            pastries.
           </p>
         </section>
         <section className="gallery">
@@ -152,7 +152,7 @@ export default function Home() {
           <ul className="location-and-hours-details">
             <li>73 Black Flash Drive</li>
             <li>Clearwater Beach, FL 33767</li>
-            <li>Open Daily: 7:00am - 3:00pm</li>
+            <li>Open Daily: 7:00am - 2:00pm</li>
           </ul>
         </section>
       </div>

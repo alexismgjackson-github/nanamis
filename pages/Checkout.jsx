@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../Context/cart";
 import "./Checkout.css";
 
 export default function Checkout() {
-  const { cartItems, getCartTotal } = useContext(CartContext);
+  const { cartItems, getCartTotal, clearCart } = useContext(CartContext);
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     cardHolder: "",
@@ -33,61 +35,46 @@ export default function Checkout() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (formData.cardHolder.length === 0) {
-      console.log("Card holder name is invalid");
-      setCardHolderMessage("Error: Card holder name is required");
-      setIsValid(false);
-    } else {
+    if (formData.cardHolder.length > 0) {
       console.log("Card holder name is valid");
       setCardHolderMessage("Card holder name successfully submitted!");
       formData.cardHolder = "";
       setIsValid(true);
     }
 
-    if (formData.cardNumber.length === 0) {
-      console.log("Card number is invalid");
-      setCardNumberMessage("Error: Card number is required");
-      setIsValid(false);
-    } else {
+    if (formData.cardNumber.length > 0) {
       console.log("Card number is valid");
       setCardNumberMessage("Card number successfully submitted!");
       formData.cardNumber = "";
       setIsValid(true);
     }
 
-    if (formData.expiration.length === 0) {
-      console.log("Expiration is invalid");
-      setExpirationMessage("Error: Expiration date is required");
-      setIsValid(false);
-    } else {
+    if (formData.expiration.length > 0) {
       console.log("Expiration is valid");
       setExpirationMessage("Expiration date was successfully submitted!");
       formData.expiration = "";
       setIsValid(true);
     }
 
-    if (formData.ccv.length === 0) {
-      console.log("CCV is invalid");
-      setCcvMessage("Error: Security code is required");
-      setIsValid(false);
-    } else {
+    if (formData.ccv.length > 0) {
       console.log("CCV is valid");
       setCcvMessage("Security code successfully submitted!");
-      formData.email = "";
+      formData.ccv = "";
       setIsValid(true);
     }
 
-    if (formData.zipcode.length === 0) {
-      console.log("Zip code is invalid");
-      setZipcodeMessage("Error: Zip code is required");
-      setIsValid(false);
-    } else {
+    if (formData.zipcode.length > 0) {
       console.log("Zip code is valid");
       setZipcodeMessage("Zip code successfully submitted!");
-      formData.email = "";
+      formData.zipcode = "";
       setIsValid(true);
     }
+
+    clearCart();
+    navigate(`/ordercomplete`);
   }
+
+  // console.log(formData);
 
   useEffect(() => {
     window.scrollTo({
@@ -134,8 +121,6 @@ export default function Checkout() {
                 <option value="12:30AM-1:00PM">12:30AM - 1:00PM</option>
                 <option value="1:00PM-1:30PM">1:00PM - 1:30PM</option>
                 <option value="1:30PM-2:00PM">1:30PM - 2:00PM</option>
-                <option value="2:00PM-2:30PM">2:00PM - 2:30PM</option>
-                <option value="2:30PM-3:00PM">2:30PM - 3:00PM</option>
               </select>
             </form>
           </div>
@@ -187,7 +172,7 @@ export default function Checkout() {
             <h2 className="checkout-subheading">
               <span className="steps">3.</span> Enter Payment Details
             </h2>
-            <form className="details-form" /*onSubmit={handleSubmit}*/>
+            <form className="details-form" onSubmit={handleSubmit}>
               <label htmlFor="">Card Holder Name (required)</label>
               {cardHolderMessage && (
                 <span
@@ -294,12 +279,11 @@ export default function Checkout() {
                 value={formData.zipcode}
                 className="checkout-form-input"
                 pattern="^[0-9]+$"
-                // pattern="(\d{5}([\-]\d{4})?)"
                 required
               />
 
               <div className="checkout-subtotal-btn-container">
-                <button type="submit" className="payment-btn">
+                <button className="payment-btn" onSubmit={handleSubmit}>
                   Complete Order ({getCartTotal()})
                 </button>
               </div>

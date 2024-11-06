@@ -21,20 +21,12 @@ export default function Footer() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (formData.email.length > 0 && emailIsValid(formData.email)) {
+    if (formData.email.length > 0) {
       console.log("Email is valid");
       setEmailMessage("Thank you for subscribing!");
       setIsValid(true);
       formData.email = "";
-    } else {
-      console.log("Email is invalid");
-      setEmailMessage("Error: Please enter a valid email.");
-      setIsValid(false);
     }
-  }
-
-  function emailIsValid(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
   useEffect(() => {

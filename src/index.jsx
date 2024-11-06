@@ -8,7 +8,7 @@ import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Layout from "../components/Layout";
 import Menu from "../pages/Menu";
-
+import OrderComplete from "../pages/OrderComplete";
 import "./index.css";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/ordercomplete" element={<OrderComplete />} />
           </Route>
         </Routes>
       </BrowserRouter>
