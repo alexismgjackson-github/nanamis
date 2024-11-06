@@ -46,6 +46,11 @@ select {
   width: 100%;
 }
 
+.select:focus {
+  border: 1.5px solid var(--color-medium);
+  outline: none;
+}
+
 .checkout-cart {
   display: grid;
   gap: 2rem;
