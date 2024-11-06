@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import "./Contact.css";
 
 export default function Contact() {
@@ -24,13 +24,15 @@ export default function Contact() {
     }));
   }
 
+  /*
   useEffect(() => {
     if (emailInputRef.current) {
       emailInputRef.current.setCustomValidity("Nope");
     }
   }, [emailInputRef]);
 
-  /*
+  */
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -78,7 +80,6 @@ export default function Contact() {
       setIsValid(true);
     }
   }
-  */
 
   // console.log(formData);
 
@@ -94,7 +95,7 @@ export default function Contact() {
             </ul>
           </div>
           <div className="contact-form-container">
-            <form className="contact-form" /*onSubmit={handleSubmit}*/>
+            <form className="contact-form" onSubmit={handleSubmit}>
               <label htmlFor="">First Name (required)</label>
               {firstNameMessage && (
                 <span
@@ -152,7 +153,7 @@ export default function Contact() {
                 value={formData.email}
                 className="contact-form-input"
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                ref={emailInputRef}
+                /*ref={emailInputRef}*/
                 required
               />
               <label htmlFor="">Message (required)</label>

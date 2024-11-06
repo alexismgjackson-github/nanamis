@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
@@ -7,6 +8,7 @@ export default function Footer() {
   });
   const [emailMessage, setEmailMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
+  const navigate = useNavigate();
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -15,13 +17,6 @@ export default function Footer() {
       [name]: value,
     }));
   }
-
-  {
-    /*
-  function emailIsValid(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -37,8 +32,16 @@ export default function Footer() {
       setIsValid(false);
     }
   }
-*/
+
+  function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
+
+  useEffect(() => {
+    return () => {
+      setEmailMessage("");
+    };
+  }, [navigate]);
 
   // console.log(formData);
 
@@ -93,7 +96,7 @@ export default function Footer() {
             <p className="newsletter-text">
               Be the first to know about all things Nanami's
             </p>
-            <form className="newsletter-form" /*onSubmit={handleSubmit}*/>
+            <form className="newsletter-form" onSubmit={handleSubmit}>
               <input
                 className="newsletter-input"
                 type={"email"}
