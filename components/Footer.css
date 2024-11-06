@@ -60,12 +60,12 @@ h2,
 }
 
 .footer-success {
-  color: green;
+  color: var(--color-success);
   font-size: 1.4rem;
 }
 
 .footer-error {
-  color: red;
+  color: var(--color-error);
   font-size: 1.4rem;
 }
 
@@ -111,7 +111,7 @@ h2,
     flex-direction: column;
     gap: 6rem;
     justify-content: space-between;
-    padding: 4rem 15rem;
+    padding: 6rem 15rem;
   }
 
   .footer-links-and-form {

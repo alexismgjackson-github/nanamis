@@ -55,7 +55,7 @@ header {
 }
 
 .hamburger-overlay {
-  background-color: #111;
+  background-color: var(--color-black);
   height: 100%;
   left: 0;
   position: fixed;
@@ -91,10 +91,6 @@ header {
 @media only screen and (min-width: 992px) {
   header {
     padding: 4rem 15rem;
-  }
-
-  .logo {
-    font-size: 3.2rem;
   }
 
   .header-mobile-and-tablet-view {

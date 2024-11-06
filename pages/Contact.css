@@ -46,13 +46,13 @@ textarea {
 }
 
 .contact-success {
-  color: green;
+  color: var(--color-success);
   font-size: 1.4rem;
   font-style: italic;
 }
 
 .contact-error {
-  color: red;
+  color: var(--color-error);
   font-size: 1.4rem;
   font-style: italic;
 }
@@ -73,14 +73,6 @@ textarea {
   background-color: var(--color-medium);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .contact-container {
@@ -93,8 +85,4 @@ textarea {
   .contact-container {
     padding: 8rem 15rem;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

@@ -8,12 +8,14 @@ export default function Checkout() {
   const { cartItems, getCartTotal } = useContext(CartContext);
 
   const [formData, setFormData] = useState({
+    cardHolder: "",
     cardNumber: "",
     expiration: "",
     ccv: "",
     zipcode: "",
   });
 
+  const [cardHolderMessage, setCardHolderMessage] = useState("");
   const [cardNumberMessage, setCardNumberMessage] = useState("");
   const [expirationMessage, setExpirationMessage] = useState("");
   const [ccvMessage, setCcvMessage] = useState("");
@@ -30,6 +32,17 @@ export default function Checkout() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    if (formData.cardHolder.length === 0) {
+      console.log("Card holder name is invalid");
+      setCardHolderMessage("Error: Card holder name is required");
+      setIsValid(false);
+    } else {
+      console.log("Card holder name is valid");
+      setCardHolderMessage("Card holder name successfully submitted!");
+      formData.cardHolder = "";
+      setIsValid(true);
+    }
 
     if (formData.cardNumber.length === 0) {
       console.log("Card number is invalid");
@@ -175,6 +188,26 @@ export default function Checkout() {
               <span className="steps">3.</span> Enter Payment Details
             </h2>
             <form className="details-form" /*onSubmit={handleSubmit}*/>
+              <label htmlFor="">Card Holder Name (required)</label>
+              {cardHolderMessage && (
+                <span
+                  className={`checkout-message ${
+                    isValid == true ? "checkout-success" : "checkout-error"
+                  }`}
+                >
+                  {cardHolderMessage}
+                </span>
+              )}
+              <input
+                type="text"
+                placeholder="Kento Nanami"
+                onChange={handleChange}
+                name="cardHolder"
+                value={formData.cardNumber}
+                className="checkout-form-input"
+                required
+              />
+
               <label htmlFor="">Card Number (required)</label>
               {cardNumberMessage && (
                 <span
@@ -198,7 +231,7 @@ export default function Checkout() {
               />
 
               <label htmlFor="" className="expiration-label">
-                Expiration (required)
+                Expiration Date (required)
               </label>
               {expirationMessage && (
                 <span

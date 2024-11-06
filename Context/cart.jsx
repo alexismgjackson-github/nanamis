@@ -45,46 +45,18 @@ export const CartProvider = ({ children }) => {
     setCartItems([]);
   };
 
-  function formatUSD(num) {
-    return num.toLocaleString("en-US", {
-      style: "currency",
-      currency: "USD",
-    });
-  }
-
   const getCartTotal = () => {
     return formatUSD(
       cartItems.reduce((total, item) => total + item.price * item.quantity, 0)
     );
   };
 
-  const getZeroPercent = () => {
-    return formatUSD(
-      cartItems.reduce((total, item) => total + item.price * item.quantity, 0) *
-        0
-    );
-  };
-
-  const getTenPercent = () => {
-    return formatUSD(
-      cartItems.reduce((total, item) => total + item.price * item.quantity, 0) *
-        0.1
-    );
-  };
-
-  const getFifteenPercent = () => {
-    return formatUSD(
-      cartItems.reduce((total, item) => total + item.price * item.quantity, 0) *
-        0.15
-    );
-  };
-
-  const getTwentyPercent = () => {
-    return formatUSD(
-      cartItems.reduce((total, item) => total + item.price * item.quantity, 0) *
-        0.2
-    );
-  };
+  function formatUSD(num) {
+    return num.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+  }
 
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -105,10 +77,6 @@ export const CartProvider = ({ children }) => {
         removeFromCart,
         clearCart,
         getCartTotal,
-        getZeroPercent,
-        getTenPercent,
-        getFifteenPercent,
-        getTwentyPercent,
       }}
     >
       {children}

@@ -12,14 +12,14 @@ export default function Header() {
     isOpen === true ? setIsOpen(false) : setIsOpen(true);
   };
 
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "unset";
-  }, [isOpen]);
-
   const activeStyle = {
     color: "#e4d00a",
     textDecoration: "underline",
   };
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  }, [isOpen]);
 
   return (
     <header>

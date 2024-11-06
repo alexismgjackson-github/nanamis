@@ -23,6 +23,7 @@ export default function MenuItem(item) {
           <span className="menu-item-price">${item.price}</span>
         </div>
       </div>
+
       <div className={`menu-item-modal-container ${isOpen ? "show" : "hide"}`}>
         <button className="close-menu-item-modal-btn" onClick={handleClick}>
           <img
@@ -31,18 +32,21 @@ export default function MenuItem(item) {
             aria-label="Close menu item modal"
           />
         </button>
-        <div className="menu-item-modal">
-          <div className="menu-item-modal-header">
-            <h1 className="menu-item-modal-heading">{item.name}</h1>
-            <span className="menu-item-modal-price">${item.price}</span>
-            <p className="menu-item-modal-description">{item.description}</p>
-            <p className="menu-item-modal-ideas">{item.ideas}</p>
-            <p className="menu-item-modal-flavor">
-              Today's flavor: {item.flavor}
-            </p>
-            <p className="menu-item-ingredients">Ingredients: {item.ingredients}</p>
-          </div>
-          <div className="menu-item-modal-content">
+        <div className="menu-item-modal-content">
+          <div className="menu-item-modal">
+            <div className="menu-item-modal-header">
+              <h1 className="menu-item-modal-heading">{item.name}</h1>
+              <span className="menu-item-modal-price">${item.price}</span>
+              <p className="menu-item-modal-description">{item.description}</p>
+              <p className="menu-item-modal-ideas">{item.ideas}</p>
+              <p className="menu-item-modal-flavor">
+                Today's flavor: {item.flavor}
+              </p>
+              <p className="menu-item-ingredients">
+                Ingredients: {item.ingredients}
+              </p>
+            </div>
+
             <div className="menu-item-modal-btn">
               <button
                 className="add-to-cart-btn"

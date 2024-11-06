@@ -16,9 +16,12 @@ export default function Footer() {
     }));
   }
 
+  {
+    /*
   function emailIsValid(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
+
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -33,6 +36,8 @@ export default function Footer() {
       setEmailMessage("Error: Please enter a valid email.");
       setIsValid(false);
     }
+  }
+*/
   }
 
   // console.log(formData);
@@ -88,7 +93,7 @@ export default function Footer() {
             <p className="newsletter-text">
               Be the first to know about all things Nanami's
             </p>
-            <form className="newsletter-form" onSubmit={handleSubmit}>
+            <form className="newsletter-form" /*onSubmit={handleSubmit}*/>
               <input
                 className="newsletter-input"
                 type={"email"}
@@ -96,6 +101,8 @@ export default function Footer() {
                 name="email"
                 onChange={handleChange}
                 value={formData.email}
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required
               />
               {emailMessage && (
                 <span
