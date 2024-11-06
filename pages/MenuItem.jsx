@@ -11,10 +11,6 @@ export default function MenuItem(item) {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "unset";
-  }, [isOpen]);
-
   return (
     <>
       <div className="menu-item" key={item.id} onClick={handleClick} {...item}>
