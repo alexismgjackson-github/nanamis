@@ -77,12 +77,8 @@
 }
 
 .remove-item-btn {
-  background-color: var(--color-medium);
-  border-radius: 0.75rem;
+  background-color: inherit;
   border-style: none;
-  color: var(--color-extralight);
-  font-size: 1.4rem;
-  padding: 0.25rem 0.75rem;
 }
 
 .remove-item-btn:hover {

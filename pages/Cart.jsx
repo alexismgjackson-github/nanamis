@@ -42,7 +42,11 @@ export default function Cart() {
                           removeFromCart(item);
                         }}
                       >
-                        Remove
+                        <img
+                          src="assets/icons/trash.svg"
+                          alt="Trash icon"
+                          aria-label="Delete item from cart"
+                        />
                       </button>
                     </div>
                   </div>
