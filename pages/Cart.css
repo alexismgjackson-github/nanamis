@@ -79,6 +79,7 @@
 .remove-item-btn {
   background-color: inherit;
   border-style: none;
+  height: 2.4rem;
 }
 
 .remove-item-btn:hover {
