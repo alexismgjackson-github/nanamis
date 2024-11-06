@@ -18,8 +18,9 @@ export default function Home() {
             hand, and baked daily. It’s a process that requires time, but the
             result is well worth the wait. Our menu changes as we go, evolving
             with the seasons. We work directly with small, regional mills and
-            farmers whenever possible, to be able to provide you with the
-            freshest baked goods.
+            farmers whenever possible. Our concept is simple, but far from the
+            ordinary: only fresh, natural ingredients are used to make our
+            artisanal bread and pastries.
           </p>
         </section>
         <section className="gallery">

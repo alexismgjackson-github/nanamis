@@ -1,6 +1,6 @@
 .menu-item {
   background-color: var(--color-extralight);
-  border: 1.5px solid lightgray;
+  border: 1.5px solid #d3d3d3;
   border-radius: 0.5rem;
   padding: 2rem;
   width: 100%;
@@ -35,7 +35,7 @@
 
 .menu-item-modal-container {
   background-color: var(--color-light);
-  border: 20px solid lightgray;
+  border: 20px solid #d3d3d3;
   height: 100%;
   left: 0;
   overflow-y: scroll;

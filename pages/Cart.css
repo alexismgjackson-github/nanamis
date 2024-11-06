@@ -19,7 +19,7 @@
 }
 
 .clear-cart-btn {
-  background-color: gray;
+  background-color: #808080;
   border-radius: 0.75rem;
   border-style: none;
   color: var(--color-extralight);
@@ -38,7 +38,7 @@
 
 .cart-item {
   background-color: var(--color-extralight);
-  border: 1.5px solid lightgray;
+  border: 1.5px solid #d3d3d3;
   border-radius: 0.5rem;
   display: grid;
   gap: 2rem;
