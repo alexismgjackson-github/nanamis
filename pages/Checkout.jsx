@@ -174,7 +174,7 @@ export default function Checkout() {
             <h2 className="checkout-subheading">
               <span className="steps">3.</span> Enter Payment Details
             </h2>
-            <form className="details-form" onSubmit={handleSubmit}>
+            <form className="details-form" /*onSubmit={handleSubmit}*/>
               <label htmlFor="">Card Number (required)</label>
               {cardNumberMessage && (
                 <span
@@ -193,6 +193,7 @@ export default function Checkout() {
                 name="cardNumber"
                 value={formData.cardNumber}
                 className="checkout-form-input"
+                pattern="^[0-9]+$"
                 required
               />
 
@@ -209,7 +210,7 @@ export default function Checkout() {
                 </span>
               )}
               <input
-                type="date"
+                type="month"
                 onChange={handleChange}
                 name="expiration"
                 value={formData.expiration}
@@ -218,7 +219,7 @@ export default function Checkout() {
               />
 
               <label htmlFor="" className="ccv-label">
-                CCV (required)
+                Security Code (required)
               </label>
               {ccvMessage && (
                 <span
@@ -237,6 +238,7 @@ export default function Checkout() {
                 name="ccv"
                 value={formData.ccv}
                 className="checkout-form-input"
+                pattern="^[0-9]+$"
                 required
               />
 
@@ -258,6 +260,8 @@ export default function Checkout() {
                 name="zipcode"
                 value={formData.zipcode}
                 className="checkout-form-input"
+                pattern="^[0-9]+$"
+                // pattern="(\d{5}([\-]\d{4})?)"
                 required
               />
 

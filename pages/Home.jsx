@@ -150,7 +150,7 @@ export default function Home() {
           <h1>Location & Hours</h1>
           <ul className="location-and-hours-details">
             <li>73 Black Flash Drive</li>
-            <li>Cannon Beach, OR 97110</li>
+            <li>Clearwater Beach, FL 33767</li>
             <li>Open Daily: 7:00am - 3:00pm</li>
           </ul>
         </section>

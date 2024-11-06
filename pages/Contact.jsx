@@ -23,6 +23,7 @@ export default function Contact() {
     }));
   }
 
+  /*
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -70,6 +71,7 @@ export default function Contact() {
       setIsValid(true);
     }
   }
+  */
 
   // console.log(formData);
 
@@ -85,7 +87,7 @@ export default function Contact() {
             </ul>
           </div>
           <div className="contact-form-container">
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form" /*onSubmit={handleSubmit}*/>
               <label htmlFor="">First Name (required)</label>
               {firstNameMessage && (
                 <span
@@ -142,6 +144,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 className="contact-form-input"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                 required
               />
               <label htmlFor="">Message (required)</label>
