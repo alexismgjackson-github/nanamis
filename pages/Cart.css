@@ -46,12 +46,6 @@
   width: 100%;
 }
 
-.empty-cart {
-  font-style: italic;
-  min-height: 42rem;
-  opacity: 0.5;
-}
-
 .cart-item-primary,
 .cart-item-secondary {
   align-items: center;
@@ -99,8 +93,7 @@
   margin-bottom: 2rem;
 }
 
-.subtotal-container,
-.tax-container {
+.subtotal-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -129,6 +122,12 @@
 
 .checkout-btn:hover {
   background-color: var(--color-medium);
+}
+
+.empty-cart {
+  font-style: italic;
+  min-height: 42rem;
+  opacity: 0.5;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

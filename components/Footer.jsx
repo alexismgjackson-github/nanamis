@@ -29,13 +29,13 @@ export default function Footer() {
     }
   }
 
+  // console.log(formData);
+
   useEffect(() => {
     return () => {
       setEmailMessage("");
     };
   }, [navigate]);
-
-  // console.log(formData);
 
   return (
     <footer>

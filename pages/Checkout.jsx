@@ -17,11 +17,6 @@ export default function Checkout() {
     zipcode: "",
   });
 
-  const [cardHolderMessage, setCardHolderMessage] = useState("");
-  const [cardNumberMessage, setCardNumberMessage] = useState("");
-  const [expirationMessage, setExpirationMessage] = useState("");
-  const [ccvMessage, setCcvMessage] = useState("");
-  const [zipcodeMessage, setZipcodeMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
 
   function handleChange(event) {
@@ -37,35 +32,30 @@ export default function Checkout() {
 
     if (formData.cardHolder.length > 0) {
       console.log("Card holder name is valid");
-      setCardHolderMessage("Card holder name successfully submitted!");
       formData.cardHolder = "";
       setIsValid(true);
     }
 
     if (formData.cardNumber.length > 0) {
       console.log("Card number is valid");
-      setCardNumberMessage("Card number successfully submitted!");
       formData.cardNumber = "";
       setIsValid(true);
     }
 
     if (formData.expiration.length > 0) {
       console.log("Expiration is valid");
-      setExpirationMessage("Expiration date was successfully submitted!");
       formData.expiration = "";
       setIsValid(true);
     }
 
     if (formData.ccv.length > 0) {
       console.log("CCV is valid");
-      setCcvMessage("Security code successfully submitted!");
       formData.ccv = "";
       setIsValid(true);
     }
 
     if (formData.zipcode.length > 0) {
       console.log("Zip code is valid");
-      setZipcodeMessage("Zip code successfully submitted!");
       formData.zipcode = "";
       setIsValid(true);
     }
@@ -105,8 +95,8 @@ export default function Checkout() {
               <span className="steps">1.</span> Choose Pickup Timeslot
             </h2>
             <form className="timepicker">
-              <label htmlFor="pickup-time"></label>
-              <select className="select" name="timeslot" id="timeslot">
+              <label htmlFor="timeslot"></label>
+              <select className="select" id="timeslot">
                 <option value="7:00AM-7:30AM">7:00AM - 7:30AM</option>
                 <option value="7:30AM-8:00AM">7:30AM - 8:00AM</option>
                 <option value="8:00AM-8:30AM">8:00AM - 8:30AM</option>
@@ -154,15 +144,12 @@ export default function Checkout() {
                 </div>
               </div>
             </div>
-
             <div className="checkout-total">
-              <div className="checkout-total-primary">
-                <div className="checkout-subtotal-container">
-                  <p className="checkout-subtotal">Order Total</p>
-                  <span className="checkout-subtotal-number">
-                    {getCartTotal()}
-                  </span>
-                </div>
+              <div className="checkout-order-total-container">
+                <p className="checkout-order-total">Order Total</p>
+                <span className="checkout-order-total-number">
+                  {getCartTotal()}
+                </span>
               </div>
             </div>
           </div>
@@ -173,16 +160,7 @@ export default function Checkout() {
               <span className="steps">3.</span> Enter Payment Details
             </h2>
             <form className="details-form" onSubmit={handleSubmit}>
-              <label htmlFor="">Card Holder Name (required)</label>
-              {cardHolderMessage && (
-                <span
-                  className={`checkout-message ${
-                    isValid == true ? "checkout-success" : "checkout-error"
-                  }`}
-                >
-                  {cardHolderMessage}
-                </span>
-              )}
+              <label>Card Holder Name (required)</label>
               <input
                 type="text"
                 placeholder="Kento Nanami"
@@ -192,17 +170,7 @@ export default function Checkout() {
                 className="checkout-form-input"
                 required
               />
-
-              <label htmlFor="">Card Number (required)</label>
-              {cardNumberMessage && (
-                <span
-                  className={`checkout-message ${
-                    isValid == true ? "checkout-success" : "checkout-error"
-                  }`}
-                >
-                  {cardNumberMessage}
-                </span>
-              )}
+              <label>Card Number (required)</label>
               <input
                 type="text"
                 placeholder="1234-1234-1234-1234"
@@ -214,19 +182,9 @@ export default function Checkout() {
                 pattern="^[0-9]+$"
                 required
               />
-
-              <label htmlFor="" className="expiration-label">
+              <label className="expiration-label">
                 Expiration Date (required)
               </label>
-              {expirationMessage && (
-                <span
-                  className={`checkout-message ${
-                    isValid == true ? "checkout-success" : "checkout-error"
-                  }`}
-                >
-                  {expirationMessage}
-                </span>
-              )}
               <input
                 type="month"
                 onChange={handleChange}
@@ -235,19 +193,7 @@ export default function Checkout() {
                 className="checkout-form-input"
                 required
               />
-
-              <label htmlFor="" className="ccv-label">
-                Security Code (required)
-              </label>
-              {ccvMessage && (
-                <span
-                  className={`checkout-message ${
-                    isValid == true ? "checkout-success" : "checkout-error"
-                  }`}
-                >
-                  {ccvMessage}
-                </span>
-              )}
+              <label className="ccv-label">Security Code (required)</label>
               <input
                 type="password"
                 maxLength={3}
@@ -259,17 +205,7 @@ export default function Checkout() {
                 pattern="^[0-9]+$"
                 required
               />
-
-              <label htmlFor="">ZIP Code (required)</label>
-              {zipcodeMessage && (
-                <span
-                  className={`checkout-message ${
-                    isValid == true ? "checkout-success" : "checkout-error"
-                  }`}
-                >
-                  {zipcodeMessage}
-                </span>
-              )}
+              <label>ZIP Code (required)</label>
               <input
                 type="text"
                 placeholder="12345"
@@ -281,8 +217,7 @@ export default function Checkout() {
                 pattern="^[0-9]+$"
                 required
               />
-
-              <div className="checkout-subtotal-btn-container">
+              <div className="checkout-complete-order-container">
                 <button className="payment-btn" onSubmit={handleSubmit}>
                   Complete Order ({getCartTotal()})
                 </button>

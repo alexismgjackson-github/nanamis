@@ -27,16 +27,20 @@
   gap: 4rem;
 }
 
-.steps {
-  font-size: 1.8rem;
-}
-
 .checkout-subheading {
   color: var(--color-extrabold);
   font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 3rem;
   text-transform: none;
+}
+
+.steps {
+  font-size: 1.8rem;
+}
+
+hr {
+  border: 1px solid #d3d3d3;
 }
 
 select {
@@ -102,59 +106,40 @@ input {
   width: 100%;
 }
 
+.checkout-order-total-container {
+  align-items: center;
+  color: var(--color-extrabold);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.checkout-order-total,
+.checkout-order-total-number {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
 .details-form {
   display: grid;
   gap: 1.5rem;
 }
 
-.tip-options-buttons {
-  display: grid;
-  gap: 2.5rem;
-}
-
-.expiration,
-.ccv {
-  display: flex;
-  flex-direction: column;
-}
-
-.checkout-subtotal-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.checkout-total-primary {
+.checkout-form-input {
   color: var(--color-extrabold);
-  display: grid;
-  gap: 0.5rem;
+  width: 100%;
 }
 
-.checkout-subtotal-container,
-.checkout-grandtotal-container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+.checkout-form-input:focus {
+  border: 1px solid var(--color-medium);
+  outline: none;
 }
 
-.checkout-subtotal,
-.checkout-subtotal-number,
-.checkout-grandtotal,
-.checkout-grandtotal-number {
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.checkout-total-secondary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.checkout-subtotal-btn-container {
+.checkout-complete-order-container {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: 4rem 0;
 }
 
 .payment-btn {
@@ -168,36 +153,6 @@ input {
 
 .payment-btn:hover {
   background-color: var(--color-medium);
-}
-
-hr {
-  border: 1px solid #d3d3d3;
-}
-
-.checkout-form-input {
-  color: var(--color-extrabold);
-  width: 100%;
-}
-
-.checkout-form-input:focus {
-  border: 1px solid var(--color-medium);
-  outline: none;
-}
-
-.checkout-subtotal-btn-container {
-  margin: 4rem 0;
-}
-
-.checkout-success {
-  color: var(--color-success);
-  font-size: 1.4rem;
-  font-style: italic;
-}
-
-.checkout-error {
-  color: var(--color-error);
-  font-size: 1.4rem;
-  font-style: italic;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
