@@ -79,7 +79,7 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  // get the cart items from the browser.
+  // get the cart items from the browser
 
   useEffect(() => {
     const cartItems = localStorage.getItem("cartItems");
