@@ -31,31 +31,31 @@ export default function Checkout() {
     event.preventDefault();
 
     if (formData.cardHolder.length > 0) {
-      console.log("Card holder name is valid");
+      // console.log("Card holder name is valid");
       formData.cardHolder = "";
       setIsValid(true);
     }
 
     if (formData.cardNumber.length > 0) {
-      console.log("Card number is valid");
+      // console.log("Card number is valid");
       formData.cardNumber = "";
       setIsValid(true);
     }
 
     if (formData.expiration.length > 0) {
-      console.log("Expiration is valid");
+      // console.log("Expiration is valid");
       formData.expiration = "";
       setIsValid(true);
     }
 
     if (formData.ccv.length > 0) {
-      console.log("CCV is valid");
+      // console.log("CCV is valid");
       formData.ccv = "";
       setIsValid(true);
     }
 
     if (formData.zipcode.length > 0) {
-      console.log("Zip code is valid");
+      // console.log("Zip code is valid");
       formData.zipcode = "";
       setIsValid(true);
     }
@@ -168,6 +168,7 @@ export default function Checkout() {
                 name="cardHolder"
                 value={formData.cardHolder}
                 className="checkout-form-input"
+                spellCheck="false"
                 required
               />
               <label>Card Number (required)</label>

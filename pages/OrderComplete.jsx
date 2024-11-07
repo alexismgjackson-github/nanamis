@@ -21,7 +21,7 @@ export default function OrderComplete() {
           <img
             className="order-complete-img"
             src="assets/images/order-complete-img.jpg"
-            alt="Hands kneading dough"
+            alt="Hands kneading dough on a stainless steel surface"
           />
         </div>
       </div>
