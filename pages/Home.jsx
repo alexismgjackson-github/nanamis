@@ -15,12 +15,10 @@ export default function Home() {
           <h1>Our Story</h1>
           <p>
             At Nanami's, our baked goods are mixed in small batches, shaped by
-            hand, and baked daily. It’s a process that requires time, but the
-            result is well worth the wait. Our menu changes as we go, evolving
-            with the seasons. We work directly with small, regional mills and
-            farmers whenever possible. Our concept is simple: only fresh,
-            natural ingredients are used to make our artisanal bread and
-            pastries.
+            hand, and baked daily. Our menu changes as we go, evolving with the
+            seasons. We work directly with small, regional mills and farmers
+            whenever possible. Our concept is simple: only fresh, natural
+            ingredients are used to make our artisanal bread and pastries.
           </p>
         </section>
         <section className="gallery">
