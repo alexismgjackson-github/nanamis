@@ -45,7 +45,7 @@ export default [
     id: 5,
     name: "Cardamom Bun",
     price: 3.95,
-    description: "Sweet, fluffy and airy texture",
+    description: "Sweet, aromatic, fluffy and airy texture",
     ideas: "Perfect as-is",
     flavor: "Plain",
     ingredients:
