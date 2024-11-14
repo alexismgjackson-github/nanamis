@@ -8,7 +8,7 @@ export default function Home() {
           <img
             className="hero-img"
             src="assets/images/hero-img.jpg"
-            alt="Stacked Sliced baguette"
+            alt="Stacked sliced baguette"
           />
         </section>
         <section className="our-story">
@@ -35,7 +35,7 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-3.jpg"
-              alt="Raw Cinnamon rolls on a wooden surface"
+              alt="Raw cinnamon rolls on a wooden surface"
               loading="lazy"
             />
             <img
@@ -55,17 +55,17 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-7.jpg"
-              alt="Sliced Ciabatta loaves on white cloth and wooden surface"
+              alt="Sliced ciabatta loaves on white cloth and wooden surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-8.jpg"
-              alt="Sesame Challah loaf on black surface"
+              alt="Sesame challah loaf on black surface"
               loading="lazy"
             />
             <img
               src="assets/images/grid-img-9.jpg"
-              alt="Sliced Multi-Grain loaf"
+              alt="Sliced multi-grain loaf"
               loading="lazy"
             />
             <img
@@ -90,7 +90,7 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-14.jpg"
-              alt="Sliced Multi-Grain loaf on a black cloth"
+              alt="Sliced multi-grain loaf on a black cloth"
               loading="lazy"
             />
             <img
@@ -115,7 +115,7 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-19.jpg"
-              alt="Soft Pretzels and silver tongs"
+              alt="Soft pretzels and silver tongs"
               loading="lazy"
             />
             <img
@@ -125,7 +125,7 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-21.jpg"
-              alt="Chocolate Babka wreath on a white plate on black surface"
+              alt="Chocolate babka wreath on a white plate on black surface"
               loading="lazy"
             />
             <img
