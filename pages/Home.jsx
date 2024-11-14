@@ -97,7 +97,7 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-15.jpg"
-              alt="Sourdough loaf on a white cloth"
+              alt="Pile of cardamom buns"
               loading="lazy"
             />
             <img

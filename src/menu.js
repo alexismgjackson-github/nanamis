@@ -13,7 +13,7 @@ export default [
     id: 2,
     name: "Bagel",
     price: 2.25,
-    description: "Sweet or salty, chewy crumb",
+    description: "Sweet or savory, chewy crumb",
     ideas:
       "Perfect as an open-faced toast-like meal or as a breakfast sandwich",
     flavor: "Blueberry",
@@ -43,6 +43,16 @@ export default [
   },
   {
     id: 5,
+    name: "Cardamom Bun",
+    price: 3.95,
+    description: "Sweet, fluffy and airy texture",
+    ideas: "Perfect as-is",
+    flavor: "Plain",
+    ingredients:
+      "flour, milk, yeast, ground cardamom, brown sugar, butter, salt",
+  },
+  {
+    id: 6,
     name: "Challah Loaf",
     price: 8.95,
     description: "Pleasant sweet flavor and a soft, fluffy texture",
@@ -53,7 +63,7 @@ export default [
       "flour, butter, eggs, sugar, vegetable oil, honey, yeast, water, sesame seeds",
   },
   {
-    id: 6,
+    id: 7,
     name: "Ciabatta Loaf",
     price: 6.75,
     description: "Light and airy bread with a slightly chewy, crispy crust",
@@ -62,7 +72,7 @@ export default [
     ingredients: "flour, yeast, olive oil, salt, water, garlic",
   },
   {
-    id: 7,
+    id: 8,
     name: "Cinnamon Roll",
     price: 3.95,
     description: "Creamy, doughy, sweet and decadent",
@@ -72,7 +82,7 @@ export default [
       "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese, pecans",
   },
   {
-    id: 8,
+    id: 9,
     name: "Croissant",
     price: 2.95,
     description: "Buttery, flaky and slightly sweet",
@@ -81,7 +91,7 @@ export default [
     ingredients: "flour, yeast, butter, milk, sugar, salt, nutella ",
   },
   {
-    id: 9,
+    id: 10,
     name: "Foccacia Loaf",
     price: 6.75,
     description: "Soft, buttery, airy interior and crispy crust",
@@ -91,7 +101,7 @@ export default [
       "all-purpose flour, active dry yeast, olive oil, salt, water, sugar, rosemary",
   },
   {
-    id: 10,
+    id: 11,
     name: "Hokkaido Milk Loaf",
     price: 9.95,
     description: "Milky-sweet flavor and a feathery soft texture",
@@ -100,7 +110,7 @@ export default [
     ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
   },
   {
-    id: 11,
+    id: 12,
     name: "Multi-Grain Loaf",
     price: 7.95,
     description:
@@ -111,7 +121,7 @@ export default [
       "cracked rye, barley, flax, millet, oats, spelt, wheat, whole-wheat flour, flaxseed, quinoa, sunflower seeds, egg white",
   },
   {
-    id: 12,
+    id: 13,
     name: "Pita Bread",
     price: 2.25,
     description: "Light with a semi-dry and dense, chewy bite",
@@ -121,7 +131,7 @@ export default [
     ingredients: "flour, salt, yeast, water, sugar, olive oil",
   },
   {
-    id: 13,
+    id: 14,
     name: "Pumperknickel Loaf",
     price: 7.95,
     description: "Nutty flavor and a slightly sweet",
@@ -130,7 +140,7 @@ export default [
     ingredients: "rye flour, molasses, cocoa powder, wheat flour, cornmeal",
   },
   {
-    id: 14,
+    id: 15,
     name: "Soft Pretzel",
     price: 3.25,
     description: "Aromatic, chewy and slight malty flavor",
@@ -140,7 +150,7 @@ export default [
       "flour, yeast, salt, baking soda, water, sugar, butter, cinnamon",
   },
   {
-    id: 15,
+    id: 16,
     name: "Sourdough Loaf",
     price: 9.95,
     description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb",
