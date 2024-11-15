@@ -28,10 +28,6 @@ h1 {
   gap: 2rem;
 }
 
-.gallery-container img {
-  max-height: 52.75rem;
-}
-
 .location-and-hours {
   margin-bottom: 8rem;
 }

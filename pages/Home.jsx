@@ -30,7 +30,7 @@ export default function Home() {
             />
             <img
               src="assets/images/grid-img-2.jpg"
-              alt="Assorted bagels on parchment paper"
+              alt="Assorted bagels on wooden surface"
               loading="lazy"
             />
             <img
@@ -59,6 +59,11 @@ export default function Home() {
               loading="lazy"
             />
             <img
+              src="assets/images/grid-img-24.jpg"
+              alt="Hand mixing dry flour"
+              loading="lazy"
+            />
+            <img
               src="assets/images/grid-img-8.jpg"
               alt="Sesame challah loaf on black surface"
               loading="lazy"
@@ -74,13 +79,13 @@ export default function Home() {
               loading="lazy"
             />
             <img
-              src="assets/images/grid-img-11.jpg"
-              alt="Hands kneading dough on a wooden surface"
+              src="assets/images/grid-img-12.jpg"
+              alt="Croissants in an oven"
               loading="lazy"
             />
             <img
-              src="assets/images/grid-img-12.jpg"
-              alt="Croissants in an oven"
+              src="assets/images/grid-img-11.jpg"
+              alt="Hands kneading dough on a wooden surface"
               loading="lazy"
             />
             <img
@@ -136,11 +141,6 @@ export default function Home() {
             <img
               src="assets/images/grid-img-23.jpg"
               alt="Multi-Grain sourdough loaf on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-24.jpg"
-              alt="Hand mixing dry flour"
               loading="lazy"
             />
           </div>

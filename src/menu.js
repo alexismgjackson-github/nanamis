@@ -12,7 +12,7 @@ export default [
   {
     id: 2,
     name: "Bagel",
-    price: 2.25,
+    price: 1.95,
     description: "Sweet or savory, chewy crumb",
     ideas:
       "Perfect as an open-faced toast-like meal or as a breakfast sandwich",
@@ -23,7 +23,7 @@ export default [
   {
     id: 3,
     name: "Baguette",
-    price: 4.95,
+    price: 5.95,
     description:
       "Crispy crust and soft chewy crumb, balanced flavor and mild acidity",
     ideas:
@@ -123,7 +123,7 @@ export default [
   {
     id: 13,
     name: "Pita Bread",
-    price: 2.25,
+    price: 1.75,
     description: "Light with a semi-dry and dense, chewy bite",
     ideas:
       "Perfect for Greek souvlaki, Middle Eastern falafel sandwich, or served with kebabs",
