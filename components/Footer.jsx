@@ -92,7 +92,7 @@ export default function Footer() {
               <input
                 className="newsletter-input"
                 type={"email"}
-                placeholder="Type email here..."
+                placeholder="kentonanami@mail.com"
                 name="email"
                 onChange={handleChange}
                 value={formData.email}
@@ -102,7 +102,7 @@ export default function Footer() {
               {emailMessage && (
                 <span
                   className={`newsletter-message ${
-                    isValid == true ? "footer-success" : "footer-error"
+                    isValid == true ? "footer-success" : ""
                   }`}
                 >
                   {emailMessage}
