@@ -191,6 +191,7 @@ export default function Checkout() {
                 type="month"
                 onChange={handleChange}
                 name="expiration"
+                min={"2025-01"}
                 value={formData.expiration}
                 className="checkout-form-input"
                 required
