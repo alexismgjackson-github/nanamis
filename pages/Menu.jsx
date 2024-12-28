@@ -10,7 +10,7 @@ export default function Menu() {
   return (
     <>
       <div className="menu-container">
-        <h1 className="menu-heading">Our Menu</h1>
+        <h1 className="menu-heading">Today's Menu</h1>
         <div className="menu-items">{menuElements}</div>
         <div className="disclaimer-container">
           <p className="menu-disclaimer">

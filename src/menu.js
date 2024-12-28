@@ -8,17 +8,7 @@ export default [
     flavor: "Chocolate",
     ingredients:
       "flour, yeast, sugar, eggs, milk, butter, salt, cinnamon, cocoa powder, dark chocolate",
-  },
-  {
-    id: 2,
-    name: "Bagel",
-    price: 1.95,
-    description: "Sweet or savory, chewy crumb",
-    ideas:
-      "Perfect as an open-faced toast-like meal or as a breakfast sandwich",
-    flavor: "Blueberry",
-    ingredients:
-      "flour, eggs, water, salt, yeast, malt, vegetable oil, blueberries, sugar, honey",
+    url: "assets/images/grid-img-21.jpg",
   },
   {
     id: 3,
@@ -30,16 +20,7 @@ export default [
       "Perfect with butter, cheese, and cured meats, or alongside charcuterie boards and butter boards",
     flavor: "Plain",
     ingredients: "flour, yeast, salt, water",
-  },
-  {
-    id: 4,
-    name: "Brioche Loaf",
-    price: 7.95,
-    description: "Sweet, fluffy and airy texture",
-    ideas:
-      "Perfect as French toast, or as a slice of bread served with butter or jam",
-    flavor: "Plain",
-    ingredients: "flour, eggs, cream, butter, sugar, yeast, milk, salt",
+    url: "assets/images/grid-img-13.jpg",
   },
   {
     id: 5,
@@ -50,6 +31,7 @@ export default [
     flavor: "Plain",
     ingredients:
       "flour, milk, yeast, ground cardamom, brown sugar, butter, salt",
+    url: "assets/images/grid-img-15.jpg",
   },
   {
     id: 6,
@@ -61,6 +43,7 @@ export default [
     flavor: "Sesame",
     ingredients:
       "flour, butter, eggs, sugar, vegetable oil, honey, yeast, water, sesame seeds",
+    url: "assets/images/grid-img-8.jpg",
   },
   {
     id: 7,
@@ -70,6 +53,7 @@ export default [
     ideas: "Perfect for garlic bread, sandwiches, paninis, or as table bread",
     flavor: "Roasted Garlic",
     ingredients: "flour, yeast, olive oil, salt, water, garlic",
+    url: "assets/images/grid-img-7.jpg",
   },
   {
     id: 8,
@@ -77,9 +61,10 @@ export default [
     price: 3.95,
     description: "Creamy, doughy, sweet and decadent",
     ideas: "Perfect as-is or with a glass of milk",
-    flavor: "Frosted Pecan",
+    flavor: "Frosted",
     ingredients:
       "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese, pecans",
+    url: "assets/images/grid-img-22.jpg",
   },
   {
     id: 9,
@@ -87,18 +72,9 @@ export default [
     price: 2.95,
     description: "Buttery, flaky and slightly sweet",
     ideas: "Perfect as-is, toasted or for breakfast sandwiches",
-    flavor: "Nutella",
+    flavor: "Butter",
     ingredients: "flour, yeast, butter, milk, sugar, salt, nutella ",
-  },
-  {
-    id: 10,
-    name: "Foccacia Loaf",
-    price: 6.75,
-    description: "Soft, buttery, airy interior and crispy crust",
-    ideas: "Perfect alongside olive oil or made into a panini",
-    flavor: "Rosemary",
-    ingredients:
-      "all-purpose flour, active dry yeast, olive oil, salt, water, sugar, rosemary",
+    url: "assets/images/grid-img-20.jpg",
   },
   {
     id: 11,
@@ -108,6 +84,7 @@ export default [
     ideas: "Perfect as-is or toasted and smeared with butter and jam",
     flavor: "Plain",
     ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
+    url: "assets/images/grid-img-6.jpg",
   },
   {
     id: 12,
@@ -119,6 +96,7 @@ export default [
     flavor: "Plain",
     ingredients:
       "cracked rye, barley, flax, millet, oats, spelt, wheat, whole-wheat flour, flaxseed, quinoa, sunflower seeds, egg white",
+    url: "assets/images/grid-img-14.jpg",
   },
   {
     id: 13,
@@ -129,6 +107,7 @@ export default [
       "Perfect for Greek souvlaki, Middle Eastern falafel sandwich, or served with kebabs",
     flavor: "Plain",
     ingredients: "flour, salt, yeast, water, sugar, olive oil",
+    url: "assets/images/grid-img-5.jpg",
   },
   {
     id: 14,
@@ -138,16 +117,7 @@ export default [
     ideas: "Perfect toasted with butter or sandwiches",
     flavor: "Plain",
     ingredients: "rye flour, molasses, cocoa powder, wheat flour, cornmeal",
-  },
-  {
-    id: 15,
-    name: "Soft Pretzel",
-    price: 3.25,
-    description: "Aromatic, chewy and slight malty flavor",
-    ideas: "Perfect as-is",
-    flavor: "Cinnamon Sugar",
-    ingredients:
-      "flour, yeast, salt, baking soda, water, sugar, butter, cinnamon",
+    url: "assets/images/grid-img-16.jpg",
   },
   {
     id: 16,
@@ -158,5 +128,6 @@ export default [
       "Perfect for toast, sandwich bread, or accompaniment to a charcuterie board",
     flavor: "Plain",
     ingredients: "sourdough starter, flour, salt, water, olive oil",
+    url: "assets/images/grid-img-10.jpg",
   },
 ];
