@@ -138,6 +138,7 @@ export default function Checkout() {
                         <p className="checkout-cart-item-flavor">
                           {item.flavor}
                         </p>
+                        <img src={item.url} className="cart-item-img" />
                       </div>
                     </div>
                   ))}

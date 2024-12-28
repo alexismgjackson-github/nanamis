@@ -35,6 +35,7 @@ export default function Cart() {
                       <span className="cart-item-price">${item.price}</span>
                     </div>
                     <div className="cart-item-secondary">
+                      <img src={item.url} className="cart-item-img" />
                       <p className="cart-item-flavor">{item.flavor}</p>
                       <button
                         className="remove-item-btn"

@@ -66,6 +66,12 @@
   font-weight: 500;
 }
 
+.cart-item-img {
+  height: 10rem;
+  object-fit: cover;
+  width: 10rem;
+}
+
 .cart-item-flavor {
   font-style: italic;
 }

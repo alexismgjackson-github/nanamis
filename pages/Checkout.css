@@ -95,8 +95,14 @@ select {
   font-weight: 500;
 }
 
-.cart-item-flavor {
+.checkout-cart-item-flavor {
   font-style: italic;
+}
+
+.checkout-cart-item-img {
+  height: 10rem;
+  object-fit: cover;
+  width: 10rem;
 }
 
 input {
