@@ -1,8 +1,8 @@
 export default [
   {
     id: 1,
-    name: "Babka Slice",
-    price: 3.25,
+    name: "Babka",
+    price: 8.95,
     description: "Buttery, sweet and brioche-like crumb",
     ideas: "Perfect as-is or with a glass of milk",
     flavor: "Chocolate",
@@ -61,9 +61,9 @@ export default [
     price: 3.95,
     description: "Creamy, doughy, sweet and decadent",
     ideas: "Perfect as-is or with a glass of milk",
-    flavor: "Frosted",
+    flavor: "Cream cheese",
     ingredients:
-      "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese, pecans",
+      "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese",
     url: "assets/images/grid-img-22.jpg",
   },
   {

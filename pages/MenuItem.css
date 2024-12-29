@@ -157,7 +157,13 @@
     top: 0;
     width: 85%;
   }
+  .menu-item-modal-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 35rem;
+  }
   .menu-item-modal {
-    gap: 10rem;
+    gap: 6rem;
   }
 }
