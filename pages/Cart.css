@@ -67,9 +67,9 @@
 }
 
 .cart-item-img {
-  height: 10rem;
+  height: 8rem;
   object-fit: cover;
-  width: 10rem;
+  width: 8rem;
 }
 
 .cart-item-flavor {

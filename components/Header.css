@@ -90,7 +90,7 @@ header {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   header {
-    padding: 4rem 15rem;
+    padding: 3rem 15rem;
   }
 
   .header-mobile-and-tablet-view {
