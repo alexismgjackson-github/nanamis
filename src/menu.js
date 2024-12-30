@@ -11,7 +11,7 @@ export default [
     url: "assets/images/grid-img-21.jpg",
   },
   {
-    id: 3,
+    id: 2,
     name: "Baguette",
     price: 4.95,
     description:
@@ -23,7 +23,7 @@ export default [
     url: "assets/images/grid-img-13.jpg",
   },
   {
-    id: 5,
+    id: 3,
     name: "Cardamom Bun",
     price: 3.95,
     description: "Sweet, aromatic, fluffy and airy texture",
@@ -34,7 +34,7 @@ export default [
     url: "assets/images/grid-img-15.jpg",
   },
   {
-    id: 6,
+    id: 4,
     name: "Challah Loaf",
     price: 8.95,
     description: "Pleasant sweet flavor and a soft, fluffy texture",
@@ -46,7 +46,7 @@ export default [
     url: "assets/images/grid-img-8.jpg",
   },
   {
-    id: 7,
+    id: 5,
     name: "Ciabatta Loaf",
     price: 6.95,
     description: "Light and airy bread with a slightly chewy, crispy crust",
@@ -56,7 +56,7 @@ export default [
     url: "assets/images/grid-img-7.jpg",
   },
   {
-    id: 8,
+    id: 6,
     name: "Cinnamon Roll",
     price: 3.95,
     description: "Creamy, doughy, sweet and decadent",
@@ -67,7 +67,7 @@ export default [
     url: "assets/images/grid-img-22.jpg",
   },
   {
-    id: 9,
+    id: 7,
     name: "Croissant",
     price: 2.95,
     description: "Buttery, flaky and slightly sweet",
@@ -77,7 +77,7 @@ export default [
     url: "assets/images/grid-img-20.jpg",
   },
   {
-    id: 11,
+    id: 8,
     name: "Hokkaido Milk Loaf",
     price: 9.95,
     description: "Milky-sweet flavor and a feathery soft texture",
@@ -87,7 +87,7 @@ export default [
     url: "assets/images/grid-img-6.jpg",
   },
   {
-    id: 12,
+    id: 9,
     name: "Multi-Grain Loaf",
     price: 7.95,
     description:
@@ -99,7 +99,7 @@ export default [
     url: "assets/images/grid-img-14.jpg",
   },
   {
-    id: 13,
+    id: 10,
     name: "Pita Bread",
     price: 1.95,
     description: "Light with a semi-dry and dense, chewy bite",
@@ -110,7 +110,7 @@ export default [
     url: "assets/images/grid-img-5.jpg",
   },
   {
-    id: 14,
+    id: 11,
     name: "Pumperknickel Loaf",
     price: 7.95,
     description: "Nutty flavor and a slightly sweet",
@@ -120,7 +120,7 @@ export default [
     url: "assets/images/grid-img-16.jpg",
   },
   {
-    id: 16,
+    id: 12,
     name: "Sourdough Loaf",
     price: 9.95,
     description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb",
