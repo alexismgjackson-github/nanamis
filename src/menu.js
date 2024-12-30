@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     name: "Babka",
-    price: 8.95,
+    price: 9.95,
     description: "Buttery, sweet and brioche-like crumb",
     ideas: "Perfect as-is or with a glass of milk",
     flavor: "Chocolate",
@@ -13,7 +13,7 @@ export default [
   {
     id: 3,
     name: "Baguette",
-    price: 5.95,
+    price: 4.95,
     description:
       "Crispy crust and soft chewy crumb, balanced flavor and mild acidity",
     ideas:
@@ -48,7 +48,7 @@ export default [
   {
     id: 7,
     name: "Ciabatta Loaf",
-    price: 6.75,
+    price: 6.95,
     description: "Light and airy bread with a slightly chewy, crispy crust",
     ideas: "Perfect for garlic bread, sandwiches, paninis, or as table bread",
     flavor: "Roasted Garlic",
@@ -73,7 +73,7 @@ export default [
     description: "Buttery, flaky and slightly sweet",
     ideas: "Perfect as-is, toasted or for breakfast sandwiches",
     flavor: "Butter",
-    ingredients: "flour, yeast, butter, milk, sugar, salt, nutella ",
+    ingredients: "flour, yeast, butter, milk, sugar, salt",
     url: "assets/images/grid-img-20.jpg",
   },
   {
@@ -101,7 +101,7 @@ export default [
   {
     id: 13,
     name: "Pita Bread",
-    price: 1.75,
+    price: 1.95,
     description: "Light with a semi-dry and dense, chewy bite",
     ideas:
       "Perfect for Greek souvlaki, Middle Eastern falafel sandwich, or served with kebabs",
