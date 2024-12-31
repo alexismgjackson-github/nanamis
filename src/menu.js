@@ -61,7 +61,7 @@ export default [
     price: 3.95,
     description: "Creamy, doughy, sweet and decadent",
     ideas: "Perfect as-is or with a glass of milk",
-    flavor: "Cream cheese",
+    flavor: "Cream Cheese",
     ingredients:
       "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese",
     url: "assets/images/grid-img-22.jpg",

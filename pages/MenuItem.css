@@ -35,7 +35,7 @@
 
 .menu-item-modal-container {
   background-color: var(--color-light);
-  border: 20px solid #d3d3d3;
+  border: 20px solid var(--color-medium);
   height: 100%;
   left: 0;
   overflow-y: scroll;
