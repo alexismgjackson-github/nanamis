@@ -67,7 +67,7 @@ export default [
   {
     id: 7,
     name: "Hokkaido Milk Bun",
-    price: 9.95,
+    price: 2.95,
     description: "Milky-sweet flavor and a feathery soft texture",
     ideas: "Perfect as-is or toasted and smeared with butter and jam",
     flavor: "Glazed Orange",

@@ -28,6 +28,7 @@ export default function Home() {
             <img src="assets/images/unsplash5.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash7.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash8.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash25.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash12.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash14.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash15.jpg" alt="" loading="lazy" />
@@ -39,7 +40,6 @@ export default function Home() {
             <img src="assets/images/unsplash20.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash21.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash11.jpg" alt="" loading="lazy" />
-            <img src="assets/images/unsplash25.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash23.jpg" alt="" loading="lazy" />
           </div>
         </section>
