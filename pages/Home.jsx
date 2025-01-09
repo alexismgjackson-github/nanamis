@@ -23,126 +23,24 @@ export default function Home() {
         </section>
         <section className="gallery">
           <div className="gallery-container">
-            <img
-              src="assets/images/grid-img-1.jpg"
-              alt="Sourdough loaf on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-2.jpg"
-              alt="Assorted bagels on wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-3.jpg"
-              alt="Raw cinnamon rolls on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-4.jpg"
-              alt="Sourdough loaf on crumpled paper"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-5.jpg"
-              alt="Multiple Pita bread puffed up"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-6.jpg"
-              alt="Sliced Hokkaido milk loaf on a white plate and cloth"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-7.jpg"
-              alt="Sliced ciabatta loaves on white cloth and wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-24.jpg"
-              alt="Hand mixing dry flour"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-8.jpg"
-              alt="Sesame challah loaf on black surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-9.jpg"
-              alt="Sliced multi-grain loaf"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-10.jpg"
-              alt="Sourdough loaf on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-12.jpg"
-              alt="Croissants in an oven"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-11.jpg"
-              alt="Hands kneading dough on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-13.jpg"
-              alt="Baguettes in a paper bag"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-14.jpg"
-              alt="Sliced multi-grain loaf on a black cloth"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-15.jpg"
-              alt="Pile of cardamom buns"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-16.jpg"
-              alt="Pumperknickel loaf on a black surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-17.jpg"
-              alt="Sliced Hokkaido milk loaf on a wooden board"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-18.jpg"
-              alt="Hand sprinkling flour on dough on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-19.jpg"
-              alt="Soft pretzels and silver tongs"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-20.jpg"
-              alt="Croissant on a white plate on a wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-21.jpg"
-              alt="Chocolate babka wreath on a white plate on black surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-22.jpg"
-              alt="Cinnamon roll on wooden surface"
-              loading="lazy"
-            />
-            <img
-              src="assets/images/grid-img-23.jpg"
-              alt="Multi-Grain sourdough loaf on a wooden surface"
-              loading="lazy"
-            />
+            <img src="assets/images/unsplash22.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash2.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash3.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash5.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash7.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash8.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash12.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash14.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash15.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash16.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash17.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash18.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash1.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash19.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash20.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash21.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash11.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash23.jpg" alt="" loading="lazy" />
           </div>
         </section>
         <section className="location-and-hours">

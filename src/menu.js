@@ -8,19 +8,7 @@ export default [
     flavor: "Chocolate",
     ingredients:
       "flour, yeast, sugar, eggs, milk, butter, salt, cinnamon, cocoa powder, dark chocolate",
-    url: "assets/images/grid-img-21.jpg",
-  },
-  {
-    id: 2,
-    name: "Baguette",
-    price: 4.95,
-    description:
-      "Crispy crust and soft chewy crumb, balanced flavor and mild acidity",
-    ideas:
-      "Perfect with butter, cheese, and cured meats, or alongside charcuterie boards and butter boards",
-    flavor: "Plain",
-    ingredients: "flour, yeast, salt, water",
-    url: "assets/images/grid-img-13.jpg",
+    url: "assets/images/unsplash12.jpg",
   },
   {
     id: 3,
@@ -31,7 +19,7 @@ export default [
     flavor: "Plain",
     ingredients:
       "flour, milk, yeast, ground cardamom, brown sugar, butter, salt",
-    url: "assets/images/grid-img-15.jpg",
+    url: "assets/images/unsplash11.jpg",
   },
   {
     id: 4,
@@ -43,7 +31,7 @@ export default [
     flavor: "Sesame",
     ingredients:
       "flour, butter, eggs, sugar, vegetable oil, honey, yeast, water, sesame seeds",
-    url: "assets/images/grid-img-8.jpg",
+    url: "assets/images/unsplash2.jpg",
   },
   {
     id: 5,
@@ -53,7 +41,7 @@ export default [
     ideas: "Perfect for garlic bread, sandwiches, paninis, or as table bread",
     flavor: "Roasted Garlic",
     ingredients: "flour, yeast, olive oil, salt, water, garlic",
-    url: "assets/images/grid-img-7.jpg",
+    url: "assets/images/unsplash15.jpg",
   },
   {
     id: 6,
@@ -64,7 +52,7 @@ export default [
     flavor: "Cream Cheese",
     ingredients:
       "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese",
-    url: "assets/images/grid-img-22.jpg",
+    url: "assets/images/unsplash17.jpg",
   },
   {
     id: 7,
@@ -72,22 +60,33 @@ export default [
     price: 2.95,
     description: "Buttery, flaky and slightly sweet",
     ideas: "Perfect as-is, toasted or for breakfast sandwiches",
-    flavor: "Butter",
-    ingredients: "flour, yeast, butter, milk, sugar, salt",
-    url: "assets/images/grid-img-20.jpg",
+    flavor: "Chocolate",
+    ingredients: "flour, yeast, butter, milk, chocolate, sugar, salt",
+    url: "assets/images/unsplash7.jpg",
   },
   {
     id: 8,
+    name: "Hokkaido Milk Bun",
+    price: 9.95,
+    description: "Milky-sweet flavor and a feathery soft texture",
+    ideas: "Perfect as-is or toasted and smeared with butter and jam",
+    flavor: "Glazed Orange",
+    ingredients:
+      "flour, sugar, yeast, milk, butter, milk powder, egg, orange, salt",
+    url: "assets/images/unsplash9.jpg",
+  },
+  {
+    id: 9,
     name: "Hokkaido Milk Loaf",
     price: 9.95,
     description: "Milky-sweet flavor and a feathery soft texture",
     ideas: "Perfect as-is or toasted and smeared with butter and jam",
     flavor: "Plain",
     ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
-    url: "assets/images/grid-img-6.jpg",
+    url: "assets/images/unsplash13.jpg",
   },
   {
-    id: 9,
+    id: 10,
     name: "Multi-Grain Loaf",
     price: 7.95,
     description:
@@ -96,10 +95,10 @@ export default [
     flavor: "Plain",
     ingredients:
       "cracked rye, barley, flax, millet, oats, spelt, wheat, whole-wheat flour, flaxseed, quinoa, sunflower seeds, egg white",
-    url: "assets/images/grid-img-14.jpg",
+    url: "assets/images/unsplash3.jpg",
   },
   {
-    id: 10,
+    id: 11,
     name: "Pita Bread",
     price: 1.95,
     description: "Light with a semi-dry and dense, chewy bite",
@@ -107,20 +106,20 @@ export default [
       "Perfect for Greek souvlaki, Middle Eastern falafel sandwich, or served with kebabs",
     flavor: "Plain",
     ingredients: "flour, salt, yeast, water, sugar, olive oil",
-    url: "assets/images/grid-img-5.jpg",
+    url: "assets/images/unsplash24.jpg",
   },
   {
-    id: 11,
+    id: 12,
     name: "Pumperknickel Loaf",
     price: 7.95,
     description: "Nutty flavor and a slightly sweet",
     ideas: "Perfect toasted with butter or sandwiches",
     flavor: "Plain",
     ingredients: "rye flour, molasses, cocoa powder, wheat flour, cornmeal",
-    url: "assets/images/grid-img-16.jpg",
+    url: "assets/images/unsplash10.jpg",
   },
   {
-    id: 12,
+    id: 13,
     name: "Sourdough Loaf",
     price: 9.95,
     description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb",
@@ -128,6 +127,6 @@ export default [
       "Perfect for toast, sandwich bread, or accompaniment to a charcuterie board",
     flavor: "Plain",
     ingredients: "sourdough starter, flour, salt, water, olive oil",
-    url: "assets/images/grid-img-10.jpg",
+    url: "assets/images/unsplash4.jpg",
   },
 ];
