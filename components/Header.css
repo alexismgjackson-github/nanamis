@@ -1,6 +1,7 @@
 header {
   align-items: center;
   background-color: var(--color-light);
+  border-bottom: 2px solid var(--color-bold);
   display: flex;
   justify-content: space-between;
   padding: 2rem;

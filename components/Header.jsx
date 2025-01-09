@@ -13,6 +13,7 @@ export default function Header() {
   };
 
   const activeStyle = {
+    color: "#cd5700",
     fontWeight: 700,
     textDecoration: "underline",
   };
