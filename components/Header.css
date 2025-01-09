@@ -4,6 +4,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
