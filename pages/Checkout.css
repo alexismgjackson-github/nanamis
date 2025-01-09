@@ -7,7 +7,7 @@
 
 .back-to-cart-link {
   align-items: center;
-  color: var(--color-extrabold);
+  color: var(--color-bold);
   display: flex;
   font-size: 1.4rem;
   font-weight: 500;
@@ -28,7 +28,7 @@
 }
 
 .checkout-subheading {
-  color: var(--color-extrabold);
+  color: var(--color-old);
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 3rem;
@@ -45,7 +45,7 @@ hr {
 
 select {
   background-color: var(--color-extralight);
-  color: var(--color-extrabold);
+  color: var(--color-bold);
   padding: 1.5rem;
   width: 100%;
 }
@@ -69,6 +69,7 @@ select {
   background-color: var(--color-extralight);
   border: 1.5px solid #d3d3d3;
   border-radius: 0.5rem;
+  color: var(--color-bold);
   display: grid;
   gap: 1.5rem;
   padding: 1.5rem;
@@ -84,13 +85,11 @@ select {
 
 .checkout-cart-item-quantity,
 .checkout-cart-item-name {
-  color: var(--color-extrabold);
   font-size: 1.6rem;
   font-weight: 700;
 }
 
 .checkout-cart-item-price {
-  color: var(--color-bold);
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -107,14 +106,14 @@ select {
 
 input {
   background-color: var(--color-extralight);
-  border: 1px solid var(--color-extrabold);
+  border: 1px solid var(--color-bold);
   padding: 1.5rem;
   width: 100%;
 }
 
 .checkout-order-total-container {
   align-items: center;
-  color: var(--color-extrabold);
+  color: var(--color-bold);
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
@@ -132,7 +131,7 @@ input {
 }
 
 .checkout-form-input {
-  color: var(--color-extrabold);
+  color: var(--color-bold);
   width: 100%;
 }
 

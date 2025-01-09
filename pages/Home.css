@@ -1,16 +1,16 @@
 .home-container {
   background-color: var(--color-light);
+  color: var(--color-bold);
   display: grid;
   gap: 10rem;
 }
 
 h1 {
-  color: var(--color-extrabold);
   margin-bottom: 2rem;
 }
 
 .home-container {
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 2rem;
 }
 
 .gallery-container {

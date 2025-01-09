@@ -19,7 +19,7 @@
 }
 
 .clear-cart-btn {
-  background-color: #808080;
+  background-color: var(--color-extrabold);
   border-radius: 0.75rem;
   border-style: none;
   color: var(--color-extralight);
@@ -90,7 +90,6 @@
 }
 
 .total-primary {
-  color: var(--color-extrabold);
   display: grid;
   gap: 0.5rem;
   margin-bottom: 2rem;
@@ -115,7 +114,7 @@
 }
 
 .checkout-btn {
-  background-color: var(--color-bold);
+  background-color: var(--color-extrabold);
   border-radius: 4rem;
   color: var(--color-extralight);
   border-style: none;

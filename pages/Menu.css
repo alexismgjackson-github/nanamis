@@ -1,5 +1,6 @@
 .menu-container {
   background-color: var(--color-light);
+  color: var(--color-bold);
   padding: 4rem 2rem;
 }
 

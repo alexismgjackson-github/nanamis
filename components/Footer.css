@@ -65,7 +65,7 @@ h2,
 }
 
 .newsletter-btn {
-  background-color: var(--color-medium);
+  background-color: var(--color-extrabold);
   border-radius: 2.75rem;
   border-style: none;
   color: var(--color-bold);
