@@ -90,6 +90,10 @@ button {
   font-weight: 500;
 }
 
+button:hover {
+  opacity: 0.5;
+}
+
 li {
   font-weight: 400;
   list-style: none;

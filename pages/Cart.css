@@ -79,11 +79,8 @@
 .remove-item-btn {
   background-color: inherit;
   border-style: none;
+  color: var(--color-bold);
   height: 2.4rem;
-}
-
-.remove-item-btn:hover {
-  opacity: 0.5;
 }
 
 .total {
@@ -124,10 +121,6 @@
   border-style: none;
   font-weight: 500;
   padding: 1.5rem 6rem;
-}
-
-.checkout-btn:hover {
-  background-color: var(--color-medium);
 }
 
 .empty-cart {
