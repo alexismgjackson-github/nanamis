@@ -131,6 +131,7 @@ input {
 }
 
 .checkout-form-input {
+  color: var(--color-bold);
   width: 100%;
 }
 

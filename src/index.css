@@ -65,6 +65,7 @@ label {
 
 input,
 textarea {
+  color: var(--color-bold);
   font-family: var(--font-primary);
 }
 
