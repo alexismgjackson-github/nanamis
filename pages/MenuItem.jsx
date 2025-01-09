@@ -38,17 +38,16 @@ export default function MenuItem(item) {
               <h1 className="menu-item-modal-heading">{item.name}</h1>
               <span className="menu-item-modal-price">${item.price}</span>
               <img src={item.url} className="menu-item-modal-img" />
-
-              <p className="menu-item-modal-description">
-                Description: {item.description}
-              </p>
-              <p className="menu-item-modal-ideas">Suggestions: {item.ideas}</p>
               <p className="menu-item-modal-flavor">
                 Today's flavor: {item.flavor}
+              </p>
+              <p className="menu-item-modal-description">
+                Description: {item.description}
               </p>
               <p className="menu-item-ingredients">
                 Ingredients: {item.ingredients}
               </p>
+              <p className="menu-item-modal-ideas">Suggestions: {item.ideas}</p>
             </div>
 
             <div className="menu-item-modal-btn">

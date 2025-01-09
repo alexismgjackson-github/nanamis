@@ -2,6 +2,7 @@
   background-color: var(--color-extralight);
   border: 1.5px solid #d3d3d3;
   border-radius: 0.5rem;
+  color: var(--color-bold);
   padding: 2rem;
   width: 100%;
 }
@@ -29,10 +30,6 @@
   font-weight: 800;
 }
 
-.menu-item-price {
-  color: var(--color-bold);
-}
-
 .menu-item-modal-container {
   background-color: var(--color-light);
   border: 20px solid var(--color-medium);
@@ -52,6 +49,7 @@
 }
 
 .menu-item-modal {
+  color: var(--color-bold);
   display: grid;
   gap: 4rem;
   padding: 2rem;
@@ -70,7 +68,6 @@
 }
 
 .menu-item-modal-price {
-  color: var(--color-bold);
   font-size: 2.2rem;
   font-weight: 900;
 }
@@ -108,16 +105,6 @@
   margin: 1.5rem;
 }
 
-.menu-item-modal-decrement-btn,
-.menu-item-modal-increment-btn {
-  align-items: center;
-  background-color: #808080;
-  border-style: none;
-  color: var(--color-extrabold);
-  display: inline-flex;
-  padding: 1rem;
-}
-
 .menu-item-modal-btn {
   display: flex;
   justify-content: center;
@@ -135,14 +122,6 @@
 
 .add-to-cart-btn:hover {
   background-color: var(--color-medium);
-}
-
-:disabled:hover {
-  background-color: #d3d3d3;
-}
-
-:disabled {
-  background-color: #d3d3d3;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

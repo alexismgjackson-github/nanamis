@@ -7,7 +7,7 @@ export default function Home() {
         <section className="hero">
           <img
             className="hero-img"
-            src="assets/images/hero-img.jpg"
+            src="assets/images/unsplash22.jpg"
             alt="Stacked sliced baguette"
           />
         </section>
@@ -23,7 +23,6 @@ export default function Home() {
         </section>
         <section className="gallery">
           <div className="gallery-container">
-            <img src="assets/images/unsplash22.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash2.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash3.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash5.jpg" alt="" loading="lazy" />
@@ -40,6 +39,7 @@ export default function Home() {
             <img src="assets/images/unsplash20.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash21.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash11.jpg" alt="" loading="lazy" />
+            <img src="assets/images/unsplash25.jpg" alt="" loading="lazy" />
             <img src="assets/images/unsplash23.jpg" alt="" loading="lazy" />
           </div>
         </section>

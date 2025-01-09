@@ -1,13 +1,13 @@
 header {
   align-items: center;
-  background-color: var(--color-bold);
+  background-color: var(--color-light);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
 
 .logo {
-  color: var(--color-medium);
+  color: var(--color-bold);
   font-family: var(--font-secondary);
   font-size: 2.4rem;
   height: 3rem;
@@ -32,7 +32,7 @@ header {
 }
 
 .mobile-and-tablet-cart-icon-container {
-  color: var(--color-extralight);
+  color: var(--color-bold);
   display: flex;
   font-size: 1.8rem;
   font-weight: 500;
@@ -55,7 +55,7 @@ header {
 }
 
 .hamburger-overlay {
-  background-color: var(--color-black);
+  background-color: var(--color-bold);
   height: 100%;
   left: 0;
   position: fixed;
