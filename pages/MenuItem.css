@@ -112,7 +112,7 @@
 }
 
 .add-to-cart-btn {
-  background-color: var(--color-bold);
+  background-color: var(--color-extrabold);
   border-radius: 4rem;
   color: var(--color-extralight);
   border-style: none;
