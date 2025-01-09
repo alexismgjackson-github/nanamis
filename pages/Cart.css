@@ -1,5 +1,6 @@
 .cart-container {
   background-color: var(--color-light);
+  color: var(--color-bold);
   padding: 4rem 2rem;
 }
 
@@ -61,7 +62,6 @@
 }
 
 .cart-item-price {
-  color: var(--color-bold);
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -79,7 +79,6 @@
 .remove-item-btn {
   background-color: inherit;
   border-style: none;
-  color: var(--color-bold);
   height: 2.4rem;
 }
 
