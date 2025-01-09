@@ -55,8 +55,8 @@ h1 {
     gap: 15rem;
   }
 
-  .hero-img {
-    padding: 5rem 10rem 2rem 10rem;
+  .hero {
+    margin: 0rem 40rem;
   }
 
   .our-story,
