@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import data from "../src/menu.js";
 import MenuItem from "./MenuItem";
 import "./Menu.css";
@@ -6,6 +7,14 @@ export default function Menu() {
   const menuElements = data.map((item) => {
     return <MenuItem key={item.id} {...item} />;
   });
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <>

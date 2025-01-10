@@ -5,12 +5,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
   color: var(--color-bold);
   font-family: var(--font-secondary);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   height: 3rem;
 }
 

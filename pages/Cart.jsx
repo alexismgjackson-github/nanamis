@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../Context/cart";
 import "./Cart.css";
@@ -6,6 +6,14 @@ import "./Cart.css";
 export default function Cart() {
   const { cartItems, removeFromCart, clearCart, getCartTotal } =
     useContext(CartContext);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <>

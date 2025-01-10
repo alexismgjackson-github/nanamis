@@ -66,13 +66,12 @@ export default [
   },
   {
     id: 7,
-    name: "Hokkaido Milk Bun",
-    price: 2.95,
+    name: "Hokkaido Milk Roll",
+    price: 3.95,
     description: "Milky-sweet flavor and a feathery soft texture",
     ideas: "Perfect as-is or toasted and smeared with butter and jam",
-    flavor: "Glazed Orange",
-    ingredients:
-      "flour, sugar, yeast, milk, butter, milk powder, egg, orange, salt",
+    flavor: "Glazed",
+    ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
     url: "assets/images/unsplash9.jpg",
   },
   {
