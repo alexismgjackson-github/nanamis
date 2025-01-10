@@ -1,5 +1,6 @@
 .order-complete-container {
   background-color: var(--color-light);
+  color: var(--color-bold);
   display: grid;
   gap: 4rem;
   min-height: 60rem;
