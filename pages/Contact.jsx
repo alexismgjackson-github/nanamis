@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Contact.css";
 
 export default function Contact() {
@@ -56,6 +56,14 @@ export default function Contact() {
   }
 
   // console.log(formData);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <>
