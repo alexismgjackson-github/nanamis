@@ -78,9 +78,14 @@ hr {
   width: 100%;
 }
 
-.checkout-cart-item-primary,
-.checkout-cart-item-secondary {
+.checkout-cart-item-primary {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-cart-item-secondary {
+  align-items: baseline;
   display: flex;
   justify-content: space-between;
 }

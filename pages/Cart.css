@@ -48,9 +48,14 @@
   width: 100%;
 }
 
-.cart-item-primary,
-.cart-item-secondary {
+.cart-item-primary {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item-secondary {
+  align-items: baseline;
   display: flex;
   justify-content: space-between;
 }
@@ -67,9 +72,9 @@
 }
 
 .cart-item-img {
-  height: 6.5rem;
+  height: 7.5rem;
   object-fit: cover;
-  width: 6.5rem;
+  width: 7.5rem;
 }
 
 .cart-item-flavor {

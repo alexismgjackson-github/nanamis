@@ -99,12 +99,6 @@
   margin: auto;
 }
 
-.menu-item-modal-quantity {
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 1.5rem;
-}
-
 .menu-item-modal-btn {
   display: flex;
   justify-content: center;
