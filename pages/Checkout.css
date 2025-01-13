@@ -159,6 +159,6 @@ input {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .checkout-container {
-    padding: 4rem 15rem;
+    padding: 4rem 16rem;
   }
 }

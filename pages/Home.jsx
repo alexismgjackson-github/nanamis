@@ -59,7 +59,7 @@ export default function Home() {
             />
             <img
               src="assets/images/unsplash25.jpg"
-              alt="Sesame rye loaf on a black surface"
+              alt="Sesame rye bread on a black surface"
               loading="lazy"
             />
             <img
