@@ -66,16 +66,6 @@ export default [
   },
   {
     id: 7,
-    name: "Hokkaido Milk Roll",
-    price: 3.95,
-    description: "Milky-sweet flavor and a feathery soft texture",
-    ideas: "Perfect as-is or toasted and smeared with butter and jam",
-    flavor: "Glazed",
-    ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
-    url: "assets/images/unsplash9.jpg",
-  },
-  {
-    id: 8,
     name: "Hokkaido Milk Loaf",
     price: 9.95,
     description: "Milky-sweet flavor and a feathery soft texture",
@@ -84,6 +74,17 @@ export default [
     ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
     url: "assets/images/unsplash13.jpg",
   },
+  {
+    id: 8,
+    name: "Hokkaido Milk Roll",
+    price: 3.95,
+    description: "Milky-sweet flavor and a feathery soft texture",
+    ideas: "Perfect as-is or toasted and smeared with butter and jam",
+    flavor: "Glazed",
+    ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
+    url: "assets/images/unsplash9.jpg",
+  },
+
   {
     id: 9,
     name: "Multi-Grain Loaf",
