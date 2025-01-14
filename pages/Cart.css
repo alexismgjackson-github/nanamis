@@ -61,14 +61,10 @@
 }
 
 .cart-item-quantity,
-.cart-item-name {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
+.cart-item-name,
 .cart-item-price {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .cart-item-img {
@@ -135,13 +131,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .cart-container {
-    padding: 6rem 16rem;
+    padding: 6rem 18rem;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .cart-container {
-    padding: 8rem 16rem;
+    padding: 8rem 18rem;
   }
 }

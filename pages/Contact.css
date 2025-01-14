@@ -72,13 +72,13 @@ textarea {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .contact-container {
-    padding: 6rem 16rem;
+    padding: 6rem 18rem;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .contact-container {
-    padding: 8rem 16rem;
+    padding: 8rem 18rem;
   }
 }

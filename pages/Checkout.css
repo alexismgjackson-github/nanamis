@@ -91,14 +91,10 @@ hr {
 }
 
 .checkout-cart-item-quantity,
-.checkout-cart-item-name {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
+.checkout-cart-item-name,
 .checkout-cart-item-price {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .checkout-cart-item-flavor {
@@ -164,6 +160,6 @@ input {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .checkout-container {
-    padding: 4rem 16rem;
+    padding: 4rem 18rem;
   }
 }
