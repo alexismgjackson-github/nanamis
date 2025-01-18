@@ -127,18 +127,18 @@ export default function Checkout() {
                     <div className="checkout-cart-item" key={item.id}>
                       <div className="checkout-cart-item-primary">
                         <span className="checkout-cart-item-quantity">
-                          x {item.quantity}
+                          {item.quantity} QTY
                         </span>
                         <p className="checkout-cart-item-name">{item.name}</p>
                         <span className="checkout-cart-item-price">
                           ${item.price}
                         </span>
-                      </div>
-                      <div className="checkout-cart-item-secondary">
                         <p className="checkout-cart-item-flavor">
                           {item.flavor}
-                        </p>
-                        <img src={item.url} className="cart-item-img" />
+                        </p>{" "}
+                      </div>
+                      <div className="checkout-cart-item-secondary">
+                        <img src={item.url} className="checkout-item-img" />
                       </div>
                     </div>
                   ))}
