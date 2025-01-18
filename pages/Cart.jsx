@@ -37,14 +37,14 @@ export default function Cart() {
                   <div className="cart-item" key={item.id}>
                     <div className="cart-item-primary">
                       <span className="cart-item-quantity">
-                        x {item.quantity}
+                        {item.quantity} QTY
                       </span>
                       <p className="cart-item-name">{item.name}</p>
                       <span className="cart-item-price">${item.price}</span>
+                      <p className="cart-item-flavor">{item.flavor}</p>
                     </div>
                     <div className="cart-item-secondary">
                       <img src={item.url} className="cart-item-img" />
-                      <p className="cart-item-flavor">{item.flavor}</p>
                       <button
                         className="remove-item-btn"
                         onClick={() => {
