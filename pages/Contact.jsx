@@ -9,8 +9,7 @@ export default function Contact() {
     message: "",
   });
 
-  const [firstNameMessage, setFirstNameMessage] = useState("");
-  const [lastNameMessage, setLastNameMessage] = useState("");
+  const [fullNameMessage, setFullNameMessage] = useState("");
   const [emailMessage, setEmailMessage] = useState("");
   const [messageMessage, setMessageMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
@@ -26,17 +25,10 @@ export default function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (formData.firstName.length > 0) {
+    if (formData.fullName.length > 0) {
       // console.log("First name is valid");
-      setFirstNameMessage("First name successfully submitted!");
-      formData.firstName = "";
-      setIsValid(true);
-    }
-
-    if (formData.lastName.length > 0) {
-      // console.log("Last name is valid");
-      setLastNameMessage("Last Name successfully submitted!");
-      formData.lastName = "";
+      setFullNameMessage("Full name successfully submitted!");
+      formData.fullName = "";
       setIsValid(true);
     }
 
@@ -78,43 +70,22 @@ export default function Contact() {
           </div>
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
-              <label htmlFor="">First Name (required)</label>
-              {firstNameMessage && (
+              <label htmlFor="">Full Name (required)</label>
+              {fullNameMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
                   }`}
                 >
-                  {firstNameMessage}
+                  {fullNameMessage}
                 </span>
               )}
               <input
                 type="text"
-                placeholder="Kento"
+                placeholder="Kento Nanami"
                 onChange={handleChange}
-                name="firstName"
-                value={formData.firstName}
-                className="contact-form-input"
-                spellCheck="false"
-                required
-              />
-
-              <label htmlFor="">Last Name (required)</label>
-              {lastNameMessage && (
-                <span
-                  className={`contact-message ${
-                    isValid == true ? "contact-success" : "contact-error"
-                  }`}
-                >
-                  {lastNameMessage}
-                </span>
-              )}
-              <input
-                type="text"
-                placeholder="Nanami"
-                onChange={handleChange}
-                name="lastName"
-                value={formData.lastName}
+                name="fullName"
+                value={formData.fullName}
                 className="contact-form-input"
                 spellCheck="false"
                 required
