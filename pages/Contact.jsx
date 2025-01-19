@@ -3,8 +3,7 @@ import "./Contact.css";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     message: "",
   });
