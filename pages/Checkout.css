@@ -49,7 +49,7 @@ select {
 }
 
 .select:focus {
-  border: 2px solid var(--color-medium);
+  border: 2px solid var(--color-extrabold);
   outline: none;
 }
 
@@ -131,7 +131,7 @@ input {
 }
 
 .checkout-form-input:focus {
-  border: 2px solid var(--color-medium);
+  border: 2px solid var(--color-extrabold);
   outline: none;
 }
 

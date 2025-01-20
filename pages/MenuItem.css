@@ -8,7 +8,7 @@
 }
 
 .menu-item:hover {
-  border: 1.5px solid var(--color-bold);
+  border: 1.5px solid var(--color-extrabold);
   cursor: pointer;
 }
 

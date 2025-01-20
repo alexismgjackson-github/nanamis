@@ -67,7 +67,7 @@ export default [
   {
     id: 7,
     name: "Hokkaido Milk Loaf",
-    price: 9.95,
+    price: 10.95,
     description: "Milky-sweet flavor and a feathery soft texture",
     ideas: "Perfect as-is or toasted and smeared with butter and jam",
     flavor: "Plain",
@@ -121,7 +121,7 @@ export default [
   {
     id: 12,
     name: "Sourdough Loaf",
-    price: 9.95,
+    price: 10.95,
     description: "Slightly tangy flavor, crispy crust, and airy-chewy crumb",
     ideas:
       "Perfect for toast, sandwich bread, or accompaniment to a charcuterie board",

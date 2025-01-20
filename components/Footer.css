@@ -50,7 +50,7 @@ h2,
 }
 
 .newsletter-input:focus {
-  border: 2px solid var(--color-medium);
+  border: 2px solid var(--color-extrabold);
   outline: none;
 }
 

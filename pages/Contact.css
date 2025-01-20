@@ -41,7 +41,7 @@ textarea {
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
-  border: 2px solid var(--color-medium);
+  border: 2px solid var(--color-extrabold);
   outline: none;
 }
 
