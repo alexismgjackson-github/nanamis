@@ -72,7 +72,7 @@
 
 .cart-item-img {
   height: 8rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   object-fit: cover;
   width: 8rem;
 }
@@ -83,6 +83,20 @@
   height: 2.4rem;
   margin: auto;
   width: 2.4rem;
+}
+
+.quantity-btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.decrement-btn,
+.increment-btn {
+  background-color: var(--color-extrabold);
+  border-radius: 0.5rem;
+  border-style: none;
+  color: var(--color-extralight);
+  width: 3rem;
 }
 
 .total {

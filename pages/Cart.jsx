@@ -4,7 +4,7 @@ import { CartContext } from "../Context/cart";
 import "./Cart.css";
 
 export default function Cart() {
-  const { cartItems, removeFromCart, clearCart, getCartTotal } =
+  const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
     useContext(CartContext);
 
   useEffect(() => {
@@ -44,19 +44,25 @@ export default function Cart() {
                       <p className="cart-item-flavor">{item.flavor}</p>
                     </div>
                     <div className="cart-item-secondary">
+                      <div className="quantity-btns">
+                        <button
+                          className="decrement-btn"
+                          onClick={() => {
+                            removeFromCart(item);
+                          }}
+                        >
+                          -
+                        </button>
+                        <button
+                          className="increment-btn"
+                          onClick={() => {
+                            addToCart(item);
+                          }}
+                        >
+                          +
+                        </button>
+                      </div>
                       <img src={item.url} className="cart-item-img" />
-                      <button
-                        className="remove-item-btn"
-                        onClick={() => {
-                          removeFromCart(item);
-                        }}
-                      >
-                        <img
-                          src="assets/icons/trash.svg"
-                          alt="Trash icon"
-                          aria-label="Delete item from cart"
-                        />
-                      </button>
                     </div>
                   </div>
                 ))}
