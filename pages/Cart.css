@@ -92,10 +92,14 @@
 
 .decrement-btn,
 .increment-btn {
+  align-items: center;
   background-color: var(--color-extrabold);
   border-radius: 0.5rem;
   border-style: none;
   color: var(--color-extralight);
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
   width: 3rem;
 }
 
