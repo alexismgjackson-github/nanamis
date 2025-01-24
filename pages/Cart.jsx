@@ -84,7 +84,14 @@ export default function Cart() {
               </div>
             </div>
           ) : (
-            <p className="empty-cart">Ready to go! Add items to get started.</p>
+            <div className="empty-cart-content">
+              <p className="empty-cart">
+                Ready to go! Add items to get started.
+              </p>
+              <Link to="/menu">
+                <button className="go-to-menu-btn">Order Now</button>
+              </Link>
+            </div>
           )}
         </div>
       </div>

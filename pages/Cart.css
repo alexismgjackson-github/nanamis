@@ -133,7 +133,8 @@
   align-items: center;
 }
 
-.checkout-btn {
+.checkout-btn,
+.go-to-menu-btn {
   background-color: var(--color-extrabold);
   border-radius: 4rem;
   color: var(--color-extralight);
@@ -142,10 +143,17 @@
   padding: 1.5rem 6rem;
 }
 
+.empty-cart-content {
+  min-height: 42rem;
+}
+
 .empty-cart {
   font-style: italic;
-  min-height: 42rem;
   opacity: 0.5;
+}
+
+.go-to-menu-btn {
+  margin-top: 4rem;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
