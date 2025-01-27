@@ -13,7 +13,7 @@ export default function Header() {
   };
 
   const activeStyle = {
-    color: "#cd5700",
+    color: "#FFC40C",
     fontWeight: 700,
   };
 
