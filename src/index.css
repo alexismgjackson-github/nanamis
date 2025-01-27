@@ -1,12 +1,12 @@
 :root {
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Fugaz One", sans-serif;
-  --color-extralight: /*#f5f0ea;*/ #f3f1ed;
-  --color-light: /*#dfdcd7;*/ #e5e0df;
+  --color-extralight: #f3f1ed;
+  --color-light: #e5e0df;
   --color-medium: #c4bfb8;
-  --color-bold: /*#473b33;*/ #0a1c38;
-  --color-extrabold: /*#cd5700;*/ #ffc40c;
-  --color-black: /*#1e1e1e;*/ #000000;
+  --color-bold: #0a1c38;
+  --color-extrabold: #ffc40c;
+  --color-black: #000000;
   --color-success: #02a402;
   --color-error: #ff0000;
 }
@@ -92,8 +92,9 @@ button {
   font-weight: 500;
 }
 
-button:hover {
-  opacity: 0.5;
+button:hover,
+button:focus {
+  opacity: 0.6;
 }
 
 li {
