@@ -8,6 +8,25 @@
   margin-bottom: 4rem;
 }
 
+.filter-btns {
+  margin-bottom: 4rem;
+}
+
+.filter-btn {
+  background-color: var(--color-extrabold);
+  border-radius: 1rem;
+  border-style: none;
+  color: var(--color-extralight);
+  margin-right: 2rem;
+  padding: 1rem;
+  width: 10rem;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--color-bold);
+}
+
 .menu-items {
   display: grid;
   gap: 2.5rem;

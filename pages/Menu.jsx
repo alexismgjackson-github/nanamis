@@ -1,10 +1,19 @@
 import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import data from "../src/menu.js";
 import MenuItem from "./MenuItem";
 import "./Menu.css";
 
 export default function Menu() {
-  const menuElements = data.map((item) => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const typeFilter = searchParams.get("type");
+
+  const displayedMenuItems = typeFilter
+    ? data.filter((item) => item.type === typeFilter)
+    : data;
+
+  const menuElements = displayedMenuItems.map((item) => {
     return <MenuItem key={item.id} {...item} />;
   });
 
@@ -20,6 +29,26 @@ export default function Menu() {
     <>
       <div className="menu-container">
         <h1 className="menu-heading">Today's Menu</h1>
+        <div className="filter-btns">
+          <button
+            onClick={() => setSearchParams({})}
+            className="filter-btn all"
+          >
+            All
+          </button>
+          <button
+            onClick={() => setSearchParams({ type: "bread" })}
+            className="filter-btn bread"
+          >
+            Bread
+          </button>
+          <button
+            onClick={() => setSearchParams({ type: "pastry" })}
+            className="filter-btn pastry"
+          >
+            Pastry
+          </button>
+        </div>
         <div className="menu-items">{menuElements}</div>
         <div className="disclaimer-container">
           <p className="menu-disclaimer">
