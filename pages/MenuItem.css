@@ -1,6 +1,5 @@
 .menu-item {
   background-color: var(--color-extralight);
-  /*border: 1.5px solid #d3d3d3;*/
   border-radius: 0.5rem;
   color: var(--color-bold);
   padding: 2rem;
@@ -8,7 +7,7 @@
 }
 
 .menu-item:hover {
-  border: 1.5px solid var(--color-extrabold);
+  border: 1px solid var(--color-extrabold);
   cursor: pointer;
 }
 

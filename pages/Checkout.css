@@ -69,7 +69,6 @@ hr {
 
 .checkout-cart-item {
   background-color: var(--color-extralight);
-  /*border: 1.5px solid #d3d3d3;*/
   border-radius: 0.5rem;
   color: var(--color-bold);
   display: flex;
