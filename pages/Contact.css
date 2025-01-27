@@ -61,12 +61,18 @@ textarea {
   background-color: var(--color-extrabold);
   border-radius: 2.75rem;
   border-style: none;
-  color: var(--color-light);
+  color: var(--color-extralight);
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 2rem;
   padding: 1.5rem;
   width: 20rem;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  opacity: 0.65;
+  transform: scale(0.95);
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

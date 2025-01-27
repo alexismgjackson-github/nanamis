@@ -7,7 +7,7 @@
 }
 
 .menu-item:hover {
-  border: 1px solid var(--color-extrabold);
+  background-color: var(--color-extrabold);
   cursor: pointer;
 }
 
@@ -106,6 +106,12 @@
   border-style: none;
   font-weight: 500;
   padding: 1.5rem 6rem;
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn:focus {
+  opacity: 0.65;
+  transform: scale(0.95);
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

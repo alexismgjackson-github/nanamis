@@ -9,6 +9,7 @@ export default [
     ingredients:
       "flour, yeast, sugar, eggs, milk, butter, salt, cinnamon, cocoa powder, dark chocolate",
     url: "assets/images/unsplash12.jpg",
+    type: "pastry",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export default [
     ingredients:
       "flour, milk, yeast, ground cardamom, brown sugar, butter, salt",
     url: "assets/images/unsplash11.jpg",
+    type: "pastry",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export default [
     ingredients:
       "flour, butter, eggs, sugar, vegetable oil, honey, yeast, water, sesame seeds",
     url: "assets/images/unsplash2.jpg",
+    type: "bread",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export default [
     flavor: "Roasted Garlic",
     ingredients: "flour, yeast, olive oil, salt, water, garlic",
     url: "assets/images/unsplash15.jpg",
+    type: "bread",
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ export default [
     ingredients:
       "flour, sugar, milk, butter, yeast, eggs, salt, cinnamon, cardamom, nutmeg, cream cheese",
     url: "assets/images/unsplash17.jpg",
+    type: "pastry",
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ export default [
     flavor: "Chocolate",
     ingredients: "flour, yeast, butter, milk, chocolate, sugar, salt",
     url: "assets/images/unsplash7.jpg",
+    type: "pastry",
   },
   {
     id: 7,
@@ -73,6 +79,7 @@ export default [
     flavor: "Plain",
     ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
     url: "assets/images/unsplash13.jpg",
+    type: "bread",
   },
   {
     id: 8,
@@ -83,6 +90,7 @@ export default [
     flavor: "Glazed",
     ingredients: "flour, sugar, yeast, milk, butter, milk powder, egg, salt",
     url: "assets/images/unsplash9.jpg",
+    type: "pastry",
   },
 
   {
@@ -96,6 +104,7 @@ export default [
     ingredients:
       "cracked rye, barley, flax, millet, oats, spelt, wheat, whole-wheat flour, flaxseed, quinoa, sunflower seeds, egg white",
     url: "assets/images/unsplash3.jpg",
+    type: "bread",
   },
   {
     id: 10,
@@ -107,6 +116,7 @@ export default [
     flavor: "Plain",
     ingredients: "flour, salt, yeast, water, sugar, olive oil",
     url: "assets/images/unsplash24.jpg",
+    type: "bread",
   },
   {
     id: 11,
@@ -128,5 +138,6 @@ export default [
     flavor: "Plain",
     ingredients: "sourdough starter, flour, salt, water, olive oil",
     url: "assets/images/unsplash4.jpg",
+    type: "bread",
   },
 ];

@@ -1,9 +1,8 @@
 :root {
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Fugaz One", sans-serif;
-  --color-extralight: /*#f3f1ed;*/ #fff;
-  --color-light: #e5e0df;
-  /*--color-medium: #c4bfb8;*/
+  --color-extralight: #fff;
+  --color-light: hsl(10, 10%, 93%);
   --color-bold: #0a1c38;
   --color-extrabold: #ffc40c;
   --color-black: #000000;
@@ -17,7 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 html {
@@ -90,11 +89,6 @@ a {
 button {
   font-family: var(--font-primary);
   font-weight: 500;
-}
-
-button:hover,
-button:focus {
-  opacity: 0.6;
 }
 
 li {

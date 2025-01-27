@@ -75,8 +75,10 @@ h2,
   width: 20rem;
 }
 
-.newsletter-btn:hover {
+.newsletter-btn:hover,
+.newsletter-btn:focus {
   opacity: 0.65;
+  transform: scale(0.95);
 }
 
 .footer-copyright p {
