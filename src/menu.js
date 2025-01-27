@@ -127,6 +127,7 @@ export default [
     flavor: "Plain",
     ingredients: "rye flour, molasses, cocoa powder, wheat flour, cornmeal",
     url: "assets/images/unsplash10.jpg",
+    type: "bread",
   },
   {
     id: 12,

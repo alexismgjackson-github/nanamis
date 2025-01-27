@@ -9,6 +9,8 @@
 }
 
 .filter-btns {
+  display: flex;
+  gap: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -17,7 +19,6 @@
   border-radius: 1rem;
   border-style: none;
   color: var(--color-extralight);
-  margin-right: 2rem;
   padding: 1rem;
   width: 10rem;
 }
