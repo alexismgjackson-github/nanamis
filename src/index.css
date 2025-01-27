@@ -1,9 +1,9 @@
 :root {
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Fugaz One", sans-serif;
-  --color-extralight: #f3f1ed;
+  --color-extralight: /*#f3f1ed;*/ #fff;
   --color-light: #e5e0df;
-  --color-medium: #c4bfb8;
+  /*--color-medium: #c4bfb8;*/
   --color-bold: #0a1c38;
   --color-extrabold: #ffc40c;
   --color-black: #000000;
