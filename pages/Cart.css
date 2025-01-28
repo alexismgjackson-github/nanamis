@@ -16,7 +16,7 @@
 
 .cart {
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .clear-cart-btn {
@@ -59,13 +59,14 @@
 }
 
 .cart-item-quantity,
-.cart-item-name,
-.cart-item-price {
+.cart-item-name {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
+.cart-item-price,
 .cart-item-flavor {
+  font-size: 1.6rem;
   font-style: italic;
 }
 
@@ -104,32 +105,40 @@
 
 .total {
   display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
 }
 
-.total-primary {
+.total-primary,
+.total-secondary,
+.total-tertiary {
   display: grid;
   gap: 0.5rem;
+}
+
+.total-tertiary {
   margin-bottom: 2rem;
 }
 
-.subtotal-container {
+.total-btn {
+  margin: auto;
+}
+
+.subtotal-container,
+.tax-container,
+.grand-total-container {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .subtotal,
-.subtotal-number {
+.subtotal-number,
+.tax,
+.tax-number,
+.grand-total,
+.grand-total-number {
   font-size: 1.6rem;
   font-weight: 500;
-}
-
-.total-secondary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .checkout-btn,

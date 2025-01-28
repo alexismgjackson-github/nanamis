@@ -21,7 +21,10 @@ export const CartProvider = ({ children }) => {
       setCartItems(
         cartItems.map((cartItem) =>
           cartItem.id === item.id
-            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            ? {
+                ...cartItem,
+                quantity: cartItem.quantity + 1,
+              }
             : cartItem
         )
       );
@@ -56,12 +59,46 @@ export const CartProvider = ({ children }) => {
     setCartItems([]);
   };
 
-  // calculate the total price of the items in the cart
+  // calculate the total price of each item in the cart
 
-  const getCartTotal = () => {
+  const getCartItemTotal = (item) => {
+    const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+
+    if (isItemInCart) {
+      return formatUSD(item.price * item.quantity);
+    }
+  };
+
+  // calculate the subtotal price of the items in the cart
+
+  const getCartSubTotal = () => {
     return formatUSD(
       cartItems.reduce((total, item) => total + item.price * item.quantity, 0)
     );
+  };
+
+  // calculate the total tax price of the items in the cart
+
+  const getTax = () => {
+    const cartSubTotal = cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+
+    return formatUSD(cartSubTotal * 0.09);
+  };
+
+  // calculate the grand total price of the items in the cart
+
+  const getGrandTotal = () => {
+    const cartSubTotal = cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+
+    const tax = cartSubTotal * 0.09;
+
+    return formatUSD(cartSubTotal + tax);
   };
 
   // format item price to USD
@@ -95,7 +132,10 @@ export const CartProvider = ({ children }) => {
         addToCart,
         removeFromCart,
         clearCart,
-        getCartTotal,
+        getCartItemTotal,
+        getCartSubTotal,
+        getTax,
+        getGrandTotal,
       }}
     >
       {children}

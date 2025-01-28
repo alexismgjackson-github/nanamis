@@ -4,8 +4,16 @@ import { CartContext } from "../Context/cart";
 import "./Cart.css";
 
 export default function Cart() {
-  const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
-    useContext(CartContext);
+  const {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    clearCart,
+    getCartItemTotal,
+    getCartSubTotal,
+    getTax,
+    getGrandTotal,
+  } = useContext(CartContext);
 
   useEffect(() => {
     window.scrollTo({
@@ -37,10 +45,12 @@ export default function Cart() {
                   <div className="cart-item" key={item.id}>
                     <div className="cart-item-primary">
                       <span className="cart-item-quantity">
-                        {item.quantity} QTY
+                        {item.quantity} QTY ({getCartItemTotal(item)})
                       </span>
                       <p className="cart-item-name">{item.name}</p>
-                      <span className="cart-item-price">${item.price}</span>
+                      <span className="cart-item-price">
+                        ${item.price} each
+                      </span>
                       <p className="cart-item-flavor">{item.flavor}</p>
                     </div>
                     <div className="cart-item-secondary">
@@ -70,11 +80,25 @@ export default function Cart() {
               <div className="total">
                 <div className="total-primary">
                   <div className="subtotal-container">
-                    <p className="subtotal">Cart Total</p>
-                    <span className="subtotal-number">{getCartTotal()}</span>
+                    <p className="subtotal">Cart Subtotal</p>
+                    <span className="subtotal-number">{getCartSubTotal()}</span>
                   </div>
                 </div>
                 <div className="total-secondary">
+                  <div className="tax-container">
+                    <p className="tax">Tax Total</p>
+                    <span className="tax-number">{getTax()}</span>
+                  </div>
+                </div>
+                <div className="total-tertiary">
+                  <div className="grand-total-container">
+                    <p className="grand-total">Grand Total</p>
+                    <span className="grand-total-number">
+                      {getGrandTotal()}
+                    </span>
+                  </div>
+                </div>
+                <div className="total-btn">
                   <Link to="/checkout">
                     <button className="checkout-btn">
                       Go To Checkout ({cartItems.length})
