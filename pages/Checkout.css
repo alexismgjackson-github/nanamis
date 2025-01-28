@@ -84,13 +84,14 @@ hr {
 }
 
 .checkout-cart-item-quantity,
-.checkout-cart-item-name,
-.checkout-cart-item-price {
+.checkout-cart-item-name {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
+.checkout-cart-item-price,
 .checkout-cart-item-flavor {
+  font-size: 1.6rem;
   font-style: italic;
 }
 
@@ -106,15 +107,20 @@ input {
   width: 100%;
 }
 
-.checkout-order-total-container {
+.checkout-order-subtotal-container,
+.checkout-order-tax-container,
+.checkout-order-grand-total-container {
   align-items: center;
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
 }
 
-.checkout-order-total,
-.checkout-order-total-number {
+.checkout-order-subtotal,
+.checkout-order-subtotal-number,
+.checkout-order-tax,
+.checkout-order-tax-number,
+.checkout-order-tax-grand-total-number {
   font-size: 1.6rem;
   font-weight: 500;
 }

@@ -5,7 +5,14 @@ import { CartContext } from "../Context/cart";
 import "./Checkout.css";
 
 export default function Checkout() {
-  const { cartItems, getCartTotal, clearCart } = useContext(CartContext);
+  const {
+    cartItems,
+    clearCart,
+    getCartItemTotal,
+    getCartSubTotal,
+    getTax,
+    getGrandTotal,
+  } = useContext(CartContext);
 
   const navigate = useNavigate();
 
@@ -127,11 +134,11 @@ export default function Checkout() {
                     <div className="checkout-cart-item" key={item.id}>
                       <div className="checkout-cart-item-primary">
                         <span className="checkout-cart-item-quantity">
-                          {item.quantity} QTY
+                          {item.quantity} QTY ({getCartItemTotal(item)})
                         </span>
                         <p className="checkout-cart-item-name">{item.name}</p>
                         <span className="checkout-cart-item-price">
-                          ${item.price}
+                          ${item.price} each
                         </span>
                         <p className="checkout-cart-item-flavor">
                           {item.flavor}
@@ -146,10 +153,22 @@ export default function Checkout() {
               </div>
             </div>
             <div className="checkout-total">
-              <div className="checkout-order-total-container">
-                <p className="checkout-order-total">Order Total</p>
-                <span className="checkout-order-total-number">
-                  {getCartTotal()}
+              <div className="checkout-order-subtotal-container">
+                <p className="checkout-order-subtotal">Order Subtotal</p>
+                <span className="checkout-order-subtotal-number">
+                  {getCartSubTotal()}
+                </span>
+              </div>
+              <div className="checkout-order-subtotal-container">
+                <p className="checkout-order-subtotal">Tax Total</p>
+                <span className="checkout-order-subtotal-number">
+                  {getTax()}
+                </span>
+              </div>
+              <div className="checkout-order-subtotal-container">
+                <p className="checkout-order-subtotal">Grand Total</p>
+                <span className="checkout-order-subtotal-number">
+                  {getGrandTotal()}
                 </span>
               </div>
             </div>
@@ -222,7 +241,7 @@ export default function Checkout() {
               />
               <div className="checkout-complete-order-container">
                 <button className="payment-btn" onSubmit={handleSubmit}>
-                  Complete Order ({getCartTotal()})
+                  Complete Order ({getGrandTotal()})
                 </button>
               </div>
             </form>
