@@ -57,11 +57,7 @@ hr {
   border: 1px solid #d3d3d3;
 }
 
-.checkout-cart {
-  display: grid;
-  gap: 2rem;
-}
-
+.checkout-cart,
 .checkout-full-cart {
   display: grid;
   gap: 2rem;
@@ -69,7 +65,7 @@ hr {
 
 .checkout-cart-item {
   background-color: var(--color-extralight);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: var(--color-bold);
   display: flex;
   justify-content: space-between;
@@ -105,6 +101,11 @@ input {
   background-color: var(--color-extralight);
   padding: 1.5rem;
   width: 100%;
+}
+
+.checkout-total {
+  display: grid;
+  gap: 1rem;
 }
 
 .checkout-order-subtotal-container,

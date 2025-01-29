@@ -11,7 +11,7 @@ export default function Cart() {
     clearCart,
     getCartItemTotal,
     getCartSubTotal,
-    getTax,
+    getTaxTotal,
     getGrandTotal,
   } = useContext(CartContext);
 
@@ -87,7 +87,7 @@ export default function Cart() {
                 <div className="total-secondary">
                   <div className="tax-container">
                     <p className="tax">Tax Total</p>
-                    <span className="tax-number">{getTax()}</span>
+                    <span className="tax-number">{getTaxTotal()}</span>
                   </div>
                 </div>
                 <div className="total-tertiary">

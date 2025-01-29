@@ -21,7 +21,7 @@
 
 .clear-cart-btn {
   background-color: var(--color-extrabold);
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   border-style: none;
   color: var(--color-extralight);
   font-size: 1.4rem;
@@ -192,5 +192,8 @@
 @media only screen and (min-width: 992px) {
   .cart-container {
     padding: 8rem 18rem;
+  }
+  .full-cart {
+    grid-template-columns: 1fr 1fr;
   }
 }

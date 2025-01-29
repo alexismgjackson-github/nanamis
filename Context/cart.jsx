@@ -79,7 +79,7 @@ export const CartProvider = ({ children }) => {
 
   // calculate the total tax price of the items in the cart
 
-  const getTax = () => {
+  const getTaxTotal = () => {
     const cartSubTotal = cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
       0
@@ -134,7 +134,7 @@ export const CartProvider = ({ children }) => {
         clearCart,
         getCartItemTotal,
         getCartSubTotal,
-        getTax,
+        getTaxTotal,
         getGrandTotal,
       }}
     >

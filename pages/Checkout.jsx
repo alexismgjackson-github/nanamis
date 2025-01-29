@@ -10,7 +10,7 @@ export default function Checkout() {
     clearCart,
     getCartItemTotal,
     getCartSubTotal,
-    getTax,
+    getTaxTotal,
     getGrandTotal,
   } = useContext(CartContext);
 
@@ -162,7 +162,7 @@ export default function Checkout() {
               <div className="checkout-order-subtotal-container">
                 <p className="checkout-order-subtotal">Tax Total</p>
                 <span className="checkout-order-subtotal-number">
-                  {getTax()}
+                  {getTaxTotal()}
                 </span>
               </div>
               <div className="checkout-order-subtotal-container">

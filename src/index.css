@@ -1,8 +1,8 @@
 :root {
   --font-primary: "Inter", sans-serif;
-  --font-secondary: "Fugaz One", sans-serif;
+  --font-secondary: "Coiny", serif;
   --color-extralight: #fff;
-  --color-light: hsl(10, 10%, 93%);
+  --color-light: #eeebea;
   --color-bold: #0a1c38;
   --color-extrabold: #ffc40c;
   --color-black: #000000;
@@ -34,6 +34,7 @@ body {
 h1,
 h2,
 h3 {
+  font-family: var(--font-secondary);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -97,7 +98,7 @@ li {
 }
 
 img {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   width: 100%;
 }
 

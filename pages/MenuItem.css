@@ -1,7 +1,9 @@
 .menu-item {
   background-color: var(--color-extralight);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: var(--color-bold);
+  display: grid;
+  gap: 2rem;
   padding: 2rem;
   width: 100%;
 }
@@ -17,7 +19,12 @@
   justify-content: space-between;
 }
 
-.menu-item-name,
+.menu-item-name {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .menu-item-price,
 .menu-item-description,
 .menu-item-ingredients {
@@ -27,6 +34,11 @@
 .menu-item-name,
 .menu-item-price {
   font-weight: 700;
+}
+
+.menu-item-body {
+  display: grid;
+  gap: 2rem;
 }
 
 .menu-item-modal-container {
@@ -42,12 +54,14 @@
 
 .close-menu-item-modal-btn {
   background-color: var(--color-light);
+  border-radius: 1rem;
   border-style: none;
   padding: 2rem;
 }
 
 .menu-item-modal {
   background-color: var(--color-light);
+  border-radius: 1rem;
   color: var(--color-bold);
   display: flex;
   flex-direction: column;
@@ -73,7 +87,6 @@
 }
 
 .menu-item-modal-img {
-  margin: 1.25rem 0;
   max-width: 50rem;
 }
 
