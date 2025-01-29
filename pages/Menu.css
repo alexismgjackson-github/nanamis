@@ -28,6 +28,16 @@
   background-color: var(--color-bold);
 }
 
+.menu-items-count-container {
+  margin-bottom: 2rem;
+}
+
+.menu-items-count {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .menu-items {
   display: grid;
   gap: 2rem;

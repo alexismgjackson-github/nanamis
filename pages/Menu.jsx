@@ -49,6 +49,11 @@ export default function Menu() {
             Pastry
           </button>
         </div>
+        <div className="menu-items-count-container">
+          <p className="menu-items-count">
+            {displayedMenuItems.length} items found
+          </p>
+        </div>
         <div className="menu-items">{menuElements}</div>
         <div className="disclaimer-container">
           <p className="menu-disclaimer">
