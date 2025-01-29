@@ -17,13 +17,6 @@ export default function MenuItem(item) {
 
   return (
     <>
-      {/*<div className="menu-item" key={item.id} onClick={handleClick} {...item}>
-        <div className="menu-item-header">
-          <p className="menu-item-name">{item.name}</p>
-          <span className="menu-item-price">${item.price}</span>
-        </div>
-  </div>*/}
-
       <div className="menu-item" key={item.id} onClick={handleClick} {...item}>
         <div className="menu-item-header">
           <img src={item.url} className="menu-item-modal-img" alt={item.name} />
