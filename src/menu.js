@@ -64,7 +64,7 @@ export default [
     name: "Croissant",
     price: 2.95,
     description: "Buttery, flaky and sweet",
-    ideas: "Perfect as-is, toasted or for breakfast sandwiches",
+    ideas: "Perfect as-is or toasted",
     flavor: "Chocolate",
     ingredients: "flour, yeast, butter, milk, chocolate, sugar, salt",
     url: "assets/images/unsplash7.jpg",

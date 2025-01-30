@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useContext } from "react";
+import { ScrollContext } from "../Context/scroll";
 import { useSearchParams } from "react-router-dom";
 import data from "../src/menu.js";
 import MenuItem from "./MenuItem";
@@ -17,13 +18,9 @@ export default function Menu() {
     return <MenuItem key={item.id} {...item} />;
   });
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  const { scrollToTop } = useContext(ScrollContext);
+
+  scrollToTop();
 
   return (
     <>

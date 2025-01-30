@@ -1,14 +1,11 @@
 import "./Home.css";
-import { useEffect } from "react";
+import { useContext } from "react";
+import { ScrollContext } from "../Context/scroll";
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  const { scrollToTop } = useContext(ScrollContext);
+
+  scrollToTop();
 
   return (
     <>

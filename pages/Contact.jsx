@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
 import "./Contact.css";
+import { ScrollContext } from "../Context/scroll";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -46,15 +47,9 @@ export default function Contact() {
     }
   }
 
-  // console.log(formData);
+  const { scrollToTop } = useContext(ScrollContext);
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  scrollToTop();
 
   return (
     <>

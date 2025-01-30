@@ -56,6 +56,7 @@
   .menu-container {
     padding: 6rem 18rem;
   }
+
   .menu-items {
     grid-template-columns: 1fr 1fr;
   }
@@ -66,6 +67,7 @@
   .menu-container {
     padding: 8rem 18rem;
   }
+
   .menu-items {
     grid-template-columns: 1fr 1fr 1fr;
   }

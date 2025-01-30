@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../Context/cart";
+import { ScrollContext } from "../Context/scroll";
 import "./Checkout.css";
 
 export default function Checkout() {
@@ -73,13 +74,9 @@ export default function Checkout() {
 
   // console.log(formData);
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  const { scrollToTop } = useContext(ScrollContext);
+
+  scrollToTop();
 
   return (
     <>

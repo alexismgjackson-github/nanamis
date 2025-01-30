@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { CartProvider } from "../Context/cart";
+import { ScrollProvider } from "../Context/scroll";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 import Contact from "../pages/Contact";
@@ -36,7 +37,9 @@ const root = createRoot(container);
 root.render(
   <StrictMode>
     <CartProvider>
-      <App />
+      <ScrollProvider>
+        <App />
+      </ScrollProvider>
     </CartProvider>
   </StrictMode>
 );

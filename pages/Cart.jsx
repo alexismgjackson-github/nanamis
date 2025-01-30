@@ -1,6 +1,7 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../Context/cart";
+import { ScrollContext } from "../Context/scroll";
 import "./Cart.css";
 
 export default function Cart() {
@@ -15,13 +16,9 @@ export default function Cart() {
     getGrandTotal,
   } = useContext(CartContext);
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  const { scrollToTop } = useContext(ScrollContext);
+
+  scrollToTop();
 
   return (
     <>

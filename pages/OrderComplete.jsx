@@ -1,14 +1,11 @@
-import { useEffect } from "react";
+import { useContext } from "react";
+import { ScrollContext } from "../Context/scroll";
 import "./OrderComplete.css";
 
 export default function OrderComplete() {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  const { scrollToTop } = useContext(ScrollContext);
+
+  scrollToTop();
 
   return (
     <>
