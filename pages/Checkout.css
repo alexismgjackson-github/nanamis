@@ -171,4 +171,9 @@ input {
   .checkout-full-cart {
     grid-template-columns: 1fr 1fr;
   }
+
+  .details-form {
+    display: grid;
+    gap: 2rem;
+  }
 }

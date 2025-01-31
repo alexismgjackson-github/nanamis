@@ -69,6 +69,12 @@ textarea {
   font-family: var(--font-primary);
 }
 
+input,
+textarea,
+select {
+  border-radius: 0.75rem;
+}
+
 textarea {
   resize: none;
 }

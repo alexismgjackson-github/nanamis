@@ -209,7 +209,7 @@ export default function Checkout() {
                 name="expiration"
                 min={"2025-01"}
                 value={formData.expiration}
-                className="checkout-form-input"
+                className="checkout-form-input date"
                 required
               />
               <label className="ccv-label">Security Code (required)</label>
@@ -220,7 +220,7 @@ export default function Checkout() {
                 onChange={handleChange}
                 name="ccv"
                 value={formData.ccv}
-                className="checkout-form-input"
+                className="checkout-form-input ccv"
                 pattern="^[0-9]+$"
                 required
               />
@@ -232,7 +232,7 @@ export default function Checkout() {
                 onChange={handleChange}
                 name="zipcode"
                 value={formData.zipcode}
-                className="checkout-form-input"
+                className="checkout-form-input zipcode"
                 pattern="^[0-9]+$"
                 required
               />
