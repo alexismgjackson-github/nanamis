@@ -1,7 +1,7 @@
 header {
   align-items: center;
   background-color: var(--color-extralight);
-  border-bottom: 1px solid var(--color-bold);
+  box-shadow: hsla(0 0% 0% / 0.1) 0 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
