@@ -9,10 +9,10 @@ export default function Contact() {
     message: "",
   });
 
-  const [fullNameMessage, setFullNameMessage] = useState("");
-  const [emailMessage, setEmailMessage] = useState("");
-  const [messageMessage, setMessageMessage] = useState("");
-  const [isValid, setIsValid] = useState(null);
+  // const [fullNameMessage, setFullNameMessage] = useState("");
+  // const [emailMessage, setEmailMessage] = useState("");
+  // const [messageMessage, setMessageMessage] = useState("");
+  // const [isValid, setIsValid] = useState(null);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -25,26 +25,26 @@ export default function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (formData.fullName.length > 0) {
-      // console.log("First name is valid");
-      setFullNameMessage("Full name successfully submitted!");
-      formData.fullName = "";
-      setIsValid(true);
-    }
+    // if (formData.fullName.length > 0) {
+    // console.log("First name is valid");
+    // setFullNameMessage("Full name successfully submitted!");
+    formData.fullName = "";
+    //setIsValid(true);
+    // }
 
-    if (formData.email.length > 0) {
-      // console.log("Email is valid");
-      setEmailMessage("Email successfully submitted!");
-      formData.email = "";
-      setIsValid(true);
-    }
+    // if (formData.email.length > 0) {
+    // console.log("Email is valid");
+    // setEmailMessage("Email successfully submitted!");
+    formData.email = "";
+    // setIsValid(true);
+    // }
 
-    if (formData.message.length > 0) {
-      // console.log("Message is valid");
-      setMessageMessage("Message successfully submitted!");
-      formData.message = "";
-      setIsValid(true);
-    }
+    // if (formData.message.length > 0) {
+    // console.log("Message is valid");
+    // setMessageMessage("Message successfully submitted!");
+    formData.message = "";
+    // setIsValid(true);
+    //}
   }
 
   const { scrollToTop } = useContext(ScrollContext);
@@ -65,7 +65,7 @@ export default function Contact() {
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
               <label htmlFor="">Full Name (required)</label>
-              {fullNameMessage && (
+              {/*{fullNameMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
@@ -73,7 +73,7 @@ export default function Contact() {
                 >
                   {fullNameMessage}
                 </span>
-              )}
+                )}*/}
               <input
                 type="text"
                 placeholder="Kento Nanami"
@@ -85,7 +85,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="">Email (required)</label>
-              {emailMessage && (
+              {/*{emailMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
@@ -93,7 +93,7 @@ export default function Contact() {
                 >
                   {emailMessage}
                 </span>
-              )}
+                )}*/}
               <input
                 type="text"
                 placeholder="kentonanami@mail.com"
@@ -106,7 +106,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="">Message (required)</label>
-              {messageMessage && (
+              {/*{messageMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
@@ -114,7 +114,7 @@ export default function Contact() {
                 >
                   {messageMessage}
                 </span>
-              )}
+                )}*/}
               <textarea
                 className="contact-form-textarea"
                 placeholder="Hello there!"
