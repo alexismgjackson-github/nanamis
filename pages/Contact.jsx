@@ -12,7 +12,7 @@ export default function Contact() {
   // const [fullNameMessage, setFullNameMessage] = useState("");
   // const [emailMessage, setEmailMessage] = useState("");
   // const [messageMessage, setMessageMessage] = useState("");
-  // const [isValid, setIsValid] = useState(null);
+  const [isValid, setIsValid] = useState(null);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -28,22 +28,25 @@ export default function Contact() {
     // if (formData.fullName.length > 0) {
     // console.log("First name is valid");
     // setFullNameMessage("Full name successfully submitted!");
+    setIsValid(true);
     formData.fullName = "";
-    //setIsValid(true);
+
     // }
 
     // if (formData.email.length > 0) {
     // console.log("Email is valid");
     // setEmailMessage("Email successfully submitted!");
+    setIsValid(true);
     formData.email = "";
-    // setIsValid(true);
+
     // }
 
     // if (formData.message.length > 0) {
     // console.log("Message is valid");
     // setMessageMessage("Message successfully submitted!");
+    setIsValid(true);
     formData.message = "";
-    // setIsValid(true);
+
     //}
   }
 
