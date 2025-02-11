@@ -9,9 +9,9 @@ export default function Contact() {
     message: "",
   });
 
-  // const [fullNameMessage, setFullNameMessage] = useState("");
-  // const [emailMessage, setEmailMessage] = useState("");
-  // const [messageMessage, setMessageMessage] = useState("");
+  const [fullNameMessage, setFullNameMessage] = useState("");
+  const [emailMessage, setEmailMessage] = useState("");
+  const [messageMessage, setMessageMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
 
   function handleChange(event) {
@@ -25,29 +25,26 @@ export default function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    // if (formData.fullName.length > 0) {
-    // console.log("First name is valid");
-    // setFullNameMessage("Full name successfully submitted!");
-    setIsValid(true);
-    formData.fullName = "";
+    if (formData.fullName.length > 0) {
+      console.log("First name is valid");
+      setFullNameMessage("Full name successfully submitted!");
+      setIsValid(true);
+      formData.fullName = "";
+    }
 
-    // }
+    if (formData.email.length > 0) {
+      console.log("Email is valid");
+      setEmailMessage("Email successfully submitted!");
+      setIsValid(true);
+      formData.email = "";
+    }
 
-    // if (formData.email.length > 0) {
-    // console.log("Email is valid");
-    // setEmailMessage("Email successfully submitted!");
-    setIsValid(true);
-    formData.email = "";
-
-    // }
-
-    // if (formData.message.length > 0) {
-    // console.log("Message is valid");
-    // setMessageMessage("Message successfully submitted!");
-    setIsValid(true);
-    formData.message = "";
-
-    //}
+    if (formData.message.length > 0) {
+      console.log("Message is valid");
+      setMessageMessage("Message successfully submitted!");
+      setIsValid(true);
+      formData.message = "";
+    }
   }
 
   const { scrollToTop } = useContext(ScrollContext);
@@ -68,7 +65,7 @@ export default function Contact() {
           <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
               <label htmlFor="">Full Name (required)</label>
-              {/*{fullNameMessage && (
+              {fullNameMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
@@ -76,7 +73,7 @@ export default function Contact() {
                 >
                   {fullNameMessage}
                 </span>
-                )}*/}
+              )}
               <input
                 type="text"
                 placeholder="Kento Nanami"
@@ -88,7 +85,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="">Email (required)</label>
-              {/*{emailMessage && (
+              {emailMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
@@ -96,7 +93,7 @@ export default function Contact() {
                 >
                   {emailMessage}
                 </span>
-                )}*/}
+              )}
               <input
                 type="text"
                 placeholder="kentonanami@mail.com"
@@ -109,7 +106,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="">Message (required)</label>
-              {/*{messageMessage && (
+              {messageMessage && (
                 <span
                   className={`contact-message ${
                     isValid == true ? "contact-success" : "contact-error"
@@ -117,7 +114,7 @@ export default function Contact() {
                 >
                   {messageMessage}
                 </span>
-                )}*/}
+              )}
               <textarea
                 className="contact-form-textarea"
                 placeholder="Hello there!"
