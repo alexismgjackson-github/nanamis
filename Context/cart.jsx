@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
   );
 
   // checking if item is already in cart
-  // if item is already in cart then increase quantity of item in the cart  
+  // if item is already in cart then increase quantity of item in the cart
   // if item is not in cart then add to cart
 
   const addToCart = (item) => {
