@@ -10,7 +10,6 @@ import Home from "../pages/Home";
 import Layout from "../components/Layout";
 import Menu from "../pages/Menu";
 import OrderComplete from "../pages/OrderComplete";
-import "../index.css";
 
 function App() {
   return (
