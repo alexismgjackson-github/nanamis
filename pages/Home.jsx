@@ -95,7 +95,7 @@ export default function Home() {
               loading="lazy"
             />
             <img
-              src="assets/images/unsplash19.jpg"
+              src="assets/images/unsplash6.jpg"
               alt="Whole baguette on a black surface"
               loading="lazy"
             />

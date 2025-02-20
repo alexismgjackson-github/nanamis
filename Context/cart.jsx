@@ -10,8 +10,7 @@ export const CartProvider = ({ children }) => {
       : []
   );
 
-  // checking if item is already in cart
-  // if item is already in cart then increase quantity of item in the cart
+  // if item is already in cart then increase quantity of item in the cart but
   // if item is not in cart then add to cart
 
   const addToCart = (item) => {
@@ -33,8 +32,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // checking if item is already in cart
-  // if the quantity of the item is equal to 1 then remove the item from cart
+  // if the quantity of the item is equal to 1 then remove the item from cart but
   // if the quantity of the item is greater than 1 then decrease the quantity of the item in cart
 
   const removeFromCart = (item) => {
