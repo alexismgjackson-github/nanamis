@@ -33,6 +33,7 @@ export default function Cart() {
                   onClick={() => {
                     clearCart();
                   }}
+                  aria-label="Remove all items from cart"
                 >
                   Clear Cart
                 </button>
@@ -57,6 +58,7 @@ export default function Cart() {
                           onClick={() => {
                             removeFromCart(item);
                           }}
+                          aria-label="Decrease item quantity by 1"
                         >
                           -
                         </button>
@@ -65,6 +67,7 @@ export default function Cart() {
                           onClick={() => {
                             addToCart(item);
                           }}
+                          aria-label="Increase item quantity by 1"
                         >
                           +
                         </button>
@@ -97,7 +100,10 @@ export default function Cart() {
                 </div>
                 <div className="total-btn">
                   <Link to="/checkout">
-                    <button className="checkout-btn">
+                    <button
+                      className="checkout-btn"
+                      aria-label="Proceed to checkout"
+                    >
                       Go To Checkout ({cartItems.length})
                     </button>
                   </Link>
@@ -110,7 +116,9 @@ export default function Cart() {
                 Ready to go! Add items to get started.
               </p>
               <Link to="/menu">
-                <button className="go-to-menu-btn">Order Now</button>
+                <button className="go-to-menu-btn" aria-label="Proceed to menu">
+                  Order Now
+                </button>
               </Link>
             </div>
           )}

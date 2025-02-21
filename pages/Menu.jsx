@@ -30,18 +30,21 @@ export default function Menu() {
           <button
             onClick={() => setSearchParams({})}
             className="filter-btn all"
+            aria-label="View all menu items"
           >
             All
           </button>
           <button
             onClick={() => setSearchParams({ type: "bread" })}
             className="filter-btn bread"
+            aria-label="View all bread items"
           >
             Bread
           </button>
           <button
             onClick={() => setSearchParams({ type: "pastry" })}
             className="filter-btn pastry"
+            aria-label="View all pastry items"
           >
             Pastry
           </button>

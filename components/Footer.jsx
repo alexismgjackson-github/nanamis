@@ -108,7 +108,12 @@ export default function Footer() {
                   {emailMessage}
                 </span>
               )}
-              <button className="newsletter-btn">Sign Up</button>
+              <button
+                className="newsletter-btn"
+                aria-label="Sign up for newsletter"
+              >
+                Sign Up
+              </button>
             </form>
           </div>
         </div>

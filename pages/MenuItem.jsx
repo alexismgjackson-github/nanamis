@@ -59,7 +59,7 @@ export default function MenuItem(item) {
             <div className="menu-item-modal-btn">
               <button
                 className="add-to-cart-btn"
-                aria-label="Add item to cart"
+                aria-label="Add menu item to cart"
                 onClick={() => {
                   addToCart(item);
                   handleClick();
