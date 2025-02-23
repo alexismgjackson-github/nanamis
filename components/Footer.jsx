@@ -118,10 +118,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="footer-copyright">
-        <p>© Nanami's Bakery By Alexis Jackson</p>
-      </div>
     </footer>
   );
 }

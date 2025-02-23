@@ -75,10 +75,6 @@ h2 {
   transform: scale(0.95);
 }
 
-.footer-copyright p {
-  font-size: 1.4rem;
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .footer-links-and-form {
@@ -117,9 +113,5 @@ h2 {
 
   .footer-links {
     margin-bottom: 2rem;
-  }
-
-  .footer-copyright {
-    text-align: center;
   }
 }
