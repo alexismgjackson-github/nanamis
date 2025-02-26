@@ -23,23 +23,39 @@ I wanted to build project that built with React Router and had cart functionalit
 
 ## WHAT I LEARNED
 
-### _LOCALSTORAGE_
+### _REACT ROUTER_
+
+- Defining and nesting Route/Routes
+- Rendering the selected current route with Outlet
+- Setting the URL and tracking browsing history with Links
+- Filtering menu item types via useSearchParams
+
+### _USESTATE_
+
+- Toggle view of modals
+- Form validation
+
+### _USECONTEXT_
+
+- Adding and remove menu items from cart via LocalStorage
+- Calculating subtotal, tax and grand total of customer's order
 
 
-### _CONTEXT_
+## _USEEFFECT_
 
-
+- Scroll To Top of page for better user experience
+- Clear form inputs when the user navigates
 
 ### _RESPONSIVE WEB DESIGN_
 
-- Implementing media queries to add device breakpoints.
-- Using device breakpoints to change orientation, font size, etc.
-- Using CSS Position, Grid and Flexbox.
+- Implementing media queries to add device breakpoints
+- Using device breakpoints to change orientation, font size, etc
+- Using CSS Position, Grid and Flexbox
 
 ### _ACCESSIBILITY_
 
-- Calculating the contrast ratio of text, icons and background colors using Coolors' Color Contrast Checker.
-- Adding aria-labels and alt tags to buttons, icons, images, etc.
+- Calculating the contrast ratio of text, icons and background colors using Coolors' Color Contrast Checker
+- Adding aria-labels and alt tags to buttons, icons, images, etc
 
 ## MOST CHALLENGING
 
@@ -47,7 +63,7 @@ I wanted to build project that built with React Router and had cart functionalit
 
 ## BUGS
 
-- I have not found any bugs yet.
+- I have not found any bugs yet
 
 ## FUTURE UPDATES
 
