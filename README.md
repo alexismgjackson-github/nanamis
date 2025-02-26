@@ -1,6 +1,6 @@
-# _WATCHER - MOVIE WATCHLIST APP_
+# _NANAMI'S - BAKERY SITE_
 
-Watcher is a fully responsive app allows that the user to search for movies and create their own watch list.
+Nanami's is a fully responsive site allows the user to order takeout directly from a fictional bakery.
 
 ## FEATURES
 
@@ -13,8 +13,7 @@ Watcher is a fully responsive app allows that the user to search for movies and 
 
 - CSS
 - React
-- The Movie Database API
-- Firebase
+- LocalStorage
 - Coolors Color Tool
 - Google Fonts & Icons
 
