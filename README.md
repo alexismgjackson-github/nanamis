@@ -41,7 +41,7 @@ I wanted to build project that built with React Router and had cart functionalit
 - Calculating subtotal, tax and grand total of customer's order
 
 
-## _USEEFFECT_
+### _USEEFFECT_
 
 - Scroll To Top of page for better user experience
 - Clear form inputs when the user navigates
