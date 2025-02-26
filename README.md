@@ -44,7 +44,7 @@ I wanted to build project that built with React Router and had cart functionalit
 ### _USEEFFECT_
 
 - Scroll To Top of page for better user experience
-- Clear form inputs when the user navigates
+- Clear form inputs of values when the user navigates
 
 ### _RESPONSIVE WEB DESIGN_
 
