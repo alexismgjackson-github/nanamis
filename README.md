@@ -30,6 +30,11 @@ I wanted to build project that built with React Router and had cart functionalit
 - Setting the URL and tracking browsing history with Links
 - Filtering menu item types via useSearchParams
 
+### _EXPORTING/IMPORTING DATA_
+
+- Using named imports and setting type="module" in the script tag
+- Using map to iterate over the array of objects
+
 ### _USESTATE_
 
 - Toggle view of modals
