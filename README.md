@@ -38,8 +38,8 @@ I wanted to build project that built with React Router and had cart functionalit
 ### _USECONTEXT_
 
 - Adding and remove menu items from cart via LocalStorage
+- Sharing cart data between components without explicitly passing props
 - Calculating subtotal, tax and grand total of customer's order
-
 
 ### _USEEFFECT_
 
