@@ -72,5 +72,5 @@ I wanted to build project that built with React Router and had cart functionalit
 
 ## FUTURE UPDATES
 
-- Maybe make ordering more granular(?)
+- Add more specificity to the ordering process
 - UI re-design
