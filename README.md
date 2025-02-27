@@ -1,6 +1,6 @@
 # _NANAMI'S - BAKERY SITE_
 
-Nanami's is a fully responsive site allows the user to order takeout directly from a fictional bakery.
+Nanami's is a fully responsive site that allows the user to order takeout directly from a fictional bakery.
 
 ## FEATURES
 
@@ -72,4 +72,5 @@ I wanted to build project that built with React Router and had cart functionalit
 
 ## FUTURE UPDATES
 
+- Maybe make ordering more granular(?)
 - UI re-design
