@@ -19,7 +19,7 @@ Nanami's is a fully responsive site that allows the user to order takeout direct
 
 ## WHY I BUILT THIS
 
-I wanted to build project that built with React Router and had cart functionality. Ultimately, I decided to go with creating a fictional bakery after finding several beautiful images of bakery items on the Unsplash site.
+I wanted to build project that built with React Router and had cart functionality. Ultimately, I decided to go with creating a fictional bakery after finding several beautiful images of bakery items on the Unsplash site. Also, I love bread!
 
 ## WHAT I LEARNED
 
