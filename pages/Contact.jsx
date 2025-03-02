@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   // if the field is valid (not empty), update user with a UI message
-  // sets a general validity flag and clear the corresponding form field
+  // set a general validity flag and clear the corresponding form field
 
   function handleSubmit(event) {
     event.preventDefault();
