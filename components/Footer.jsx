@@ -10,6 +10,8 @@ export default function Footer() {
   const [isValid, setIsValid] = useState(null);
   const navigate = useNavigate();
 
+  // update the state of form whenever a user changes a field
+
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -17,6 +19,9 @@ export default function Footer() {
       [name]: value,
     }));
   }
+
+  // if the field is valid (not empty), update user with a UI message
+  // sets a general validity flag and clear the corresponding form field
 
   function handleSubmit(event) {
     event.preventDefault();
