@@ -6,9 +6,11 @@ import MenuItem from "./MenuItem";
 import "./Menu.css";
 
 export default function Menu() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams(); // reading and updating query parameters in the URL
 
-  const typeFilter = searchParams.get("type");
+  const typeFilter = searchParams.get("type"); // retrieves the value of the type query parameter from the URL
+
+  // filters the data array based on the type query parameter and only displays matching items
 
   const displayedMenuItems = typeFilter
     ? data.filter((item) => item.type === typeFilter)

@@ -11,6 +11,8 @@ export default function MenuItem(item) {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
+  // if the modal is open prevent the page from scrolling, else allowing scrolling to resume
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
   }, [isOpen]);
