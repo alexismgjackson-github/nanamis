@@ -3,6 +3,8 @@ import { createContext, useEffect } from "react";
 export const ScrollContext = createContext();
 
 export const ScrollProvider = ({ children }) => {
+  // scrolls the window to the top with a smooth animation
+
   const scrollToTop = () => {
     useEffect(() => {
       window.scrollTo({
