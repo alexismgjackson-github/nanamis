@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import { useSearchParams } from "react-router-dom";
 import data from "../src/menu.js";
@@ -6,8 +6,6 @@ import MenuItem from "./MenuItem";
 import "./Menu.css";
 
 export default function Menu() {
-  const [isSelected, setIsSelected] = useState(null);
-
   const [searchParams, setSearchParams] = useSearchParams(); // reading and updating query parameters in the URL
 
   const typeFilter = searchParams.get("type"); // retrieves the value of the type query parameter from the URL
