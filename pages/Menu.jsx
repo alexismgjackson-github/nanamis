@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { ScrollContext } from "../Context/scroll";
 import { useSearchParams } from "react-router-dom";
 import data from "../src/menu.js";
@@ -6,6 +6,8 @@ import MenuItem from "./MenuItem";
 import "./Menu.css";
 
 export default function Menu() {
+  const [isSelected, setIsSelected] = useState(null);
+
   const [searchParams, setSearchParams] = useSearchParams(); // reading and updating query parameters in the URL
 
   const typeFilter = searchParams.get("type"); // retrieves the value of the type query parameter from the URL
@@ -31,21 +33,25 @@ export default function Menu() {
         <div className="filter-btns">
           <button
             onClick={() => setSearchParams({})}
-            className="filter-btn all"
+            className={`filter-btn all ${typeFilter === "" ? "selected" : ""}`}
             aria-label="View all menu items"
           >
             All
           </button>
           <button
             onClick={() => setSearchParams({ type: "bread" })}
-            className="filter-btn bread"
+            className={`filter-btn bread ${
+              typeFilter === "bread" ? "selected" : ""
+            }`}
             aria-label="View all bread items"
           >
             Bread
           </button>
           <button
             onClick={() => setSearchParams({ type: "pastry" })}
-            className="filter-btn pastry"
+            className={`filter-btn pastry ${
+              typeFilter === "pastry" ? "selected" : ""
+            }`}
             aria-label="View all pastry items"
           >
             Pastry

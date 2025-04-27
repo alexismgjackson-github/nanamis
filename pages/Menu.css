@@ -23,7 +23,8 @@
   width: 10rem;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn.selected {
   background-color: var(--color-bold);
 }
 
