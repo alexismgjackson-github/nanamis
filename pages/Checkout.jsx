@@ -99,16 +99,16 @@ export default function Checkout() {
                   {cartItems.map((item) => (
                     <div className="checkout-cart-item" key={item.id}>
                       <div className="checkout-cart-item-primary">
-                        <span className="checkout-cart-item-quantity">
-                          {item.quantity} QTY ({getCartItemTotal(item)})
-                        </span>
                         <p className="checkout-cart-item-name">{item.name}</p>
-                        <span className="checkout-cart-item-price">
-                          ${item.price} each
-                        </span>
                         <p className="checkout-cart-item-flavor">
                           {item.flavor}
                         </p>{" "}
+                        <span className="checkout-cart-item-price">
+                          ${item.price} each
+                        </span>
+                        <span className="checkout-cart-item-quantity">
+                          {item.quantity} QTY ({getCartItemTotal(item)})
+                        </span>
                       </div>
                       <div className="checkout-cart-item-secondary">
                         <img src={item.url} className="checkout-item-img" />

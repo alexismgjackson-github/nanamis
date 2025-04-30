@@ -42,16 +42,17 @@ export default function Cart() {
                 {cartItems.map((item) => (
                   <div className="cart-item" key={item.id}>
                     <div className="cart-item-primary">
-                      <span className="cart-item-quantity">
-                        {item.quantity} QTY ({getCartItemTotal(item)})
-                      </span>
                       <p className="cart-item-name">{item.name}</p>
+                      <p className="cart-item-flavor">{item.flavor}</p>
                       <span className="cart-item-price">
                         ${item.price} each
                       </span>
-                      <p className="cart-item-flavor">{item.flavor}</p>
+                      <span className="cart-item-quantity">
+                        {item.quantity} QTY ({getCartItemTotal(item)})
+                      </span>
                     </div>
                     <div className="cart-item-secondary">
+                      <img src={item.url} className="cart-item-img" />
                       <div className="quantity-btns">
                         <button
                           className="decrement-btn"
@@ -72,7 +73,6 @@ export default function Cart() {
                           +
                         </button>
                       </div>
-                      <img src={item.url} className="cart-item-img" />
                     </div>
                   </div>
                 ))}

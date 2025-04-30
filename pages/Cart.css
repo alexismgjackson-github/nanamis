@@ -55,11 +55,20 @@
 }
 
 .cart-item-primary {
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.cart-item-quantity,
 .cart-item-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.cart-item-name,
+.cart-item-flavor {
+  height: 2rem;
+}
+
+.cart-item-quantity {
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -72,7 +81,7 @@
 
 .cart-item-img {
   height: 8rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   object-fit: cover;
   width: 8rem;
 }
