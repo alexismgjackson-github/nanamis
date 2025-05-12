@@ -5,6 +5,7 @@ import { ScrollContext } from "../Context/scroll";
 import "./Cart.css";
 
 export default function Cart() {
+  // Destructuring functions and values from the CartContext to manage cart state
   const {
     cartItems,
     addToCart,
@@ -16,8 +17,10 @@ export default function Cart() {
     getGrandTotal,
   } = useContext(CartContext);
 
+  // Getting scrollToTop function from ScrollContext to handle scrolling behavior
   const { scrollToTop } = useContext(ScrollContext);
 
+  // Call scrollToTop to scroll the page to the top when the component is mounted
   scrollToTop();
 
   return (
@@ -25,19 +28,23 @@ export default function Cart() {
       <div className="cart-container">
         <h1 className="cart-heading">Your Cart</h1>
         <div className="cart-container-content">
+          {/* If there are items in the cart, render cart details */}
           {cartItems.length > 0 ? (
             <div className="cart">
+              {/* Button to clear the entire cart */}
               <div className="clear-cart">
                 <button
                   className="clear-cart-btn"
                   onClick={() => {
-                    clearCart();
+                    clearCart(); // Clears all items in the cart
                   }}
                   aria-label="Remove all items from cart"
                 >
                   Clear Cart
                 </button>
               </div>
+
+              {/* Loop through the cartItems array and render each item */}
               <div className="full-cart">
                 {cartItems.map((item) => (
                   <div className="cart-item" key={item.id}>
@@ -51,22 +58,26 @@ export default function Cart() {
                         {item.quantity} QTY ({getCartItemTotal(item)})
                       </span>
                     </div>
+
+                    {/* Section for the image and quantity control buttons */}
                     <div className="cart-item-secondary">
                       <img src={item.url} className="cart-item-img" />
                       <div className="quantity-btns">
+                        {/* Decrease item quantity button */}
                         <button
                           className="decrement-btn"
                           onClick={() => {
-                            removeFromCart(item);
+                            removeFromCart(item); // Removes one quantity of the item
                           }}
                           aria-label="Decrease item quantity by 1"
                         >
                           -
                         </button>
+                        {/* Increase item quantity button */}
                         <button
                           className="increment-btn"
                           onClick={() => {
-                            addToCart(item);
+                            addToCart(item); // Adds one more quantity of the item
                           }}
                           aria-label="Increase item quantity by 1"
                         >
@@ -77,20 +88,27 @@ export default function Cart() {
                   </div>
                 ))}
               </div>
+
+              {/* Display total calculations (subtotal, tax, grand total) */}
               <div className="total">
                 <div className="total-primary">
+                  {/* Subtotal calculation */}
                   <div className="subtotal-container">
                     <p className="subtotal">Cart Subtotal</p>
                     <span className="subtotal-number">{getCartSubTotal()}</span>
                   </div>
                 </div>
+
                 <div className="total-secondary">
+                  {/* Tax total calculation */}
                   <div className="tax-container">
                     <p className="tax">Tax Total</p>
                     <span className="tax-number">{getTaxTotal()}</span>
                   </div>
                 </div>
+
                 <div className="total-tertiary">
+                  {/* Grand total calculation */}
                   <div className="grand-total-container">
                     <p className="grand-total">Grand Total</p>
                     <span className="grand-total-number">
@@ -98,6 +116,8 @@ export default function Cart() {
                     </span>
                   </div>
                 </div>
+
+                {/* Button to proceed to checkout */}
                 <div className="total-btn">
                   <Link to="/checkout">
                     <button
@@ -111,10 +131,12 @@ export default function Cart() {
               </div>
             </div>
           ) : (
+            // If the cart is empty, show an empty cart message
             <div className="empty-cart-content">
               <p className="empty-cart">
                 Ready to go! Add items to get started.
               </p>
+              {/* Link to menu page */}
               <Link to="/menu">
                 <button className="go-to-menu-btn" aria-label="Proceed to menu">
                   Order Now

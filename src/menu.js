@@ -1,15 +1,16 @@
+// Exporting an array of product objects, representing a bakery's inventory
 export default [
   {
-    id: 1,
-    name: "Babka",
-    price: 9.95,
-    description: "Buttery, sweet and brioche-like crumb",
-    ideas: "Perfect as-is or with a glass of milk",
-    flavor: "Chocolate",
+    id: 1, // Unique identifier for the product
+    name: "Babka", // Name of the product
+    price: 9.95, // Price in USD
+    description: "Buttery, sweet and brioche-like crumb", // Short description
+    ideas: "Perfect as-is or with a glass of milk", // Serving suggestion
+    flavor: "Chocolate", // Flavor variant
     ingredients:
-      "flour, yeast, sugar, eggs, milk, butter, salt, cinnamon, cocoa powder, dark chocolate",
-    url: "assets/images/unsplash12.jpg",
-    type: "pastry",
+      "flour, yeast, sugar, eggs, milk, butter, salt, cinnamon, cocoa powder, dark chocolate", // List of ingredients
+    url: "assets/images/unsplash12.jpg", // Path to the product image
+    type: "pastry", // Category type
   },
   {
     id: 2,
@@ -92,7 +93,6 @@ export default [
     url: "assets/images/unsplash9.jpg",
     type: "pastry",
   },
-
   {
     id: 9,
     name: "Multi-Grain Loaf",

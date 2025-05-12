@@ -1,22 +1,29 @@
-import "./Home.css";
-import { useContext } from "react";
-import { ScrollContext } from "../Context/scroll";
+import "./Home.css"; // Importing CSS styles for the Home component
+import { useContext } from "react"; // Importing useContext hook to access the ScrollContext
+import { ScrollContext } from "../Context/scroll"; // Importing the ScrollContext
 
+// The Home component renders the main page content
 export default function Home() {
+  // Accessing the scrollToTop function from the ScrollContext
   const { scrollToTop } = useContext(ScrollContext);
 
+  // Calling the scrollToTop function to scroll the window to the top when the component renders
   scrollToTop();
 
   return (
     <>
+      {/* Main container for the Home page */}
       <div className="home-container">
+        {/* Hero section with an image */}
         <section className="hero">
           <img
-            className="hero-img"
-            src="assets/images/unsplash22.jpg"
-            alt="Sourdough rye loaf in a cloth held by a person wearing an apron"
+            className="hero-img" // Applying styles to the hero image
+            src="assets/images/unsplash22.jpg" // Image source
+            alt="Sourdough rye loaf in a cloth held by a person wearing an apron" // Alt text for accessibility
           />
         </section>
+
+        {/* Our Story section with heading and text */}
         <section className="our-story">
           <h1>Our Story</h1>
           <p>
@@ -27,12 +34,15 @@ export default function Home() {
             ingredients are used to make our artisanal bread and pastries.
           </p>
         </section>
+
+        {/* Gallery section with images of baked goods */}
         <section className="gallery">
           <div className="gallery-container">
+            {/* Each image is loaded lazily for performance improvement */}
             <img
               src="assets/images/unsplash2.jpg"
               alt="Sesame challah loaf on a black surface"
-              loading="lazy"
+              loading="lazy" // Lazy loading the image to improve page load performance
             />
             <img
               src="assets/images/unsplash3.jpg"
@@ -91,12 +101,15 @@ export default function Home() {
             />
           </div>
         </section>
+
+        {/* Location and Hours section */}
         <section className="location-and-hours">
           <h1>Location & Hours</h1>
           <ul className="location-and-hours-details">
-            <li>73 Black Flash Drive</li>
-            <li>Clearwater Beach, FL 33767</li>
-            <li>Open Daily: 7:00am - 2:00pm</li>
+            <li>73 Black Flash Drive</li> {/* Location address */}
+            <li>Clearwater Beach, FL 33767</li>{" "}
+            {/* Location city and zip code */}
+            <li>Open Daily: 7:00am - 2:00pm</li> {/* Operating hours */}
           </ul>
         </section>
       </div>

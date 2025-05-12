@@ -1,18 +1,21 @@
+// Import React hooks and createContext to manage cart state globally
 import { createContext, useState, useEffect } from "react";
 
+// Create the Cart context
 export const CartContext = createContext();
 
+// CartProvider component to wrap around any component that needs access to the cart
 export const CartProvider = ({ children }) => {
-  // the initial state of the cart items will be an empty array - if items are not in browser
+  // Initialize cartItems state from localStorage if it exists, otherwise use an empty array
   const [cartItems, setCartItems] = useState(
     localStorage.getItem("cartItems")
       ? JSON.parse(localStorage.getItem("cartItems"))
       : []
   );
 
-  // if item is already in cart then increase quantity of item in the cart but
-  // if item is not in cart then add the item to cart
-
+  // Add an item to the cart
+  // - If the item already exists, increase its quantity
+  // - If it's new, add it with quantity = 1
   const addToCart = (item) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
 
@@ -32,10 +35,9 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // if item is already in cart...
-  // if the quantity of the item is equal to 1 then remove the item from cart but
-  // if the quantity of the item is greater than 1 then decrease the quantity of the item in cart
-
+  // Remove an item from the cart
+  // - If quantity is 1, remove it entirely
+  // - If quantity is > 1, decrease the quantity
   const removeFromCart = (item) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
 
@@ -54,14 +56,12 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // set the cart items to an empty array
-
+  // Clear the entire cart
   const clearCart = () => {
     setCartItems([]);
   };
 
-  // calculate the total price of each item in the cart
-
+  // Calculate total for a specific item in the cart
   const getCartItemTotal = (item) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
     if (isItemInCart) {
@@ -69,16 +69,14 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // calculate the subtotal price of the items in the cart
-
+  // Calculate subtotal for all items in the cart (before tax)
   const getCartSubTotal = () => {
     return formatUSD(
       cartItems.reduce((total, item) => total + item.price * item.quantity, 0)
     );
   };
 
-  // calculate the total tax price of the items in the cart
-
+  // Calculate total tax (9% assumed tax rate)
   const getTaxTotal = () => {
     const cartSubTotal = cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
@@ -88,8 +86,7 @@ export const CartProvider = ({ children }) => {
     return formatUSD(cartSubTotal * 0.09);
   };
 
-  // calculate the grand total price of the items in the cart, including tax
-
+  // Calculate the grand total including tax
   const getGrandTotal = () => {
     const cartSubTotal = cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
@@ -101,8 +98,7 @@ export const CartProvider = ({ children }) => {
     return formatUSD(cartSubTotal + tax);
   };
 
-  // format item price to USD
-
+  // Format a number as USD currency
   function formatUSD(num) {
     return num.toLocaleString("en-US", {
       style: "currency",
@@ -110,24 +106,20 @@ export const CartProvider = ({ children }) => {
     });
   }
 
-  // localStorage handling (initialization)
-  // whenever cartItems is updated, save the changes to localStorage (if the cart is not empty)
-
+  // Save cart to localStorage every time it changes
   useEffect(() => {
     if (cartItems.length > 0) {
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
     }
-  }, [cartItems]); // run the effect only when the cartItems state changes
+  }, [cartItems]); // Trigger this effect whenever cartItems changes
 
-  // localStorage handling (persistence)
-  // when the component first appears on the page, attempt to load the cartItems from localStorage
-
+  // Load cart from localStorage on initial render
   useEffect(() => {
     const storedCartItems = localStorage.getItem("cartItems");
     if (storedCartItems) {
       setCartItems(JSON.parse(storedCartItems));
     }
-  }, []); // will run only once, after the initial render of the component
+  }, []); // Run once on mount
 
   return (
     <CartContext.Provider
@@ -143,6 +135,7 @@ export const CartProvider = ({ children }) => {
       }}
     >
       {children}{" "}
+      {/* Render any child components that need access to the cart */}
     </CartContext.Provider>
   );
 };

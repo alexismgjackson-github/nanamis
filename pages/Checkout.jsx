@@ -6,6 +6,7 @@ import { ScrollContext } from "../Context/scroll";
 import "./Checkout.css";
 
 export default function Checkout() {
+  // Destructuring functions and values from CartContext to manage cart state
   const {
     cartItems,
     clearCart,
@@ -15,8 +16,10 @@ export default function Checkout() {
     getGrandTotal,
   } = useContext(CartContext);
 
+  // Using useNavigate to redirect after form submission
   const navigate = useNavigate();
 
+  // State to store form data (payment details)
   const [formData, setFormData] = useState({
     cardHolder: "",
     cardNumber: "",
@@ -25,8 +28,7 @@ export default function Checkout() {
     zipcode: "",
   });
 
-  // update the state of form whenever a user changes a field
-
+  // Handle form input changes and update state accordingly
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -35,21 +37,21 @@ export default function Checkout() {
     }));
   }
 
+  // Handle form submission - clear cart and navigate to order completion page
   function handleSubmit(event) {
-    event.preventDefault();
-    clearCart();
-    navigate(`/ordercomplete`);
+    event.preventDefault(); // Prevent default form submission
+    clearCart(); // Clear all items from the cart
+    navigate(`/ordercomplete`); // Redirect to the order complete page
   }
 
-  // console.log(formData);
-
+  // Scroll to top when component mounts (for better user experience)
   const { scrollToTop } = useContext(ScrollContext);
-
   scrollToTop();
 
   return (
     <>
       <div className="checkout-container">
+        {/* Back to cart link */}
         <div className="back-to-cart-container">
           <Link className="back-to-cart-link" to="/cart">
             <img
@@ -61,8 +63,11 @@ export default function Checkout() {
             <span>Back To Cart</span>
           </Link>
         </div>
+
         <h1 className="checkout-heading">Checkout</h1>
+
         <div className="checkout-steps-container">
+          {/* Step 1: Choose Pickup Time Slot */}
           <div className="timepicker-container">
             <h2 className="checkout-subheading">
               <span className="steps">1.</span> Choose Pickup Timeslot
@@ -70,6 +75,7 @@ export default function Checkout() {
             <form className="timepicker">
               <label htmlFor="timeslot"></label>
               <select className="select" id="timeslot">
+                {/* Timeslot options */}
                 <option value="7:00AM-7:30AM">7:00AM - 7:30AM</option>
                 <option value="7:30AM-8:00AM">7:30AM - 8:00AM</option>
                 <option value="8:00AM-8:30AM">8:00AM - 8:30AM</option>
@@ -87,8 +93,10 @@ export default function Checkout() {
               </select>
             </form>
           </div>
+
           <hr />
 
+          {/* Step 2: Review Your Order */}
           <div className="view-order-container">
             <h2 className="checkout-subheading">
               <span className="steps">2.</span> Review Your Order
@@ -96,13 +104,14 @@ export default function Checkout() {
             <div className="cart-container-content">
               <div className="checkout-cart">
                 <div className="checkout-full-cart">
+                  {/* Loop through cart items and display them */}
                   {cartItems.map((item) => (
                     <div className="checkout-cart-item" key={item.id}>
                       <div className="checkout-cart-item-primary">
                         <p className="checkout-cart-item-name">{item.name}</p>
                         <p className="checkout-cart-item-flavor">
                           {item.flavor}
-                        </p>{" "}
+                        </p>
                         <span className="checkout-cart-item-price">
                           ${item.price} each
                         </span>
@@ -119,6 +128,7 @@ export default function Checkout() {
               </div>
             </div>
             <div className="checkout-total">
+              {/* Display subtotal, tax, and grand total */}
               <div className="checkout-order-subtotal-container">
                 <p className="checkout-order-subtotal">Order Subtotal</p>
                 <span className="checkout-order-subtotal-number">
@@ -139,13 +149,16 @@ export default function Checkout() {
               </div>
             </div>
           </div>
+
           <hr />
 
+          {/* Step 3: Enter Payment Details */}
           <div className="details-container">
             <h2 className="checkout-subheading">
               <span className="steps">3.</span> Enter Payment Details
             </h2>
             <form className="details-form" onSubmit={handleSubmit}>
+              {/* Form fields for credit card details */}
               <label>Card Holder Name (required)</label>
               <input
                 type="text"

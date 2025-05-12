@@ -1,17 +1,23 @@
+// Import necessary hooks and styles
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Footer.css";
+import { useNavigate } from "react-router-dom"; // For navigation and to trigger effect cleanup
+import "./Footer.css"; // Footer styles
 
 export default function Footer() {
+  // State to manage email input field
   const [formData, setFormData] = useState({
     email: "",
   });
+
+  // Message displayed after form submission
   const [emailMessage, setEmailMessage] = useState("");
+
+  // Boolean to track if the submitted email is valid
   const [isValid, setIsValid] = useState(null);
+
   const navigate = useNavigate();
 
-  // update the state of form whenever a user changes a field
-
+  // Updates form state on input change
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -20,22 +26,19 @@ export default function Footer() {
     }));
   }
 
-  // if the field is valid (not empty), update user with a UI message
-  // set a general validity flag and clear the corresponding form field
-
+  // Handles form submission
   function handleSubmit(event) {
     event.preventDefault();
 
     if (formData.email.length > 0) {
       console.log("Email is valid");
-      setEmailMessage("Thank you for subscribing!");
-      setIsValid(true);
-      formData.email = "";
+      setEmailMessage("Thank you for subscribing!"); // Show success message
+      setIsValid(true); // Mark as valid
+      setFormData({ email: "" }); // ✅ Properly reset the email input
     }
   }
 
-  // console.log(formData);
-
+  // Clear email message on component unmount or navigation change
   useEffect(() => {
     return () => {
       setEmailMessage("");
@@ -45,6 +48,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-links-and-form">
+        {/* Social links section */}
         <div className="footer-primary">
           <h2>Social</h2>
           <ul className="footer-links">
@@ -87,6 +91,7 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Newsletter form section */}
         <div className="footer-secondary">
           <h2>Newsletter</h2>
           <div className="newsletter-container">
@@ -101,13 +106,14 @@ export default function Footer() {
                 name="email"
                 onChange={handleChange}
                 value={formData.email}
-                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" // Simple email regex pattern
                 required
               />
+              {/* Show message only if one exists */}
               {emailMessage && (
                 <span
                   className={`newsletter-message ${
-                    isValid == true ? "footer-success" : ""
+                    isValid === true ? "footer-success" : ""
                   }`}
                 >
                   {emailMessage}
