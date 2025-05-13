@@ -96,7 +96,7 @@ a {
 button {
   font-family: var(--font-primary);
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -106,7 +106,7 @@ li {
 }
 
 img {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   width: 100%;
 }
 

@@ -1,6 +1,6 @@
 .menu-item {
   background-color: var(--color-extralight);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   color: var(--color-bold);
   display: grid;
   gap: 2rem;

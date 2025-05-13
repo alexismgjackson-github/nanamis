@@ -30,7 +30,7 @@
 
 .checkout-subheading {
   color: var(--color-bold);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 3rem;
   text-transform: none;
@@ -65,7 +65,7 @@ hr {
 
 .checkout-cart-item {
   background-color: var(--color-extralight);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   color: var(--color-bold);
   display: flex;
   justify-content: space-between;
@@ -80,18 +80,18 @@ hr {
 }
 
 .checkout-cart-item-name {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .checkout-cart-item-quantity {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .checkout-cart-item-price,
 .checkout-cart-item-flavor {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-style: italic;
 }
 
