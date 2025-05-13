@@ -23,15 +23,12 @@ header {
   display: flex;
 }
 
-.header-nav a:hover {
-  font-weight: 600;
-}
-
 .header-desktop-view {
   display: none;
 }
 
 .header-desktop-view a {
+  font-weight: 700;
   text-transform: uppercase;
 }
 

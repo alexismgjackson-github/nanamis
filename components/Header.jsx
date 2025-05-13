@@ -18,7 +18,6 @@ export default function Header() {
   // Style to apply to active navigation links
   const activeStyle = {
     color: "#FFC40C",
-    fontWeight: 700,
   };
 
   // Lock or unlock body scroll depending on hamburger menu state
