@@ -68,7 +68,7 @@ h1 {
 
   .gallery-container {
     gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .location-and-hours {
